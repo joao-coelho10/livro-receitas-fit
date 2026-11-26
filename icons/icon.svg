@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#1E5F45"/>
+  <circle cx="256" cy="262" r="168" fill="#2A7556"/>
+  <!-- tabuleiro -->
+  <rect x="112" y="170" width="288" height="200" rx="30" fill="#6E7A86"/>
+  <rect x="132" y="190" width="248" height="160" rx="18" fill="#343C46"/>
+  <g>
+    <rect x="152" y="208" width="34" height="34" rx="8" fill="#F6DCCB"/>
+    <rect x="196" y="214" width="30" height="30" rx="7" fill="#F7A540"/>
+    <circle cx="252" cy="226" r="13" fill="#EAD095"/>
+    <rect x="276" y="208" width="32" height="32" rx="8" fill="#F6DCCB"/>
+    <circle cx="334" cy="226" r="13" fill="#EAD095"/>
+    <rect x="352" y="214" width="12" height="40" rx="6" fill="#E03A2A" transform="rotate(20 358 234)"/>
+    <rect x="156" y="258" width="12" height="42" rx="6" fill="#F7C531" transform="rotate(-25 162 279)"/>
+    <circle cx="198" cy="276" r="13" fill="#EAD095"/>
+    <rect x="222" y="258" width="32" height="32" rx="8" fill="#F7A540"/>
+    <circle cx="290" cy="270" r="22" fill="#FFFFFF"/>
+    <rect x="324" y="262" width="32" height="32" rx="8" fill="#F6DCCB"/>
+    <rect x="166" y="306" width="30" height="30" rx="7" fill="#F6DCCB"/>
+    <circle cx="226" cy="320" r="13" fill="#EAD095"/>
+    <rect x="252" y="304" width="12" height="40" rx="6" fill="#E03A2A" transform="rotate(-30 258 324)"/>
+    <rect x="282" y="306" width="30" height="30" rx="7" fill="#F7A540"/>
+    <circle cx="344" cy="318" r="13" fill="#EAD095"/>
+    <path d="M286 262c6-4 12-2 10 4" stroke="#3E9A4A" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- vapor -->
+  <path d="M208 150c-14-18 14-28 0-48M256 146c-14-18 14-28 0-48M304 150c-14-18 14-28 0-48" stroke="#FFF5EA" stroke-width="10" fill="none" stroke-linecap="round" opacity=".85"/>
+</svg>

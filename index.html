@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Livro de Receitas Fit</title>
+  <meta name="description" content="Receitas de forno, leves e ricas em proteína, com vídeo passo a passo.">
+  <meta name="theme-color" content="#1E5F45">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Receitas Fit">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar para o conteúdo</a>
+  <header class="topbar" id="topbar">
+    <button class="icon-btn back" id="backBtn" aria-label="Voltar" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <a class="brand" href="#/" aria-label="Início">
+      <img src="icons/icon-192.png" alt="" width="32" height="32">
+      <span id="topTitle">Receitas Fit</span>
+    </a>
+    <span class="net" id="netBadge" hidden>Sem internet</span>
+  </header>
+  <main id="main" tabindex="-1"><div class="loading">A carregar receitas…</div></main>
+  <nav class="tabbar" id="tabbar" aria-label="Navegação principal">
+    <a href="#/" data-tab="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h10"/></svg><span>Receitas</span></a>
+    <a href="#/refeicao" data-tab="meal"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 3"/></svg><span>Refeição</span></a>
+    <a href="#/favoritas" data-tab="fav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span>Favoritas</span></a>
+    <a href="#/mais" data-tab="more"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 20h14"/></svg><span>Offline</span></a>
+  </nav>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>

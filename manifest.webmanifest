@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "Livro de Receitas Fit",
+  "short_name": "Receitas Fit",
+  "description": "Receitas de forno, leves e ricas em proteína, com vídeo passo a passo.",
+  "lang": "pt-PT",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFF7EE",
+  "theme_color": "#1E5F45",
+  "categories": ["food", "health", "lifestyle"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Refeição completa", "short_name": "Refeição", "url": "./#/refeicao", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Favoritas", "url": "./#/favoritas", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}
