@@ -62,9 +62,11 @@ function prepare(data) {
     return Object.assign({}, r, {
       kcal: m.kcal || 0, p: m.protein || 0, c: m.carbs || 0, f: m.fat || 0,
       pairs: r.pairs || [], tags: r.tags || [], tips: r.tips || [], steps: r.steps || [], ingredients: r.ingredients || [],
-      videoSrc: r.videoFile || ('videos/' + r.id + '.mp4'),
-      posterSrc: r.poster || ('media/' + r.id + '.jpg'),
-      thumbSrc: r.thumb || ('media/' + r.id + '-thumb.webp'),
+      // recipes.json traz videoFile/poster/thumb vazios enquanto o vídeo ainda não foi gerado
+      hasVideo: r.videoFile !== '',
+      videoSrc: r.videoFile === undefined ? 'videos/' + r.id + '.mp4' : r.videoFile,
+      posterSrc: r.poster === undefined ? 'media/' + r.id + '.jpg' : r.poster,
+      thumbSrc: r.thumb || (r.thumb === '' ? 'icons/icon-192.png' : 'media/' + r.id + '-thumb.webp'),
       need: Array.from(new Set((r.ingredients || []).filter((i) => i.food && !/opcional/i.test(i.n || '')).map((i) => i.food))),
     });
   });
@@ -186,6 +188,7 @@ async function refreshSaved() {
 }
 const isSaved = (r) => SAVED.has(abs(r.videoSrc));
 async function saveRecipe(r) {
+  if (!r.hasVideo) throw new Error('O vídeo desta receita ainda está a ser preparado.');
   if (!('caches' in window)) throw new Error('Este navegador não permite guardar para offline.');
   const vc = await caches.open(VIDEO_CACHE);
   const url = abs(r.videoSrc);
@@ -392,8 +395,9 @@ function renderRecipe(main, r) {
   const maxKcal = 700, maxP = 60;
   const macro = (v, unit, label, w, c) => '<div class="macro"><b>' + v + '</b><span>' + unit + label + '</span><i style="--w:' + Math.min(100, w) + '%;--c:' + c + '"></i></div>';
   main.innerHTML =
-    '<div class="video-wrap"><video id="vid" playsinline webkit-playsinline preload="none" poster="' + esc(r.posterSrc) + '" src="' + esc(r.videoSrc) + '" aria-label="Vídeo passo a passo: ' + esc(r.title) + '"></video>' +
-    '<button class="play" id="playBtn" aria-label="Ver vídeo passo a passo"><img src="' + esc(r.posterSrc) + '" alt="" onerror="this.remove()"><span><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg>Ver vídeo passo a passo</span></button></div>' +
+    (r.hasVideo ? '<div class="video-wrap"><video id="vid" playsinline webkit-playsinline preload="none" poster="' + esc(r.posterSrc) + '" src="' + esc(r.videoSrc) + '" aria-label="Vídeo passo a passo: ' + esc(r.title) + '"></video>' +
+    '<button class="play" id="playBtn" aria-label="Ver vídeo passo a passo"><img src="' + esc(r.posterSrc) + '" alt="" onerror="this.remove()"><span><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg>Ver vídeo passo a passo</span></button></div>'
+     : '<div class="video-soon"><span>' + icon.clock + '</span><b>Vídeo narrado a caminho</b><small>A receita está completa aqui em baixo; o vídeo chega numa próxima atualização.</small></div>') +
     '<div class="r-head"><span class="kicker">' + esc(r.meal) + ' · ' + esc(r.protein) + '</span><h1>' + esc(r.title) + '</h1>' +
     '<div class="facts"><span class="fact">' + icon.clock + esc(r.handsOn) + ' min prep.</span>' +
     '<span class="fact">' + icon.flame + esc(r.temp ? r.temp + ' °C · ' + r.oven : r.oven) + '</span>' +
@@ -404,7 +408,7 @@ function renderRecipe(main, r) {
     '<a class="btn primary full" href="#/receita/' + esc(r.id) + '/cozinha">' + icon.chef + 'Modo cozinha</a>' +
     '<button class="btn" data-fav="' + esc(r.id) + '" aria-pressed="' + isFav(r.id) + '">' + icon.heart + 'Favorita</button>' +
     '<button class="btn' + (colsOf(r.id).some((c) => c.id !== 'fav') ? ' has' : '') + '" data-cols="' + esc(r.id) + '">' + icon.folder + '<span class="lbl">' + (function () { const n = colsOf(r.id).filter((c) => c.id !== 'fav').length; return n ? 'Em ' + plural(n, 'coleção', 'coleções') : 'Coleções'; })() + '</span></button>' +
-    '<button class="btn" id="saveBtn">' + (isSaved(r) ? icon.check + 'Guardada offline' : icon.down + 'Guardar offline') + '</button>' +
+    '<button class="btn" id="saveBtn"' + (r.hasVideo ? '' : ' disabled title="Vídeo em preparação"') + '>' + (isSaved(r) ? icon.check + 'Guardada offline' : icon.down + 'Guardar offline') + '</button>' +
     '<button class="btn" id="shareBtn">' + icon.share + 'Partilhar</button></div>' +
     '<section class="sec"><h2>Macros por dose <small>estimativa</small></h2><div class="macros">' +
     macro(r.kcal, '', 'kcal', r.kcal / maxKcal * 100, 'var(--orange)') + macro(r.p + ' g', '', 'proteína', r.p / maxP * 100, 'var(--yellow)') +
@@ -434,9 +438,11 @@ function renderRecipe(main, r) {
     li.onclick = tog; li.onkeydown = (e) => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tog(); } };
   });
   const vid = $('#vid');
+  if (vid) {
   $('#playBtn').onclick = () => { $('#playBtn').hidden = true; vid.controls = true; const pr = vid.play(); if (pr) pr.catch(() => {}); };
   vid.addEventListener('play', () => { if (autoSave() && !isSaved(r) && navigator.onLine) saveRecipe(r).catch(() => {}); }, { once: true });
   vid.addEventListener('error', () => { if (!navigator.onLine && !isSaved(r)) toast('Este vídeo ainda não está guardado para offline.'); });
+  }
   const sb = $('#saveBtn');
   sb.onclick = async () => {
     sb.disabled = true;
@@ -732,7 +738,7 @@ async function renderMore(main) {
     '<div id="storage" class="small" style="margin-top:10px"></div>' +
     '<button class="btn full" id="clearVids" style="margin-top:10px"' + (nSaved ? '' : ' disabled') + '>' + icon.trash + 'Apagar vídeos guardados</button>' +
     '</div></section>' +
-    '<section class="sec"><h2>Por receita</h2><div class="list">' + RECIPES.map((r) => rowHTML(r, isSaved(r) ? '✓ Vídeo offline' : 'Só com internet')).join('') + '</div></section>' +
+    '<section class="sec"><h2>Por receita</h2><div class="list">' + RECIPES.map((r) => rowHTML(r, !r.hasVideo ? 'Vídeo a caminho' : isSaved(r) ? '✓ Vídeo offline' : 'Só com internet')).join('') + '</div></section>' +
     '<section class="sec"><h2>Sobre</h2><div class="panel small">' + esc(RECIPES.length + ' receitas. Macros por dose são estimativas a partir de ingredientes crus; variam com as marcas e o tamanho dos ingredientes.') +
     '<div class="kv" style="margin-top:8px"><span>Service worker</span><b id="swState">…</b></div></div></section>';
   const ib = $('#installBtn'); if (ib) ib.onclick = async () => { if (!installEvt) return; installEvt.prompt(); await installEvt.userChoice; installEvt = null; ib.hidden = true; };
@@ -740,14 +746,14 @@ async function renderMore(main) {
   $('#swState').textContent = !('serviceWorker' in navigator) ? 'Não suportado' : navigator.serviceWorker.controller ? 'Ativo' : 'A iniciar';
   if (navigator.storage && navigator.storage.estimate) navigator.storage.estimate().then((s) => { const el = $('#storage'); if (el) el.textContent = 'Espaço usado pela app: ' + mb(s.usage || 0) + '.'; });
   if (navigator.onLine) {
-    Promise.all(RECIPES.filter((r) => !isSaved(r)).map((r) => fetch(r.videoSrc, { method: 'HEAD' }).then((x) => Number(x.headers.get('content-length')) || 0).catch(() => 0)))
+    Promise.all(RECIPES.filter((r) => r.hasVideo && !isSaved(r)).map((r) => fetch(r.videoSrc, { method: 'HEAD' }).then((x) => Number(x.headers.get('content-length')) || 0).catch(() => 0)))
       .then((sizes) => { const t = sizes.reduce((a, b) => a + b, 0); const el = $('#allSize'); if (el && t) el.textContent = ' (' + mb(t) + ')'; });
   }
   $('#saveAll').onclick = async () => {
     if (bulkRunning) return;
     if (!navigator.onLine) { toast('Precisas de internet para guardar.'); return; }
     bulkRunning = true;
-    const todo = RECIPES.filter((r) => !isSaved(r));
+    const todo = RECIPES.filter((r) => r.hasVideo && !isSaved(r));
     const prog = $('#prog'), txt = $('#progTxt'); prog.hidden = false; txt.hidden = false; $('#saveAll').disabled = true;
     let done = 0, fail = 0;
     for (const r of todo) {

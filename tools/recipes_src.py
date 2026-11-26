@@ -387,6 +387,8 @@ for _r in RECIPES:
     _r['pairs'] = _r['pairs'] + [p for p in _m.pop('addPairs', []) if p not in _r['pairs']]
     _r.update(_m)
 RECIPES += RECIPES_EXTRA
+from recipes_v3 import RECIPES_V3
+RECIPES += RECIPES_V3
 
 def grams_of(ing):
     if 't' in ing: return 0
@@ -428,14 +430,23 @@ def build():
         rr['freezer'] = bool(r.get('freezer'))
         rr['storage'] = r.get('storage', '')
         rr['foods'] = sorted(set(foods), key=foods.index)
-        tags = [t for t in r['tags'] if t != 'sem glúten']
+        # Saciante/volume: muita comida por poucas calorias (densidade energética ≤ 0,9 kcal/g numa dose ≥ 400 g)
+        gtot = sum(grams_of(i) for i in r['ingredients'])
+        rr['gramsPerServing'] = round(gtot / s)
+        rr['kcalPerGram'] = round(tot[0] / gtot, 2) if gtot else 0
+        auto_vol = r['meal'] == 'Prato principal' and rr['kcalPerGram'] <= 0.9 and gtot / s >= 400
+        rr['volume'] = bool(r.get('volume', auto_vol))
+        rr['salad'] = bool(r.get('salad'))
+        tags = [t for t in r['tags'] if t not in ('sem glúten', 'saciante', 'salada')]
+        if rr['salad']: tags.insert(0, 'salada')
+        if rr['volume']: tags.insert(1 if rr['salad'] else 0, 'saciante')
         if rr['glutenFree']: tags.append('sem glúten')
         rr['tags'] = tags
         rr['steps'] = [{'title': a, 'detail': b} for a, b in r['steps']]
         # ?v=<hash do ficheiro>: um vídeo/poster gerado de novo tem um URL novo, por isso nenhuma cache serve o antigo
         for key, rel in (('videoFile', f"videos/{r['id']}.mp4"), ('poster', f"media/{r['id']}.jpg"), ('thumb', f"media/{r['id']}-thumb.webp")):
             fp = os.path.join(os.path.dirname(OUT_PATH), rel)
-            rr[key] = rel + ('?v=' + hashlib.sha1(open(fp, 'rb').read()).hexdigest()[:8] if os.path.exists(fp) else '')
+            rr[key] = (rel + '?v=' + hashlib.sha1(open(fp, 'rb').read()).hexdigest()[:8]) if os.path.exists(fp) else ''  # vazio = ainda não gerado
         out.append(rr)
     book = {'title': 'Livro de Receitas Fit do Chef', 'language': 'pt-PT',
             'proteinTypes': ['Frango/Peru', 'Vaca/Porco', 'Ovos/Queijo', 'Vegetariano/Leguminosas', 'Peixe'],
@@ -446,6 +457,6 @@ def build():
             'notes': 'Macros por dose são estimativas a partir de ingredientes crus (tools/foods.py). Para acrescentar uma receita: junta-a a tools/recipes_src.py, corre o script e gera o vídeo com tools/render_all.py (ver README.md).'}
     json.dump({'book': book, 'recipes': out}, open(OUT_PATH, 'w'), ensure_ascii=False, indent=1)
     for r in out:
-        m = r['macrosPerServing']; print(f"{r['id']:42s} {r['meal']:18s} {m['kcal']:4d} kcal {m['protein']:3d} P {m['carbs']:3d} C {m['fat']:3d} F  P/100={r['proteinPer100kcal']} fib={m['fiber']} {r['cost']}{r['costPerServing']} gf={int(r['glutenFree'])} veg={int(r['vegetarian'])}")
+        m = r['macrosPerServing']; print(f"{r['id']:42s} {r['meal']:18s} {m['kcal']:4d} kcal {m['protein']:3d} P {m['carbs']:3d} C {m['fat']:3d} F  P/100={r['proteinPer100kcal']} fib={m['fiber']} {r['cost']}{r['costPerServing']} gf={int(r['glutenFree'])} veg={int(r['vegetarian'])} vol={int(r['volume'])} {r['kcalPerGram']} {r['gramsPerServing']}g sal={int(r['salad'])}")
 
 if __name__ == '__main__': build()

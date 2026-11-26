@@ -112,6 +112,11 @@ body.cook .tabbar,body.cook .topbar{display:none}
 .video-wrap{position:relative;margin:4px -16px 0;background:#F6E9DA;aspect-ratio:16/9;overflow:hidden}
 @media (min-width:600px){.video-wrap{margin:4px 0 0;border-radius:var(--r)}}
 .video-wrap video{width:100%;height:100%;display:block;background:#F6E9DA}
+.video-soon{margin:4px -16px 0;aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;padding:16px 28px;background:var(--soft,#F6E9DA);color:var(--ink2,#6b5a4a)}
+.video-soon span svg{width:34px;height:34px;fill:none;stroke:currentColor;stroke-width:1.8}
+.video-soon b{font-size:1.02rem;color:var(--ink,#2b211a)}
+.video-soon small{font-size:.85rem;max-width:30ch;line-height:1.4}
+@media (min-width:600px){.video-soon{margin:4px 0 0;border-radius:var(--r)}}
 .video-wrap .play{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:flex-end;border:0;background:transparent;padding:12px}
 .video-wrap .play span{font-size:14px!important;padding:10px 16px 10px 12px!important}
 .video-wrap .play img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}

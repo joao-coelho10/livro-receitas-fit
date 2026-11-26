@@ -77,3 +77,40 @@ LABELS = {
 PANTRY = {'azeite','alho','mostarda','mel','amido','eritritol','caril','fermento','paprika'}
 # Trocas aceitáveis (se tens um, serve para o outro)
 SUBS = [['skyr','iog_grego','quark'], ['frango','peru'], ['feijao_branco','feijao_vermelho','feijao_preto'], ['tomate','tomate_cherry']]
+
+# ---- 3.ª leva: pequenos-almoços, snacks, saladas e pratos de volume ----
+_NEW = {  # chave: (kcal, P, C, G por 100 g), fibra, €/kg, rótulo, grupo
+ 'quinoa':((120,4.4,21.3,1.9),2.8,4.5,'Quinoa (cozida)','Batata, cereais e pão'),
+ 'pao_integral':((247,13,41,3.4),7,3.5,'Pão integral','Batata, cereais e pão'),
+ 'bolacha_arroz':((387,8,81,2.8),4,6,'Bolachas de arroz','Batata, cereais e pão'),
+ 'milho_pipoca':((375,11,74,4.3),15,3,'Milho para pipocas','Batata, cereais e pão'),
+ 'alface':((15,1.4,2.9,0.2),1.3,3,'Alface / mistura de folhas','Legumes'),
+ 'rucula':((25,2.6,3.7,0.7),1.6,9,'Rúcula','Legumes'),
+ 'couve':((32,2.5,6,0.6),2.5,2.5,'Couve portuguesa / lombarda','Legumes'),
+ 'alho_frances':((61,1.5,14,0.3),1.8,2.5,'Alho-francês','Legumes'),
+ 'beterraba':((43,1.6,10,0.2),2.8,2.5,'Beterraba cozida','Legumes'),
+ 'milho':((86,3.3,19,1.4),2.7,3,'Milho doce','Legumes'),
+ 'aipo':((16,0.7,3,0.2),1.6,2.5,'Aipo','Legumes'),
+ 'morangos':((32,0.7,7.7,0.3),2,5,'Morangos','Fruta'),
+ 'kiwi':((61,1.1,15,0.5),3,3,'Kiwi','Fruta'),
+ 'laranja':((47,0.9,12,0.1),2.4,1.5,'Laranja','Fruta'),
+ 'abacate':((160,2,8.5,14.7),6.7,6,'Abacate','Fruta'),
+ 'manteiga_amendoim':((588,25,20,50),6,9,'Manteiga de amendoim','Despensa básica'),
+ 'amendoim_po':((400,50,24,12),8,22,'Amendoim em pó (PB2)','Despensa básica'),
+ 'whey':((380,78,8,5),0,25,'Proteína em pó (whey)','Ovos e laticínios'),
+ 'iog_natural':((56,4.5,6,1.5),0,2,'Iogurte natural magro','Ovos e laticínios'),
+ 'requeijao':((170,11,4,12),0,9,'Requeijão','Ovos e laticínios'),
+ 'feta_light':((180,17,1,12),0,11,'Feta light','Ovos e laticínios'),
+ 'salmao_fumado':((117,18,0,4.3),0,30,'Salmão fumado','Peixe'),
+ 'presunto':((180,30,0,6),0,25,'Presunto (sem gordura)','Carne e aves'),
+ 'edamame':((121,11.9,8.9,5.2),5.2,8,'Edamame','Leguminosas e tofu'),
+ 'canela':((247,4,81,1.2),53,25,'Canela','Despensa básica'),
+}
+for _k, (_m, _f, _p, _l, _g) in _NEW.items():
+    FOODS[_k] = _m; FIBER[_k] = _f; PRICE[_k] = _p; LABELS[_k] = (_l, _g)
+UNIT_G.update({'kiwi':75,'laranja':180,'abacate':150,'pao_integral':35,'bolacha_arroz':8,'morangos':15,'aipo':40,'alho_frances':150})
+SPOON_G.update({'manteiga_amendoim':16,'amendoim_po':8,'canela':3,'whey':10})
+GLUTEN |= {'pao_integral'}
+MEAT_FISH |= {'salmao_fumado','presunto'}
+PANTRY |= {'canela'}
+SUBS += [['alface','rucula','espinafres'], ['iog_natural','iog_grego','skyr'], ['laranja','kiwi']]

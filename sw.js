@@ -3,7 +3,7 @@
    - recipes.json: rede primeiro (receitas novas aparecem logo), cache se estiver offline.
    - Miniaturas e posters: cache à medida que são vistos.
    - Vídeos: só da cache se tiverem sido guardados (com suporte a pedidos Range), senão rede. */
-const VERSION = 'v3';
+const VERSION = 'v4';
 const SHELL = 'rf-shell-' + VERSION;
 const DATA = 'rf-data';
 const MEDIA = 'rf-media-v2';

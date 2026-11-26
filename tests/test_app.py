@@ -61,7 +61,7 @@ def run(pw, engine):
         dim, v = rnd.choice(opts)
         if i % 9 == 8:  # sai e volta (abre uma receita e volta atrás / vai ao Em casa e volta pela barra)
             if pg.locator('.card').count():
-                pg.locator('.card').first.tap(); pg.wait_for_selector('#vid'); pg.go_back(); pg.wait_for_selector('#filters')
+                pg.locator('.card').first.tap(); pg.wait_for_selector('.r-head'); pg.go_back(); pg.wait_for_selector('#filters')
             else:
                 pg.locator('#tabbar a[data-tab="casa"]').tap(); pg.wait_for_selector('[data-food]'); pg.locator('#tabbar a[data-tab="home"]').tap(); pg.wait_for_selector('#filters')
             if not check(pg, st, 'nav'): good = False; print('   after nav', i)
@@ -97,9 +97,13 @@ def run(pw, engine):
     ok(f'{E}: Em casa não mexe na lista de Receitas', after['count'] == before['count'] == len(R) and after['meal'] == before['meal'] and after['quick'] == before['quick'])
     pg.reload(); pg.wait_for_selector('#filters')
     ok(f'{E}: … nem depois de recarregar', ui_state(pg)['count'] == len(R))
+    # 6b) página da receita: com vídeo mostra o leitor; sem vídeo ainda mostra o aviso
+    for r in [x for x in R if x.get('videoFile')][:1] + [x for x in R if not x.get('videoFile')][:1]:
+        pg.goto(BASE + '#/receita/' + r['id']); pg.wait_for_selector('.r-head')
+        ok(f"{E}: receita {'com' if r['videoFile'] else 'sem'} vídeo", pg.locator('#vid' if r['videoFile'] else '.video-soon').count() == 1)
     # 7) coleções
     rid = R[0]['id']
-    pg.goto(BASE + '#/receita/' + rid); pg.wait_for_selector('#vid')
+    pg.goto(BASE + '#/receita/' + rid); pg.wait_for_selector('.r-head')
     pg.locator('.actions [data-fav]').tap(); pg.locator('.actions [data-cols]').tap(); pg.wait_for_selector('.sheet')
     pg.fill('#newColName', 'Jantares rápidos'); pg.locator('#newColForm button').tap(); pg.wait_for_timeout(150)
     cols = pg.evaluate('RF.cols')

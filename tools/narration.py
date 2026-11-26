@@ -34,6 +34,7 @@ def speak(s):
     s = re.sub(r'(\d+)\s*%', r'\1 por cento', s); s = re.sub(r'(\d+)\s*h\b', r'\1 horas', s)
     s = s.replace(' · ', ', ').replace('&', 'e')
     s = re.sub(r'(?i)\bskyr\b', 'squir', s)  # pronúncia: "squir"
+    s = re.sub(r'\be e\b', 'e', s)
     s = re.sub(r'\s+([,.!?:])', r'\1', s); s = re.sub(r',\s*,', ',', s); s = re.sub(r',\s*([.!?])', r'\1', s)
     return re.sub(r'\s+', ' ', s).strip()
 
@@ -67,7 +68,7 @@ def script(r):
         n = ingr_name(it[2])
         if n and n not in names: names.append(n)
     if len(names) > 7: names = names[:6] + ['mais umas coisinhas']
-    out.append(f"Para {r['servings']} doses, vais precisar de {join_pt(names)}.")
+    out.append((f"Para uma dose" if r['servings'] == 1 else f"Para {r['servings']} doses") + f", vais precisar de {join_pt(names)}.")
     k = 0; first = True; steps = v['steps']
     for j, s in enumerate(steps):
         last = j == len(steps) - 1
@@ -81,15 +82,26 @@ def script(r):
             first_w = title.split()[0].lower() if title else ''
             if first_w[:1].isdigit(): title = 'serve ' + title
             elif first_w not in VERBS: title = 'junta ' + lc(title)
-            parts = [f"{con}, {lc(title)}."]
+            auto = first_w not in VERBS and not first_w[:1].isdigit()
+            items = []  # frases curtas de cada grupo do passo, juntas numa frase corrida
             for b in s.get('batches', []):
-                tx = btext(b)
+                tx = btext(b).rstrip('.!')
                 if not tx: continue
-                if b.get('fx') == 'oil' and not re.match(r'(?i)(rega|um fio|azeite)', tx): tx = 'Rega com ' + lc(tx)
-                elif b.get('fx') == 'spice' and not re.match(r'(?i)tempera', tx): tx = 'Tempera com ' + lc(tx)
-                if tx.startswith('Com ') and len(parts) == 1 and len(title.split()) <= 2: tx = lc(tx)
-                if tx[:1].islower() and parts: parts[-1] = parts[-1].rstrip('.') + ' ' + sent(tx)
-                else: parts.append(sent(tx))
+                if b.get('fx') == 'oil' and not re.match(r'(?i)(rega|um fio|azeite)', tx): tx = 'rega com ' + lc(tx)
+                elif b.get('fx') == 'oil' and re.match(r'(?i)um fio', tx): tx = 'junta ' + lc(tx)
+                elif b.get('fx') == 'spice' and not re.match(r'(?i)tempera', tx): tx = 'tempera com ' + lc(tx)
+                tx = tx[:1].lower() + tx[1:] if not tx[:2].isupper() else tx
+                if tx.startswith('com ') and items: items[-1] += ' ' + tx
+                else: items.append(tx)
+            verb = lambda x: x.split()[0].lower() in VERBS or x.split()[0].lower() in ('rega', 'tempera')
+            if s['kind'] == 'top' or len(items) <= 1 or (len(items) == 2 and not verb(items[0])):
+                if auto and items: parts = [f"{con}, junta {join_pt(items)}."]
+                else: parts = [f"{con}, {lc(title)}" + (((' ' if items[0].startswith('com ') else ': ') + join_pt(items)) if items else '') + '.']
+            elif verb(items[0]):
+                parts = [f"{con}, {lc(title)}."] + [sent(i[:1].upper() + i[1:]) for i in items]
+            else:
+                mid = ''.join(', depois ' + i for i in items[1:-1])
+                parts = [f"{con}, {lc(title)}.", f"Começa por {items[0]}{mid} e, no fim, {items[-1]}."]
             if s.get('mix') and s.get('mixText'): parts.append(sent(' '.join(s['mixText'])))
             if s['kind'] == 'top' and s.get('done'):
                 d = re.sub(r'\s*Bom apetite[.!]?', '', s['done']).strip()
@@ -103,7 +115,8 @@ def script(r):
             if s.get('after'): t += ' ' + sent(s['after'])
             k += 1
         elif s['kind'] == 'chill':
-            t = f"{con}, vai ao frigorífico durante {s.get('label', '')} {s.get('sub', 'minutos')}."; k += 1
+            lugar = 'congelador' if 'congelador' in ' '.join(s.get('title', [])).lower() else 'frigorífico'
+            t = f"{con}, vai ao {lugar} durante {s.get('label', '')} {s.get('sub', 'minutos')}."; k += 1
         else:
             t = sent(' '.join(s.get('title', [])))
         out.append(t)
@@ -120,13 +133,13 @@ def tts(text):
     exe = os.path.join(os.path.dirname(sys.executable), 'edge-tts')
     cmd = [exe if os.path.exists(exe) else 'edge-tts', '--voice', VOICE, f'--rate={RATE}', f'--pitch={PITCH}', '--text', text, '--write-media', mp3 + '.tmp']
     err = None
-    for a in range(14):
+    for a in range(30):
         try:  # num processo à parte, com tempo limite: o serviço às vezes fica pendurado
             subprocess.run(cmd, check=True, timeout=45, capture_output=True)
             if os.path.getsize(mp3 + '.tmp') > 1000: os.replace(mp3 + '.tmp', mp3); return mp3
         except Exception as e:
             err = e
-        time.sleep(min(2 + a * 1.5, 12))
+        time.sleep(min(3 + a * 2, 30))
     raise RuntimeError(f'edge-tts falhou: {text[:40]}… ({err})')
 
 def decode(path, ch=1):

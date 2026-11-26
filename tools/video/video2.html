@@ -271,11 +271,11 @@ function sTitle(u){let s=`<rect width="${W}" height="${H}" fill="${C.cream}"/><c
  const yb=276+sz*1.2*(tl.length-1);
  const sub=R.temp?`Forno a ${R.temp} °C · ${R.oven}`:`Sem forno · ${R.handsOn} min`;
  s+=`<text x="64" y="${yb+56}" font-size="28" font-weight="500" fill="${C.mut}" opacity="${eo(pr(u,1.3,1.9)).toFixed(2)}">${esc(sub)}</text>`;
- let x=64,y=yb+130;[[R.servings+' doses',C.green],[M.kcal+' kcal por dose',C.tomato],[M.protein+' g de proteína',C.greenD]].forEach((c,i)=>{const w=tw(c[0],24,700)+40;if(x+w>620){x=64;y+=64}const ch=chip(x,y,c[0],pr(u,1.8+i*.2,2.4+i*.2),c[1]);s+=ch.s;x+=w+14});
+ let x=64,y=yb+130;[[R.servings+(R.servings==1?' dose':' doses'),C.green],[M.kcal+' kcal por dose',C.tomato],[M.protein+' g de proteína',C.greenD]].forEach((c,i)=>{const w=tw(c[0],24,700)+40;if(x+w>620){x=64;y+=64}const ch=chip(x,y,c[0],pr(u,1.8+i*.2,2.4+i*.2),c[1]);s+=ch.s;x+=w+14});
  return s}
 function sIngr(u){let s=`<rect width="${W}" height="${H}" fill="${C.cream}"/>`;
  s+=`<text x="64" y="122" font-size="22" font-weight="700" letter-spacing="3.5" fill="${C.tomato}" opacity="${eo(pr(u,0,.5)).toFixed(2)}">INGREDIENTES</text>`;
- s+=`<text x="64" y="186" font-size="56" font-weight="800" fill="${C.ink}" opacity="${eo(pr(u,.1,.7)).toFixed(2)}">O que vais precisar <tspan fill="${C.green}">· ${R.servings} doses</tspan></text>`;
+ s+=`<text x="64" y="186" font-size="56" font-weight="800" fill="${C.ink}" opacity="${eo(pr(u,.1,.7)).toFixed(2)}">O que vais precisar <tspan fill="${C.green}">· ${R.servings} ${R.servings==1?'dose':'doses'}</tspan></text>`;
  const n=V.ingr.length,rows=Math.ceil(n/2);const rh=Math.min(108,(672-226)/rows);const cw=560;
  V.ingr.forEach((r,i)=>{const col=i%2,row=Math.floor(i/2);const p=eob(pr(u,.7+i*.5,1.3+i*.5));const x=64+col*(cw+40),y=226+row*rh;const two=r[2].length>1;const bh=rh-18;
   const nm=fit(r[2],two?22:25,500,420);
@@ -316,7 +316,7 @@ function sStep(sc,u){const s0=STEPS[sc.j],d=sc.d,T=sc.S+u;const key=dispKey(s0);
  return s}
 function sEnd(u){let s=`<rect width="${W}" height="${H}" fill="${C.green}"/>`;
  s+=`<text x="${W/2}" y="120" text-anchor="middle" font-size="22" font-weight="700" letter-spacing="4" fill="#BFE3D2" opacity="${eo(pr(u,0,.5)).toFixed(2)}">MACROS POR DOSE</text>`;
- const head=`1 dose de ${R.servings}`;s+=`<text x="${W/2}" y="196" text-anchor="middle" font-size="56" font-weight="800" fill="#FFF6E9" opacity="${eo(pr(u,.1,.7)).toFixed(2)}">${esc(head)}</text>`;
+ const head=R.servings==1?`Por dose`:`1 dose de ${R.servings}`;s+=`<text x="${W/2}" y="196" text-anchor="middle" font-size="56" font-weight="800" fill="#FFF6E9" opacity="${eo(pr(u,.1,.7)).toFixed(2)}">${esc(head)}</text>`;
  const tiles=[[M.kcal,'kcal','Calorias',C.tomato,600],[M.protein,'g','Proteína','#FFD27A',60],[M.carbs,'g','Hidratos','#9ED8B8',80],[M.fat,'g','Gordura','#F4A259',30]];const tw2=250,gap=30,x0=(W-(tw2*4+gap*3))/2;
  tiles.forEach((t,i)=>{const p=eob(pr(u,.6+i*.3,1.3+i*.3));const cnt=eo(pr(u,.8+i*.3,2.4+i*.3));const x=x0+i*(tw2+gap);
   s+=`<g transform="translate(${x} ${(250+(1-clamp(p))*30).toFixed(1)})" opacity="${clamp(p).toFixed(2)}"><rect width="${tw2}" height="270" rx="28" fill="#fff"/><text x="${tw2/2}" y="124" text-anchor="middle" font-size="96" font-weight="800" fill="${C.ink}">${Math.round(t[0]*cnt)}</text><text x="${tw2/2}" y="166" text-anchor="middle" font-size="32" font-weight="700" fill="${C.green}">${t[1]}</text><text x="${tw2/2}" y="206" text-anchor="middle" font-size="26" font-weight="500" fill="${C.mut}">${t[2]}</text><rect x="40" y="230" width="${tw2-80}" height="10" rx="5" fill="#F0E6D6"/><rect x="40" y="230" width="${((tw2-80)*clamp(t[0]/t[4])*cnt).toFixed(1)}" height="10" rx="5" fill="${t[3]}"/></g>`});
