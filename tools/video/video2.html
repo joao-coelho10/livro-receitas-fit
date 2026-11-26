@@ -97,6 +97,8 @@ function stepDur(s){if(s.dur)return s.dur;const nb=(s.batches||[]).length;
 const nIngr=V.ingr.length;
 const SC=[{k:'title',d:4},{k:'ingr',d:Math.max(6.5,1.2+nIngr*.5+2.2)}];
 STEPS.forEach((s,j)=>SC.push({k:'step',j,d:stepDur(s)}));SC.push({k:'end',d:6.5});
+// Durações mínimas por cena (para caber a narração): window.SCENE_DUR = [s0, s1, ...]
+if(window.SCENE_DUR)SC.forEach((s,i)=>{if(window.SCENE_DUR[i])s.d=Math.max(s.d,window.SCENE_DUR[i])});
 let acc=0;SC.forEach(s=>{s.S=acc;acc+=s.d});const TOTAL=acc;window.TOTAL=TOTAL;
 const SS=SC.filter(s=>s.k==='step');const END_STEPS=SS[SS.length-1].S+SS[SS.length-1].d;
 // group add times, mix windows, cook curve

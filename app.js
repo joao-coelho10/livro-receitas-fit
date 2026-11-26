@@ -3,7 +3,7 @@
 (() => {
 'use strict';
 
-const VIDEO_CACHE = 'rf-videos';
+const VIDEO_CACHE = 'rf-videos-v2'; // tem de ser igual ao sw.js
 const MEDIA_CACHE = 'rf-media';
 const PROTEIN_COLORS = { 'Frango/Peru': '#F2B53A', 'Vaca/Porco': '#B0585A', 'Ovos/Queijo': '#F6D77A', 'Vegetariano/Leguminosas': '#5DA543', 'Peixe': '#F7896B' };
 const SORTS = [
@@ -16,6 +16,7 @@ const $$ = (s, el = document) => Array.from(el.querySelectorAll(s));
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const norm = (s) => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 const fmt1 = (n) => n.toFixed(1).replace('.', ',');
+const fmt2 = (n) => n.toFixed(2).replace('.', ',');
 const store = {
   get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* modo privado */ } },
@@ -35,6 +36,8 @@ const icon = {
   chev: '<svg class="chev" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>',
   left: '<svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>',
   right: '<svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>',
+  home: '<svg viewBox="0 0 24 24"><path d="M4 11l8-6.5 8 6.5M6 9.5V20h12V9.5"/><path d="M10 20v-5h4v5"/></svg>',
+  leaf: '<svg viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19l7-7"/></svg>',
   trash: '<svg viewBox="0 0 24 24"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>',
 };
 
@@ -60,6 +63,7 @@ function prepare(data) {
       videoSrc: r.videoFile || ('videos/' + r.id + '.mp4'),
       posterSrc: r.poster || ('media/' + r.id + '.jpg'),
       thumbSrc: r.thumb || ('media/' + r.id + '-thumb.webp'),
+      need: Array.from(new Set((r.ingredients || []).filter((i) => i.food && !/opcional/i.test(i.n || '')).map((i) => i.food))),
     });
   });
   BY_ID = {}; HAY = {};
@@ -133,7 +137,18 @@ async function unsaveRecipe(r) {
 const autoSave = () => store.get('rf-autosave', true);
 
 /* ---------- estado da lista ---------- */
-const F = { q: '', prot: new Set(), meal: new Set(), sort: store.get('rf-sort', 'p100') };
+const F = { q: '', prot: new Set(), meal: new Set(), quick: new Set(), sort: store.get('rf-sort', 'p100') };
+const QUICK = [
+  ['rapida', 'Até 30 min', (r) => totalMin(r) <= 30],
+  ['facil', 'Fácil', (r) => r.difficulty === 'Fácil'],
+  ['semgluten', 'Sem glúten', (r) => r.glutenFree],
+  ['veg', 'Vegetariana', (r) => r.vegetarian],
+  ['prep', 'Meal prep', (r) => r.mealPrep],
+  ['congela', 'Congela bem', (r) => r.freezer],
+  ['barata', 'Económica (€)', (r) => r.cost === '€'],
+];
+const QBY = Object.fromEntries(QUICK.map((q) => [q[0], q]));
+const matchQuick = (r, skip) => Array.from(F.quick).every((k) => k === skip || !QBY[k] || QBY[k][2](r));
 const tokens = () => norm(F.q).split(/\s+/).filter(Boolean);
 function matchQ(r, toks) { return toks.every((t) => HAY[r.id].indexOf(t) >= 0); }
 const matchSet = (set, v) => set.size === 0 || set.has(v);
@@ -154,7 +169,8 @@ function cardHTML(r) {
     '<div class="body"><span class="kicker">' + esc(r.meal) + '</span><h3>' + esc(r.title) + '</h3>' +
     '<div class="meta"><span><b>' + r.kcal + '</b> kcal</span><span><b>' + r.p + ' g</b> proteína</span><span>' + esc(timeText(r)) + '</span>' +
     (isSaved(r) ? '<span class="saved-dot" title="Vídeo disponível offline">' + icon.check + 'offline</span>' : '') + '</div>' +
-    '<div><span class="badge">' + fmt1(p100(r)) + ' g / 100 kcal</span></div></div>' +
+    '<div class="badges"><span class="badge">' + fmt1(p100(r)) + ' g / 100 kcal</span>' + (r.cost ? '<span class="badge soft" title="Custo aproximado por dose">' + esc(r.cost) + '</span>' : '') +
+    (r.mealPrep ? '<span class="badge soft">meal prep</span>' : '') + '</div></div>' +
     '</a><button class="fav-btn" data-fav="' + esc(r.id) + '" aria-pressed="' + isFav(r.id) + '" aria-label="Favorita: ' + esc(r.short || r.title) + '">' + icon.heart + '</button>';
 }
 const cardWrap = (r) => '<div style="position:relative">' + cardHTML(r) + '</div>';
@@ -178,10 +194,12 @@ function renderHome(main, favOnly) {
   }
   main.innerHTML =
     '<div class="hero"><h1>' + esc('Livro de Receitas Fit') + '</h1><p>' + plural(RECIPES.length, 'receita', 'receitas') + ' de forno · muita proteína, poucas calorias</p></div>' +
-    '<div class="search">' + icon.search + '<input id="q" type="search" inputmode="search" enterkeyhint="search" autocomplete="off" placeholder="Pesquisa: cottage, batata, sem forno…" aria-label="Pesquisar receitas" value="' + esc(F.q) + '">' +
+    '<a class="casa-cta" href="#/casa">' + icon.home + '<span><b>O que tenho em casa?</b><small>' + (CASA.sel.size ? plural(CASA.sel.size, 'ingrediente escolhido', 'ingredientes escolhidos') + ' · ver receitas' : 'Escolhe ingredientes e vê o que dá para fazer') + '</small></span>' + icon.chev + '</a>' +
+    '<div class="search">' + icon.search + '<input id="q" type="search" inputmode="search" enterkeyhint="search" autocomplete="off" placeholder="Pesquisa: cottage, batata…" aria-label="Pesquisar receitas" value="' + esc(F.q) + '">' +
     '<button class="clear-q" id="clearQ" aria-label="Limpar pesquisa"' + (F.q ? '' : ' hidden') + '>' + icon.x + '</button></div>' +
     '<div class="filter-label" id="lblMeal">Refeição</div><div class="chips" id="chipsMeal" role="group" aria-labelledby="lblMeal"></div>' +
     '<div class="filter-label" id="lblProt">Proteína</div><div class="chips" id="chipsProt" role="group" aria-labelledby="lblProt"></div>' +
+    '<div class="filter-label" id="lblQuick">Mais filtros</div><div class="chips" id="chipsQuick" role="group" aria-labelledby="lblQuick"></div>' +
     '<div class="toolbar"><div class="count" id="count"></div>' + selectHTML('sort', SORTS, F.sort, 'Ordenar por') + '</div>' +
     '<div id="results"></div>';
   const q = $('#q', main);
@@ -192,7 +210,7 @@ function renderHome(main, favOnly) {
   main.addEventListener('click', (e) => {
     const c = e.target.closest('.chip[data-dim]');
     if (!c) return;
-    const set = c.dataset.dim === 'prot' ? F.prot : F.meal;
+    const set = c.dataset.dim === 'prot' ? F.prot : c.dataset.dim === 'quick' ? F.quick : F.meal;
     const v = c.dataset.v;
     if (v === '*') set.clear(); else if (set.has(v)) set.delete(v); else set.add(v);
     updateHome();
@@ -201,16 +219,18 @@ function renderHome(main, favOnly) {
 }
 function updateHome() {
   const toks = tokens();
-  const results = sortList(RECIPES.filter((r) => matchQ(r, toks) && matchSet(F.prot, r.protein) && matchSet(F.meal, r.meal)));
+  const results = sortList(RECIPES.filter((r) => matchQ(r, toks) && matchSet(F.prot, r.protein) && matchSet(F.meal, r.meal) && matchQuick(r)));
   const chip = (dim, v, label, n, on, dot) => '<button class="chip" data-dim="' + dim + '" data-v="' + esc(v) + '" aria-pressed="' + on + '"' + (n === 0 && !on ? ' disabled' : '') + '>' +
     (dot ? '<i class="dot" style="background:' + dot + '"></i>' : '') + esc(label) + (n != null ? ' <span class="n">' + n + '</span>' : '') + '</button>';
-  const nMeal = (v) => RECIPES.filter((r) => matchQ(r, toks) && matchSet(F.prot, r.protein) && r.meal === v).length;
-  const nProt = (v) => RECIPES.filter((r) => matchQ(r, toks) && matchSet(F.meal, r.meal) && r.protein === v).length;
+  const nMeal = (v) => RECIPES.filter((r) => matchQ(r, toks) && matchSet(F.prot, r.protein) && matchQuick(r) && r.meal === v).length;
+  const nProt = (v) => RECIPES.filter((r) => matchQ(r, toks) && matchSet(F.meal, r.meal) && matchQuick(r) && r.protein === v).length;
+  const nQuick = (k) => RECIPES.filter((r) => matchQ(r, toks) && matchSet(F.meal, r.meal) && matchSet(F.prot, r.protein) && matchQuick(r, k) && QBY[k][2](r)).length;
   $('#chipsMeal').innerHTML = chip('meal', '*', 'Todas', null, F.meal.size === 0) + MEALS.map((m) => chip('meal', m, m, nMeal(m), F.meal.has(m))).join('');
   $('#chipsProt').innerHTML = chip('prot', '*', 'Todas', null, F.prot.size === 0) + PROTEINS.map((p) => chip('prot', p, p, nProt(p), F.prot.has(p), PROTEIN_COLORS[p])).join('');
-  const filtered = toks.length || F.prot.size || F.meal.size;
+  $('#chipsQuick').innerHTML = QUICK.map((q) => chip('quick', q[0], q[1], nQuick(q[0]), F.quick.has(q[0]))).join('');
+  const filtered = toks.length || F.prot.size || F.meal.size || F.quick.size;
   $('#count').innerHTML = '<b>' + plural(results.length, 'receita', 'receitas') + '</b>' + (filtered ? ' · <button class="link-btn" id="clearAll">Limpar filtros</button>' : '');
-  const ca = $('#clearAll'); if (ca) ca.addEventListener('click', () => { F.q = ''; F.prot.clear(); F.meal.clear(); const q = $('#q'); q.value = ''; $('#clearQ').hidden = true; updateHome(); });
+  const ca = $('#clearAll'); if (ca) ca.addEventListener('click', () => { F.q = ''; F.prot.clear(); F.meal.clear(); F.quick.clear(); const q = $('#q'); q.value = ''; $('#clearQ').hidden = true; updateHome(); });
   $('#results').innerHTML = results.length ? '<div class="grid">' + results.map(cardWrap).join('') + '</div>'
     : '<div class="empty"><h3>Nenhuma receita encontrada</h3><p>Não há receitas' + (F.q.trim() ? ' com “' + esc(F.q.trim()) + '”' : '') + ' para estes filtros. Experimenta outra palavra ou limpa os filtros.</p></div>';
 }
@@ -233,7 +253,9 @@ function renderRecipe(main, r) {
     '<div class="r-head"><span class="kicker">' + esc(r.meal) + ' · ' + esc(r.protein) + '</span><h1>' + esc(r.title) + '</h1>' +
     '<div class="facts"><span class="fact">' + icon.clock + esc(r.handsOn) + ' min prep.</span>' +
     '<span class="fact">' + icon.flame + esc(r.temp ? r.temp + ' °C · ' + r.oven : r.oven) + '</span>' +
-    '<span class="fact">' + icon.users + esc(plural(r.servings, 'dose', 'doses')) + '</span></div></div>' +
+    '<span class="fact">' + icon.users + esc(plural(r.servings, 'dose', 'doses')) + '</span>' +
+    (r.difficulty ? '<span class="fact">' + icon.chef + esc(r.difficulty) + '</span>' : '') +
+    (r.cost ? '<span class="fact" title="Custo aproximado por dose">' + esc(r.cost) + (r.costPerServing ? ' · ~' + fmt2(r.costPerServing) + ' €/dose' : '') + '</span>' : '') + '</div></div>' +
     '<div class="actions">' +
     '<a class="btn primary" href="#/receita/' + esc(r.id) + '/cozinha">' + icon.chef + 'Modo cozinha</a>' +
     '<button class="btn" data-fav="' + esc(r.id) + '" aria-pressed="' + isFav(r.id) + '">' + icon.heart + 'Favorita</button>' +
@@ -241,8 +263,10 @@ function renderRecipe(main, r) {
     '<button class="btn" id="shareBtn">' + icon.share + 'Partilhar</button></div>' +
     '<section class="sec"><h2>Macros por dose <small>estimativa</small></h2><div class="macros">' +
     macro(r.kcal, '', 'kcal', r.kcal / maxKcal * 100, 'var(--orange)') + macro(r.p + ' g', '', 'proteína', r.p / maxP * 100, 'var(--yellow)') +
-    macro(r.c + ' g', '', 'hidratos', r.c / 80 * 100, '#8CC7A1') + macro(r.f + ' g', '', 'gordura', r.f / 30 * 100, '#E9A15B') + '</div>' +
+    macro(r.c + ' g', '', 'hidratos', r.c / 80 * 100, '#8CC7A1') + macro(r.f + ' g', '', 'gordura', r.f / 30 * 100, '#E9A15B') +
+    (r.macrosPerServing && r.macrosPerServing.fiber != null ? macro(r.macrosPerServing.fiber + ' g', '', 'fibra', r.macrosPerServing.fiber / 12 * 100, '#7FB069') : '') + '</div>' +
     '<p class="note">Estimativa a partir dos ingredientes crus · ' + fmt1(p100(r)) + ' g de proteína por 100 kcal · 1 dose = 1/' + r.servings + ' da receita.</p></section>' +
+    infoHTML(r) +
     '<section class="sec"><h2>Ingredientes <small>toca para riscar</small></h2><div class="panel">' +
     '<div class="stepper"><button id="dMinus" aria-label="Menos doses">−</button><output id="dOut" aria-live="polite">' + esc(plural(doses, 'dose', 'doses')) + '</output><button id="dPlus" aria-label="Mais doses">+</button>' +
     (doses !== r.servings ? '<button class="link-btn reset" id="dReset">Repor ' + r.servings + '</button>' : '') + '</div>' +
@@ -264,7 +288,7 @@ function renderRecipe(main, r) {
     const tog = () => { const k = Number(li.dataset.k); if (checked.has(k)) checked.delete(k); else checked.add(k); li.classList.toggle('done'); li.setAttribute('aria-checked', String(checked.has(k))); };
     li.onclick = tog; li.onkeydown = (e) => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tog(); } };
   });
-  $$('[data-tag]', main).forEach((a) => a.addEventListener('click', () => { F.q = a.dataset.tag; F.prot.clear(); F.meal.clear(); }));
+  $$('[data-tag]', main).forEach((a) => a.addEventListener('click', () => { F.q = a.dataset.tag; F.prot.clear(); F.meal.clear(); F.quick.clear(); }));
   const vid = $('#vid');
   $('#playBtn').onclick = () => { $('#playBtn').hidden = true; vid.controls = true; const pr = vid.play(); if (pr) pr.catch(() => {}); };
   vid.addEventListener('play', () => { if (autoSave() && !isSaved(r) && navigator.onLine) saveRecipe(r).catch(() => {}); }, { once: true });
@@ -285,6 +309,101 @@ function renderRecipe(main, r) {
       else { await navigator.clipboard.writeText(url); toast('Link copiado'); }
     } catch (e) { /* cancelado */ }
   };
+}
+
+function infoHTML(r) {
+  const items = [];
+  items.push(['⏱', 'Tempo total', timeText(r) + ' (' + (r.handsOn || 0) + ' min de preparação)']);
+  if (r.storage) items.push(['🧊', 'Conservação', r.storage]);
+  const flags = [];
+  if (r.mealPrep) flags.push('boa para meal prep');
+  if (r.freezer) flags.push('congela bem');
+  if (r.glutenFree) flags.push('sem glúten');
+  if (r.vegetarian) flags.push('vegetariana');
+  if (flags.length) items.push(['✅', 'Bom saber', flags.join(' · ').replace(/^./, (c) => c.toUpperCase())]);
+  return '<section class="sec"><div class="panel info">' + items.map((x) => '<div class="info-row"><span class="ico" aria-hidden="true">' + x[0] + '</span><div><b>' + esc(x[1]) + '</b><span>' + esc(x[2]) + '</span></div></div>').join('') + '</div></section>';
+}
+
+/* ---------- vista: o que tenho em casa ---------- */
+const CASA = { sel: new Set(store.get('rf-casa', [])), pantry: store.get('rf-casa-despensa', true), q: '' };
+const saveCasa = () => { store.set('rf-casa', Array.from(CASA.sel)); store.set('rf-casa-despensa', CASA.pantry); };
+function foodsUsed() {
+  const used = new Set(); RECIPES.forEach((r) => r.need.forEach((f) => used.add(f)));
+  return used;
+}
+const foodLabel = (k) => (BOOK.foods && BOOK.foods[k] ? BOOK.foods[k].label : k);
+function haveFood(k) {
+  if (CASA.sel.has(k)) return { ok: true };
+  if (CASA.pantry && BOOK.foods && BOOK.foods[k] && BOOK.foods[k].pantry) return { ok: true };
+  for (const g of (BOOK.subs || [])) {
+    if (g.indexOf(k) >= 0) { const alt = g.find((x) => x !== k && CASA.sel.has(x)); if (alt) return { ok: true, sub: alt }; }
+  }
+  return { ok: false };
+}
+function casaRank() {
+  const out = [];
+  RECIPES.forEach((r) => {
+    if (!r.need.length) return;
+    const missing = [], subs = []; let mine = 0;
+    r.need.forEach((k) => { const h = haveFood(k); if (!h.ok) missing.push(k); else { if (CASA.sel.has(k) || h.sub) mine++; if (h.sub) subs.push([k, h.sub]); } });
+    if (mine === 0 || missing.length > 2) return;
+    out.push({ r, missing, subs, mine, share: mine / r.need.length });
+  });
+  out.sort((a, b) => a.missing.length - b.missing.length || b.share - a.share || p100(b.r) - p100(a.r));
+  return out;
+}
+function renderCasa(main) {
+  const used = foodsUsed();
+  const groups = (BOOK.foodGroups || []).map((g) => [g, Object.keys(BOOK.foods || {}).filter((k) => BOOK.foods[k].group === g && used.has(k))]).filter((g) => g[1].length);
+  main.innerHTML = '<div class="hero"><h1>O que tenho em casa</h1><p>Marca o que tens e eu digo-te o que dá para cozinhar.</p></div>' +
+    '<div class="search">' + icon.search + '<input id="cq" type="search" autocomplete="off" enterkeyhint="search" placeholder="Procura um ingrediente: frango, ovos…" aria-label="Procurar ingrediente" value="' + esc(CASA.q) + '"></div>' +
+    '<label class="toggle casa-pantry">Tenho o básico da despensa<small>sal, pimenta, especiarias, azeite, alho, mostarda, mel, fermento…</small><span class="switch"><input type="checkbox" id="cPantry"' + (CASA.pantry ? ' checked' : '') + '><span></span></span></label>' +
+    '<div class="casa-bar"><span id="cCount"></span><button class="link-btn" id="cClear">Limpar</button></div>' +
+    '<div id="cGroups">' + groups.map((g) => '<div class="casa-group" data-group="' + esc(g[0]) + '"><div class="filter-label">' + esc(g[0]) + '</div><div class="chips wrap">' +
+      g[1].map((k) => '<button class="chip" data-food="' + esc(k) + '" data-label="' + esc(norm(foodLabel(k))) + '"></button>').join('') + '</div></div>').join('') +
+    '<p class="small" id="cNone" hidden>Nenhum ingrediente com esse nome.</p></div>' +
+    '<section class="sec" id="cRes" aria-live="polite"></section>';
+  const draw = () => {
+    $$('[data-food]', main).forEach((b) => {
+      const k = b.dataset.food, isP = BOOK.foods[k].pantry && CASA.pantry;
+      const on = CASA.sel.has(k) || isP;
+      b.setAttribute('aria-pressed', String(on)); b.disabled = isP;
+      b.innerHTML = (on ? icon.check : '') + esc(foodLabel(k));
+      b.title = isP ? 'Incluído no básico da despensa' : '';
+    });
+    const qn = norm(CASA.q.trim()); let any = false;
+    $$('.casa-group', main).forEach((g) => {
+      let vis = 0;
+      $$('[data-food]', g).forEach((b) => { const show = !qn || b.dataset.label.indexOf(qn) >= 0; b.hidden = !show; if (show) vis++; });
+      g.hidden = vis === 0; if (vis) any = true;
+    });
+    $('#cNone').hidden = any;
+    $('#cCount').innerHTML = CASA.sel.size ? '<b>' + plural(CASA.sel.size, 'ingrediente escolhido', 'ingredientes escolhidos') + '</b>' : 'Ainda não escolheste nada';
+    $('#cClear').hidden = !CASA.sel.size;
+    const res = $('#cRes');
+    if (!CASA.sel.size) { res.innerHTML = '<div class="empty"><h3>Toca nos ingredientes que tens</h3><p>Mostro primeiro as receitas que podes fazer já e depois as que só precisam de mais 1 ou 2 coisas.</p></div>'; return; }
+    const list = casaRank();
+    const sect = (title, items, note) => items.length ? '<h2 class="casa-h">' + title + ' <small>' + items.length + '</small></h2>' + (note ? '<p class="small" style="margin:-4px 0 10px">' + note + '</p>' : '') + '<div class="list">' + items.map((x) => {
+      let d = x.r.meal + ' · ' + x.r.kcal + ' kcal · ' + x.r.p + ' g prot.';
+      const miss = x.missing.length ? '<span class="miss">Falta: ' + esc(x.missing.map(foodLabel).join(', ')) + '</span>' : '';
+      const sub = x.subs.length ? '<span class="subn">Troca: ' + esc(x.subs.map((s) => foodLabel(s[0]) + ' → ' + foodLabel(s[1]).toLowerCase()).join(', ')) + '</span>' : '';
+      return '<a class="row" href="#/receita/' + esc(x.r.id) + '"><img loading="lazy" src="' + esc(x.r.thumbSrc) + '" alt="" onerror="this.onerror=null;this.src=\'icons/icon-192.png\'"><div class="t"><b>' + esc(x.r.title) + '</b><span>' + esc(d) + '</span>' + miss + sub + '</div>' + icon.chev + '</a>';
+    }).join('') + '</div>' : '';
+    const g0 = list.filter((x) => !x.missing.length), g1 = list.filter((x) => x.missing.length === 1), g2 = list.filter((x) => x.missing.length === 2);
+    res.innerHTML = (list.length ? sect('Podes fazer já', g0) + sect('Falta 1 ingrediente', g1) + sect('Faltam 2 ingredientes', g2)
+      : '<div class="empty"><h3>Ainda nada completo</h3><p>Com estes ingredientes faltam 3 ou mais coisas em todas as receitas. Junta mais alguns, por exemplo ovos, cebola ou batata.</p></div>') +
+      '<p class="small" style="margin-top:12px">Conta os ingredientes principais de cada receita; sal, pimenta e ervas a gosto não entram. Ingredientes opcionais também não.</p>';
+  };
+  main.querySelector('#cGroups').addEventListener('click', (e) => {
+    const b = e.target.closest('[data-food]'); if (!b || b.disabled) return;
+    const k = b.dataset.food; if (CASA.sel.has(k)) CASA.sel.delete(k); else CASA.sel.add(k);
+    saveCasa(); draw();
+  });
+  $('#cq').addEventListener('input', (e) => { CASA.q = e.target.value; draw(); });
+  $('#cq').addEventListener('keydown', (e) => { if (e.key === 'Enter') e.target.blur(); });
+  $('#cPantry').addEventListener('change', (e) => { CASA.pantry = e.target.checked; saveCasa(); draw(); });
+  $('#cClear').addEventListener('click', () => { CASA.sel.clear(); saveCasa(); draw(); });
+  draw();
 }
 
 /* ---------- vista: modo cozinha ---------- */
@@ -410,7 +529,7 @@ function renderMeal(main) {
     '</div><div id="sug"></div>' +
     '<section class="sec"><details class="panel"><summary>Como escolhe</summary><ul class="bul" style="margin-top:10px">' +
     ['Parte de um prato base do tipo de refeição (prato principal, pequeno-almoço ou snack), filtrado pela proteína preferida.',
-      'Testa todas as combinações com pão proteico, um molho e uma sobremesa opcionais, e 1 ou 1½ doses do prato base.',
+      'Testa todas as combinações com pão ou substituto, um molho e uma sobremesa opcionais, e 1 ou 1½ doses do prato base.',
       'Fica com as que ficam a 12% do alvo de kcal e cumprem a proteína mínima; passar do alvo pesa mais do que ficar abaixo.',
       'Prefere os acompanhamentos que a receita indica em “Combina com” e refeições com menos peças.',
       '“Outra sugestão” percorre as melhores, alternando o prato base para variar.'].map((t) => '<li>' + esc(t) + '</li>').join('') + '</ul></details></section>';
@@ -428,7 +547,7 @@ function drawSug(main) {
   const box = $('#sug', main);
   if (!sug.pool.length) { box.innerHTML = '<div class="empty" style="margin-top:16px"><h3>Sem combinações</h3><p>Ainda não há receitas suficientes para este tipo de refeição.</p></div>'; return; }
   const combo = sug.pool[MS.idx % sug.pool.length];
-  const qtyText = (x) => x.role === 'Pão' ? (x.qty === 1 ? '1 fatia' : frac(x.qty) + ' fatias') : x.qty === 1 ? '1 dose' : frac(x.qty) + ' doses';
+  const qtyText = (x) => { const u = x.r.unit || ['dose', 'doses']; return x.qty === 1 ? '1 ' + u[0] : frac(x.qty) + ' ' + u[1]; };
   const minP = Number(MS.minP);
   box.innerHTML = '<div class="sug-head"><h2>Sugestão ' + ((MS.idx % sug.pool.length) + 1) + ' de ' + sug.pool.length + '</h2><button class="btn accent" id="another"' + (sug.pool.length < 2 ? ' disabled' : '') + '>Outra sugestão</button></div>' +
     '<div class="list">' + combo.parts.map((x) => rowHTML(x.r, qtyText(x) + ' · ' + Math.round(x.r.kcal * x.qty) + ' kcal · ' + Math.round(x.r.p * x.qty) + ' g de proteína', x.role)).join('') + '</div>' +
@@ -523,6 +642,7 @@ function route() {
   } else {
     if (wasCook) releaseLock();
     if (parts[0] === 'refeicao') { tab = 'meal'; title = 'Refeição completa'; docTitle = 'Refeição completa · Receitas Fit'; renderMeal(main); }
+    else if (parts[0] === 'casa') { tab = 'casa'; title = 'Em casa'; docTitle = 'O que tenho em casa · Receitas Fit'; renderCasa(main); }
     else if (parts[0] === 'favoritas') { tab = 'fav'; title = 'Favoritas'; docTitle = 'Favoritas · Receitas Fit'; renderHome(main, true); }
     else if (parts[0] === 'mais') { tab = 'more'; title = 'Offline'; docTitle = 'Offline · Receitas Fit'; renderMore(main); }
     else {
@@ -567,6 +687,6 @@ async function boot() {
     navigator.serviceWorker.register('sw.js').catch((err) => console.warn('Service worker não registado:', err));
   }
 }
-window.RF = { buildCombos: (...a) => buildCombos(...a), get recipes() { return RECIPES; } }; // para testes
+window.RF = { buildCombos: (...a) => buildCombos(...a), casaRank: () => casaRank(), get recipes() { return RECIPES; } }; // para testes
 boot();
 })();

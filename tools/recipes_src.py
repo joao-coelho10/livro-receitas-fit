@@ -379,6 +379,14 @@ RECIPES = [
     dict(kind='top', title=['Serve', 'com skyr'], batches=[dict(groups=['y'], text=['Skyr com baunilha']), dict(groups=['m'], text=['Hortelã, se quiseres'])], done='Bom apetite!')])),
 ]
 
+from recipes_extra import RECIPES_EXTRA, META
+from foods import FIBER, PRICE, GLUTEN, MEAT_FISH, LABELS, PANTRY, SUBS
+for _r in RECIPES:
+    _m = dict(META.get(_r['id'], {}))
+    _r['pairs'] = _r['pairs'] + [p for p in _m.pop('addPairs', []) if p not in _r['pairs']]
+    _r.update(_m)
+RECIPES += RECIPES_EXTRA
+
 def grams_of(ing):
     if 't' in ing: return 0
     f = ing['food']; q = ing['q']
@@ -405,15 +413,35 @@ def build():
         m = {'kcal': round(tot[0] / s / 5) * 5, 'protein': round(tot[1] / s), 'carbs': round(tot[2] / s), 'fat': round(tot[3] / s)}
         rr = dict(r); rr['macrosPerServing'] = m; rr['macroBreakdownWholeRecipe'] = br
         rr['proteinPer100kcal'] = round(tot[1] / tot[0] * 100, 1)
+        foods = [i['food'] for i in r['ingredients'] if 'food' in i]
+        fib = sum(FIBER[i['food']] * grams_of(i) / 100 for i in r['ingredients'] if 'food' in i)
+        cost = sum(PRICE[i['food']] * grams_of(i) / 1000 for i in r['ingredients'] if 'food' in i) / s
+        m['fiber'] = round(fib / s)
+        rr['totalMin'] = r['handsOn'] + r['ovenMax']
+        rr['costPerServing'] = round(cost, 2)
+        rr['cost'] = '€' if cost < 1.5 else ('€€' if cost < 3 else '€€€')
+        rr['glutenFree'] = not any(f in GLUTEN for f in foods)
+        rr['vegetarian'] = not any(f in MEAT_FISH for f in foods)
+        rr['difficulty'] = r.get('difficulty', 'Fácil')
+        rr['mealPrep'] = bool(r.get('mealPrep'))
+        rr['freezer'] = bool(r.get('freezer'))
+        rr['storage'] = r.get('storage', '')
+        rr['foods'] = sorted(set(foods), key=foods.index)
+        tags = [t for t in r['tags'] if t != 'sem glúten']
+        if rr['glutenFree']: tags.append('sem glúten')
+        rr['tags'] = tags
         rr['steps'] = [{'title': a, 'detail': b} for a, b in r['steps']]
         rr['videoFile'] = f"videos/{r['id']}.mp4"
         out.append(rr)
     book = {'title': 'Livro de Receitas Fit do Chef', 'language': 'pt-PT',
             'proteinTypes': ['Frango/Peru', 'Vaca/Porco', 'Ovos/Queijo', 'Vegetariano/Leguminosas', 'Peixe'],
             'mealTypes': ['Prato principal', 'Acompanhamento/Pão', 'Molho', 'Pequeno-almoço', 'Snack', 'Sobremesa'],
+            'foods': {k: {'label': LABELS[k][0], 'group': LABELS[k][1], 'pantry': k in PANTRY} for k in LABELS},
+            'foodGroups': ['Carne e aves', 'Peixe', 'Ovos e laticínios', 'Leguminosas e tofu', 'Batata, cereais e pão', 'Legumes', 'Fruta', 'Despensa básica'],
+            'subs': SUBS,
             'notes': 'Macros por dose são estimativas a partir de ingredientes crus (tools/foods.py). Para acrescentar uma receita: junta-a a tools/recipes_src.py, corre o script e gera o vídeo com tools/render_all.py (ver README.md).'}
     json.dump({'book': book, 'recipes': out}, open(os.path.join(os.path.dirname(__file__), '..', 'recipes.json'), 'w'), ensure_ascii=False, indent=1)
     for r in out:
-        m = r['macrosPerServing']; print(f"{r['id']:42s} {r['meal']:18s} {m['kcal']:4d} kcal {m['protein']:3d} P {m['carbs']:3d} C {m['fat']:3d} F  P/100={r['proteinPer100kcal']}")
+        m = r['macrosPerServing']; print(f"{r['id']:42s} {r['meal']:18s} {m['kcal']:4d} kcal {m['protein']:3d} P {m['carbs']:3d} C {m['fat']:3d} F  P/100={r['proteinPer100kcal']} fib={m['fiber']} {r['cost']}{r['costPerServing']} gf={int(r['glutenFree'])} veg={int(r['vegetarian'])}")
 
 if __name__ == '__main__': build()

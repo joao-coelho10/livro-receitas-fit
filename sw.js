@@ -3,11 +3,11 @@
    - recipes.json: rede primeiro (receitas novas aparecem logo), cache se estiver offline.
    - Miniaturas e posters: cache à medida que são vistos.
    - Vídeos: só da cache se tiverem sido guardados (com suporte a pedidos Range), senão rede. */
-const VERSION = 'v1';
+const VERSION = 'v2';
 const SHELL = 'rf-shell-' + VERSION;
 const DATA = 'rf-data';
 const MEDIA = 'rf-media';
-const VIDEOS = 'rf-videos';
+const VIDEOS = 'rf-videos-v2'; // v2: vídeos narrados (o nome novo apaga os vídeos antigos guardados)
 const SHELL_FILES = [
   './', 'index.html', 'styles.css', 'app.js', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-512.png', 'icons/apple-touch-icon.png', 'icons/favicon-32.png', 'icons/icon.svg',

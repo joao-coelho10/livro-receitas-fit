@@ -17,6 +17,353 @@
    "Snack",
    "Sobremesa"
   ],
+  "foods": {
+   "frango": {
+    "label": "Peito de frango",
+    "group": "Carne e aves",
+    "pantry": false
+   },
+   "frango_coxa": {
+    "label": "Coxas de frango",
+    "group": "Carne e aves",
+    "pantry": false
+   },
+   "peru": {
+    "label": "Peru",
+    "group": "Carne e aves",
+    "pantry": false
+   },
+   "peru_picado": {
+    "label": "Peru picado",
+    "group": "Carne e aves",
+    "pantry": false
+   },
+   "fiambre_peru": {
+    "label": "Fiambre de peru",
+    "group": "Carne e aves",
+    "pantry": false
+   },
+   "vaca5": {
+    "label": "Carne picada de vaca",
+    "group": "Carne e aves",
+    "pantry": false
+   },
+   "porco_lombo": {
+    "label": "Lombo de porco",
+    "group": "Carne e aves",
+    "pantry": false
+   },
+   "salmao": {
+    "label": "Salmão",
+    "group": "Peixe",
+    "pantry": false
+   },
+   "atum": {
+    "label": "Atum em lata",
+    "group": "Peixe",
+    "pantry": false
+   },
+   "sardinha_lata": {
+    "label": "Sardinhas em lata",
+    "group": "Peixe",
+    "pantry": false
+   },
+   "ovo": {
+    "label": "Ovos",
+    "group": "Ovos e laticínios",
+    "pantry": false
+   },
+   "clara": {
+    "label": "Claras de ovo",
+    "group": "Ovos e laticínios",
+    "pantry": false
+   },
+   "cottage": {
+    "label": "Queijo cottage",
+    "group": "Ovos e laticínios",
+    "pantry": false
+   },
+   "quark": {
+    "label": "Quark",
+    "group": "Ovos e laticínios",
+    "pantry": false
+   },
+   "skyr": {
+    "label": "Skyr",
+    "group": "Ovos e laticínios",
+    "pantry": false
+   },
+   "iog_grego": {
+    "label": "Iogurte grego magro",
+    "group": "Ovos e laticínios",
+    "pantry": false
+   },
+   "mozzarella_light": {
+    "label": "Mozzarella light",
+    "group": "Ovos e laticínios",
+    "pantry": false
+   },
+   "parmesao": {
+    "label": "Parmesão",
+    "group": "Ovos e laticínios",
+    "pantry": false
+   },
+   "queijo_fresco": {
+    "label": "Queijo fresco",
+    "group": "Ovos e laticínios",
+    "pantry": false
+   },
+   "leite_magro": {
+    "label": "Leite magro",
+    "group": "Ovos e laticínios",
+    "pantry": false
+   },
+   "grao": {
+    "label": "Grão-de-bico",
+    "group": "Leguminosas e tofu",
+    "pantry": false
+   },
+   "feijao_branco": {
+    "label": "Feijão branco",
+    "group": "Leguminosas e tofu",
+    "pantry": false
+   },
+   "feijao_vermelho": {
+    "label": "Feijão vermelho",
+    "group": "Leguminosas e tofu",
+    "pantry": false
+   },
+   "feijao_preto": {
+    "label": "Feijão preto",
+    "group": "Leguminosas e tofu",
+    "pantry": false
+   },
+   "lentilhas": {
+    "label": "Lentilhas",
+    "group": "Leguminosas e tofu",
+    "pantry": false
+   },
+   "ervilhas": {
+    "label": "Ervilhas",
+    "group": "Leguminosas e tofu",
+    "pantry": false
+   },
+   "tofu": {
+    "label": "Tofu",
+    "group": "Leguminosas e tofu",
+    "pantry": false
+   },
+   "batata": {
+    "label": "Batata",
+    "group": "Batata, cereais e pão",
+    "pantry": false
+   },
+   "batata_doce": {
+    "label": "Batata-doce",
+    "group": "Batata, cereais e pão",
+    "pantry": false
+   },
+   "aveia": {
+    "label": "Flocos de aveia",
+    "group": "Batata, cereais e pão",
+    "pantry": false
+   },
+   "tortilha_integral": {
+    "label": "Tortilhas integrais",
+    "group": "Batata, cereais e pão",
+    "pantry": false
+   },
+   "pimento": {
+    "label": "Pimento",
+    "group": "Legumes",
+    "pantry": false
+   },
+   "cebola": {
+    "label": "Cebola",
+    "group": "Legumes",
+    "pantry": false
+   },
+   "tomate_lata": {
+    "label": "Tomate em lata",
+    "group": "Legumes",
+    "pantry": false
+   },
+   "tomate_cherry": {
+    "label": "Tomate cherry",
+    "group": "Legumes",
+    "pantry": false
+   },
+   "tomate": {
+    "label": "Tomate",
+    "group": "Legumes",
+    "pantry": false
+   },
+   "cogumelos": {
+    "label": "Cogumelos",
+    "group": "Legumes",
+    "pantry": false
+   },
+   "feijao_verde": {
+    "label": "Feijão-verde",
+    "group": "Legumes",
+    "pantry": false
+   },
+   "couve_bruxelas": {
+    "label": "Couves-de-bruxelas",
+    "group": "Legumes",
+    "pantry": false
+   },
+   "brocolos": {
+    "label": "Brócolos",
+    "group": "Legumes",
+    "pantry": false
+   },
+   "couve_flor": {
+    "label": "Couve-flor",
+    "group": "Legumes",
+    "pantry": false
+   },
+   "espinafres": {
+    "label": "Espinafres",
+    "group": "Legumes",
+    "pantry": false
+   },
+   "pepino": {
+    "label": "Pepino",
+    "group": "Legumes",
+    "pantry": false
+   },
+   "abobora": {
+    "label": "Abóbora",
+    "group": "Legumes",
+    "pantry": false
+   },
+   "curgete": {
+    "label": "Curgete",
+    "group": "Legumes",
+    "pantry": false
+   },
+   "cenoura": {
+    "label": "Cenoura",
+    "group": "Legumes",
+    "pantry": false
+   },
+   "beringela": {
+    "label": "Beringela",
+    "group": "Legumes",
+    "pantry": false
+   },
+   "banana": {
+    "label": "Banana",
+    "group": "Fruta",
+    "pantry": false
+   },
+   "maca": {
+    "label": "Maçã",
+    "group": "Fruta",
+    "pantry": false
+   },
+   "pera": {
+    "label": "Pera",
+    "group": "Fruta",
+    "pantry": false
+   },
+   "frutos_vermelhos": {
+    "label": "Frutos vermelhos",
+    "group": "Fruta",
+    "pantry": false
+   },
+   "limao": {
+    "label": "Limão",
+    "group": "Fruta",
+    "pantry": false
+   },
+   "azeite": {
+    "label": "Azeite",
+    "group": "Despensa básica",
+    "pantry": true
+   },
+   "alho": {
+    "label": "Alho",
+    "group": "Despensa básica",
+    "pantry": true
+   },
+   "mostarda": {
+    "label": "Mostarda",
+    "group": "Despensa básica",
+    "pantry": true
+   },
+   "mel": {
+    "label": "Mel",
+    "group": "Despensa básica",
+    "pantry": true
+   },
+   "amido": {
+    "label": "Amido de milho",
+    "group": "Despensa básica",
+    "pantry": true
+   },
+   "eritritol": {
+    "label": "Adoçante",
+    "group": "Despensa básica",
+    "pantry": true
+   },
+   "caril": {
+    "label": "Caril em pó",
+    "group": "Despensa básica",
+    "pantry": true
+   },
+   "fermento": {
+    "label": "Fermento em pó",
+    "group": "Despensa básica",
+    "pantry": true
+   },
+   "paprika": {
+    "label": "Colorau",
+    "group": "Despensa básica",
+    "pantry": true
+   },
+   "cacau": {
+    "label": "Cacau magro",
+    "group": "Despensa básica",
+    "pantry": false
+   },
+   "chia": {
+    "label": "Sementes de chia",
+    "group": "Despensa básica",
+    "pantry": false
+   }
+  },
+  "foodGroups": [
+   "Carne e aves",
+   "Peixe",
+   "Ovos e laticínios",
+   "Leguminosas e tofu",
+   "Batata, cereais e pão",
+   "Legumes",
+   "Fruta",
+   "Despensa básica"
+  ],
+  "subs": [
+   [
+    "skyr",
+    "iog_grego",
+    "quark"
+   ],
+   [
+    "frango",
+    "peru"
+   ],
+   [
+    "feijao_branco",
+    "feijao_vermelho",
+    "feijao_preto"
+   ],
+   [
+    "tomate",
+    "tomate_cherry"
+   ]
+  ],
   "notes": "Macros por dose são estimativas a partir de ingredientes crus (tools/foods.py). Para acrescentar uma receita: junta-a a tools/recipes_src.py, corre o script e gera o vídeo com tools/render_all.py (ver README.md)."
  },
  "recipes": [
@@ -33,9 +380,9 @@
    "temp": 210,
    "tags": [
     "tabuleiro único",
-    "sem glúten",
     "batata-doce",
-    "grão"
+    "grão",
+    "sem glúten"
    ],
    "ingredients": [
     {
@@ -114,7 +461,8 @@
    "pairs": [
     "molho-skyr-alho-ervas",
     "crumble-maca-frutos-vermelhos-skyr",
-    "cheesecake-skyr-forno"
+    "cheesecake-skyr-forno",
+    "molho-verde-ervilhas-skyr"
    ],
    "video": {
     "container": "tray",
@@ -371,11 +719,16 @@
      }
     ]
    },
+   "difficulty": "Fácil",
+   "storage": "3 dias no frigorífico",
+   "mealPrep": true,
+   "hook": "Esta é das minhas favoritas: frango, batata-doce e grão, tudo no mesmo tabuleiro.",
    "macrosPerServing": {
     "kcal": 435,
     "protein": 44,
     "carbs": 42,
-    "fat": 9
+    "fat": 9,
+    "fiber": 10
    },
    "macroBreakdownWholeRecipe": [
     {
@@ -422,6 +775,21 @@
     }
    ],
    "proteinPer100kcal": 10.3,
+   "totalMin": 50,
+   "costPerServing": 1.86,
+   "cost": "€€",
+   "glutenFree": true,
+   "vegetarian": false,
+   "freezer": false,
+   "foods": [
+    "frango",
+    "batata_doce",
+    "grao",
+    "pimento",
+    "cebola",
+    "azeite",
+    "iog_grego"
+   ],
    "videoFile": "videos/frango-batata-doce-grao-pimentos.mp4"
   },
   {
@@ -527,7 +895,8 @@
    ],
    "pairs": [
     "pao-proteico-cottage-aveia",
-    "cheesecake-skyr-forno"
+    "cheesecake-skyr-forno",
+    "paezinhos-quark-aveia"
    ],
    "video": {
     "container": "tray",
@@ -764,11 +1133,17 @@
      }
     ]
    },
+   "difficulty": "Média",
+   "storage": "4 dias no frigorífico · congela bem",
+   "mealPrep": true,
+   "freezer": true,
+   "hook": "Almôndegas no forno, num molho de tomate com feijão. Conforto puro, mas leve.",
    "macrosPerServing": {
     "kcal": 365,
     "protein": 39,
     "carbs": 26,
-    "fat": 11
+    "fat": 11,
+    "fiber": 7
    },
    "macroBreakdownWholeRecipe": [
     {
@@ -821,6 +1196,21 @@
     }
    ],
    "proteinPer100kcal": 10.7,
+   "totalMin": 50,
+   "costPerServing": 2.15,
+   "cost": "€€",
+   "glutenFree": false,
+   "vegetarian": false,
+   "foods": [
+    "vaca5",
+    "ovo",
+    "aveia",
+    "tomate_lata",
+    "feijao_branco",
+    "cebola",
+    "espinafres",
+    "parmesao"
+   ],
    "videoFile": "videos/almondegas-vaca-feijao-tomate.mp4"
   },
   {
@@ -913,7 +1303,9 @@
    "pairs": [
     "molho-quark-pimento-assado",
     "molho-skyr-alho-ervas",
-    "crumble-maca-frutos-vermelhos-skyr"
+    "crumble-maca-frutos-vermelhos-skyr",
+    "molho-mostarda-mel-cottage",
+    "peras-assadas-canela-quark"
    ],
    "video": {
     "container": "tray",
@@ -1145,11 +1537,16 @@
      }
     ]
    },
+   "difficulty": "Fácil",
+   "storage": "3 dias no frigorífico",
+   "mealPrep": true,
+   "hook": "Lombo de porco com batatinha e couves-de-bruxelas. Um almoço de domingo sem esforço.",
    "macrosPerServing": {
     "kcal": 395,
     "protein": 38,
     "carbs": 33,
-    "fat": 12
+    "fat": 12,
+    "fiber": 7
    },
    "macroBreakdownWholeRecipe": [
     {
@@ -1190,6 +1587,20 @@
     }
    ],
    "proteinPer100kcal": 9.7,
+   "totalMin": 50,
+   "costPerServing": 1.69,
+   "cost": "€€",
+   "glutenFree": true,
+   "vegetarian": false,
+   "freezer": false,
+   "foods": [
+    "porco_lombo",
+    "batata",
+    "couve_bruxelas",
+    "cebola",
+    "azeite",
+    "mostarda"
+   ],
    "videoFile": "videos/lombo-porco-batata-couves.mp4"
   },
   {
@@ -1276,7 +1687,8 @@
    "pairs": [
     "molho-skyr-alho-ervas",
     "molho-quark-pimento-assado",
-    "cheesecake-skyr-forno"
+    "cheesecake-skyr-forno",
+    "molho-mostarda-mel-cottage"
    ],
    "video": {
     "container": "tray",
@@ -1516,11 +1928,16 @@
      }
     ]
    },
+   "difficulty": "Fácil",
+   "storage": "3 dias no frigorífico",
+   "mealPrep": true,
+   "hook": "Peru com batata, cogumelos e feijão-verde: simples, leve e cheio de sabor.",
    "macrosPerServing": {
     "kcal": 315,
     "protein": 42,
     "carbs": 26,
-    "fat": 5
+    "fat": 5,
+    "fiber": 5
    },
    "macroBreakdownWholeRecipe": [
     {
@@ -1561,6 +1978,20 @@
     }
    ],
    "proteinPer100kcal": 13.3,
+   "totalMin": 45,
+   "costPerServing": 1.94,
+   "cost": "€€",
+   "glutenFree": true,
+   "vegetarian": false,
+   "freezer": false,
+   "foods": [
+    "peru",
+    "batata",
+    "cogumelos",
+    "feijao_verde",
+    "azeite",
+    "limao"
+   ],
    "videoFile": "videos/peru-batata-cogumelos-feijao-verde.mp4"
   },
   {
@@ -1578,7 +2009,8 @@
     "vegetariano",
     "cottage",
     "grão",
-    "jantar rápido"
+    "jantar rápido",
+    "sem glúten"
    ],
    "ingredients": [
     {
@@ -1662,7 +2094,8 @@
    ],
    "pairs": [
     "pao-proteico-cottage-aveia",
-    "crumble-maca-frutos-vermelhos-skyr"
+    "crumble-maca-frutos-vermelhos-skyr",
+    "paezinhos-quark-aveia"
    ],
    "video": {
     "container": "round",
@@ -1923,11 +2356,16 @@
      }
     ]
    },
+   "difficulty": "Fácil",
+   "storage": "2 dias no frigorífico (melhor na hora)",
+   "mealPrep": false,
+   "hook": "Ovos a cozer num molho de tomate com grão. Ótimo para um brunch ou um jantar rápido.",
    "macrosPerServing": {
     "kcal": 350,
     "protein": 26,
     "carbs": 27,
-    "fat": 15
+    "fat": 15,
+    "fiber": 7
    },
    "macroBreakdownWholeRecipe": [
     {
@@ -1974,6 +2412,21 @@
     }
    ],
    "proteinPer100kcal": 7.4,
+   "totalMin": 35,
+   "costPerServing": 1.29,
+   "cost": "€",
+   "glutenFree": true,
+   "vegetarian": true,
+   "freezer": false,
+   "foods": [
+    "ovo",
+    "tomate_lata",
+    "grao",
+    "pimento",
+    "cebola",
+    "cottage",
+    "azeite"
+   ],
    "videoFile": "videos/ovos-forno-tomate-grao-cottage.mp4"
   },
   {
@@ -1991,7 +2444,8 @@
     "vegetariano",
     "leguminosas",
     "caril",
-    "skyr"
+    "skyr",
+    "sem glúten"
    ],
    "ingredients": [
     {
@@ -2073,7 +2527,8 @@
    ],
    "pairs": [
     "pao-proteico-cottage-aveia",
-    "crumble-maca-frutos-vermelhos-skyr"
+    "crumble-maca-frutos-vermelhos-skyr",
+    "molho-verde-ervilhas-skyr"
    ],
    "video": {
     "container": "tray",
@@ -2345,11 +2800,17 @@
      }
     ]
    },
+   "difficulty": "Fácil",
+   "storage": "4 dias no frigorífico · congela bem",
+   "mealPrep": true,
+   "freezer": true,
+   "hook": "Um caril aromático, vegetariano e assado no forno, com couve-flor tostadinha.",
    "macrosPerServing": {
     "kcal": 395,
     "protein": 29,
     "carbs": 44,
-    "fat": 14
+    "fat": 14,
+    "fiber": 15
    },
    "macroBreakdownWholeRecipe": [
     {
@@ -2402,6 +2863,21 @@
     }
    ],
    "proteinPer100kcal": 7.4,
+   "totalMin": 45,
+   "costPerServing": 1.93,
+   "cost": "€€",
+   "glutenFree": true,
+   "vegetarian": true,
+   "foods": [
+    "couve_flor",
+    "grao",
+    "tofu",
+    "tomate_cherry",
+    "cebola",
+    "azeite",
+    "caril",
+    "skyr"
+   ],
    "videoFile": "videos/caril-grao-couve-flor-tofu.mp4"
   },
   {
@@ -2487,7 +2963,8 @@
    ],
    "pairs": [
     "molho-skyr-alho-ervas",
-    "cheesecake-skyr-forno"
+    "cheesecake-skyr-forno",
+    "molho-verde-ervilhas-skyr"
    ],
    "video": {
     "container": "tray",
@@ -2725,11 +3202,16 @@
      }
     ]
    },
+   "difficulty": "Fácil",
+   "storage": "2 dias no frigorífico",
+   "mealPrep": true,
+   "hook": "Salmão com batata e brócolos: o jantar saudável mais fácil do mundo.",
    "macrosPerServing": {
     "kcal": 405,
     "protein": 30,
     "carbs": 29,
-    "fat": 18
+    "fat": 18,
+    "fiber": 6
    },
    "macroBreakdownWholeRecipe": [
     {
@@ -2764,6 +3246,19 @@
     }
    ],
    "proteinPer100kcal": 7.5,
+   "totalMin": 45,
+   "costPerServing": 2.78,
+   "cost": "€€",
+   "glutenFree": true,
+   "vegetarian": false,
+   "freezer": false,
+   "foods": [
+    "salmao",
+    "batata",
+    "brocolos",
+    "limao",
+    "azeite"
+   ],
    "videoFile": "videos/salmao-batata-brocolos.mp4"
   },
   {
@@ -3069,11 +3564,21 @@
      }
     ]
    },
+   "difficulty": "Fácil",
+   "storage": "4 dias no frigorífico · congela bem",
+   "mealPrep": true,
+   "freezer": true,
+   "unit": [
+    "fatia",
+    "fatias"
+   ],
+   "hook": "Pão sem farinha de trigo, feito com cottage e aveia. E não podia ser mais fácil.",
    "macrosPerServing": {
     "kcal": 125,
     "protein": 10,
     "carbs": 11,
-    "fat": 4
+    "fat": 4,
+    "fiber": 1
    },
    "macroBreakdownWholeRecipe": [
     {
@@ -3102,6 +3607,17 @@
     }
    ],
    "proteinPer100kcal": 7.8,
+   "totalMin": 40,
+   "costPerServing": 0.41,
+   "cost": "€",
+   "glutenFree": false,
+   "vegetarian": true,
+   "foods": [
+    "cottage",
+    "ovo",
+    "aveia",
+    "fermento"
+   ],
    "videoFile": "videos/pao-proteico-cottage-aveia.mp4"
   },
   {
@@ -3119,7 +3635,8 @@
     "molho",
     "skyr",
     "sem forno",
-    "tzatziki leve"
+    "tzatziki leve",
+    "sem glúten"
    ],
    "ingredients": [
     {
@@ -3362,11 +3879,16 @@
      }
     ]
    },
+   "difficulty": "Fácil",
+   "storage": "3 dias no frigorífico",
+   "mealPrep": true,
+   "hook": "Um molho fresquinho, tipo tzatziki, que fica bem com quase tudo.",
    "macrosPerServing": {
     "kcal": 35,
     "protein": 6,
     "carbs": 3,
-    "fat": 0
+    "fat": 0,
+    "fiber": 0
    },
    "macroBreakdownWholeRecipe": [
     {
@@ -3395,6 +3917,18 @@
     }
    ],
    "proteinPer100kcal": 15.6,
+   "totalMin": 10,
+   "costPerServing": 0.3,
+   "cost": "€",
+   "glutenFree": true,
+   "vegetarian": true,
+   "freezer": false,
+   "foods": [
+    "skyr",
+    "pepino",
+    "alho",
+    "limao"
+   ],
    "videoFile": "videos/molho-skyr-alho-ervas.mp4"
   },
   {
@@ -3412,7 +3946,8 @@
     "molho",
     "quark",
     "pimento assado",
-    "para carnes"
+    "para carnes",
+    "sem glúten"
    ],
    "ingredients": [
     {
@@ -3642,11 +4177,16 @@
      }
     ]
    },
+   "difficulty": "Fácil",
+   "storage": "4 dias no frigorífico",
+   "mealPrep": true,
+   "hook": "Um molho cremoso de pimento assado, com quark, docinho e fumado.",
    "macrosPerServing": {
     "kcal": 35,
     "protein": 5,
     "carbs": 4,
-    "fat": 0
+    "fat": 0,
+    "fiber": 1
    },
    "macroBreakdownWholeRecipe": [
     {
@@ -3675,6 +4215,18 @@
     }
    ],
    "proteinPer100kcal": 14.6,
+   "totalMin": 30,
+   "costPerServing": 0.27,
+   "cost": "€",
+   "glutenFree": true,
+   "vegetarian": true,
+   "freezer": false,
+   "foods": [
+    "quark",
+    "pimento",
+    "alho",
+    "limao"
+   ],
    "videoFile": "videos/molho-quark-pimento-assado.mp4"
   },
   {
@@ -3772,7 +4324,9 @@
     "Uma colher de skyr por cima junta mais 5 g de proteína.",
     "Os frutos vermelhos congelados resultam bem, sem descongelar."
    ],
-   "pairs": [],
+   "pairs": [
+    "molho-mostarda-mel-cottage"
+   ],
    "video": {
     "container": "tray",
     "groups": [
@@ -4057,11 +4611,16 @@
      }
     ]
    },
+   "difficulty": "Fácil",
+   "storage": "3 dias no frigorífico",
+   "mealPrep": true,
+   "hook": "Uma panqueca gigante no forno, para não ficares a virar panquecas uma a uma.",
    "macrosPerServing": {
     "kcal": 305,
     "protein": 21,
     "carbs": 35,
-    "fat": 9
+    "fat": 9,
+    "fiber": 6
    },
    "macroBreakdownWholeRecipe": [
     {
@@ -4108,6 +4667,21 @@
     }
    ],
    "proteinPer100kcal": 7.0,
+   "totalMin": 35,
+   "costPerServing": 1.2,
+   "cost": "€",
+   "glutenFree": false,
+   "vegetarian": true,
+   "freezer": false,
+   "foods": [
+    "aveia",
+    "cottage",
+    "ovo",
+    "clara",
+    "banana",
+    "fermento",
+    "frutos_vermelhos"
+   ],
    "videoFile": "videos/panqueca-forno-aveia-cottage.mp4"
   },
   {
@@ -4124,8 +4698,8 @@
    "tags": [
     "pequeno-almoço",
     "meal prep",
-    "sem glúten",
-    "claras"
+    "claras",
+    "sem glúten"
    ],
    "ingredients": [
     {
@@ -4424,11 +4998,17 @@
      }
     ]
    },
+   "difficulty": "Fácil",
+   "storage": "4 dias no frigorífico · congela bem",
+   "mealPrep": true,
+   "freezer": true,
+   "hook": "Muffins de ovo para a semana toda: pegas num e sais porta fora.",
    "macrosPerServing": {
     "kcal": 210,
     "protein": 25,
     "carbs": 4,
-    "fat": 10
+    "fat": 10,
+    "fiber": 1
    },
    "macroBreakdownWholeRecipe": [
     {
@@ -4469,6 +5049,19 @@
     }
    ],
    "proteinPer100kcal": 12.1,
+   "totalMin": 30,
+   "costPerServing": 1.36,
+   "cost": "€",
+   "glutenFree": true,
+   "vegetarian": false,
+   "foods": [
+    "ovo",
+    "clara",
+    "fiambre_peru",
+    "espinafres",
+    "pimento",
+    "mozzarella_light"
+   ],
    "videoFile": "videos/muffins-ovo-peru-espinafres.mp4"
   },
   {
@@ -4548,7 +5141,9 @@
    ],
    "pairs": [
     "molho-skyr-alho-ervas",
-    "molho-quark-pimento-assado"
+    "molho-quark-pimento-assado",
+    "molho-mostarda-mel-cottage",
+    "wraps-claras-aveia-forno"
    ],
    "video": {
     "container": "tray",
@@ -4775,11 +5370,16 @@
      }
     ]
    },
+   "difficulty": "Média",
+   "storage": "3 dias no frigorífico",
+   "mealPrep": true,
+   "hook": "Bolinhas de atum douradas no forno, perfeitas para petiscar.",
    "macrosPerServing": {
     "kcal": 160,
     "protein": 23,
     "carbs": 9,
-    "fat": 3
+    "fat": 3,
+    "fiber": 1
    },
    "macroBreakdownWholeRecipe": [
     {
@@ -4808,6 +5408,18 @@
     }
    ],
    "proteinPer100kcal": 14.3,
+   "totalMin": 33,
+   "costPerServing": 1.15,
+   "cost": "€",
+   "glutenFree": false,
+   "vegetarian": false,
+   "freezer": false,
+   "foods": [
+    "atum",
+    "cottage",
+    "ovo",
+    "aveia"
+   ],
    "videoFile": "videos/bolinhas-atum-cottage.mp4"
   },
   {
@@ -4825,7 +5437,8 @@
     "snack",
     "leguminosas",
     "estaladiço",
-    "fibra"
+    "fibra",
+    "sem glúten"
    ],
    "ingredients": [
     {
@@ -5016,11 +5629,16 @@
      }
     ]
    },
+   "difficulty": "Fácil",
+   "storage": "5 dias num frasco fechado",
+   "mealPrep": true,
+   "hook": "Grão crocante como se fossem batatas fritas, mas cheio de proteína e fibra.",
    "macrosPerServing": {
     "kcal": 200,
     "protein": 10,
     "carbs": 27,
-    "fat": 6
+    "fat": 6,
+    "fiber": 9
    },
    "macroBreakdownWholeRecipe": [
     {
@@ -5043,6 +5661,17 @@
     }
    ],
    "proteinPer100kcal": 5.1,
+   "totalMin": 40,
+   "costPerServing": 0.41,
+   "cost": "€",
+   "glutenFree": true,
+   "vegetarian": true,
+   "freezer": false,
+   "foods": [
+    "grao",
+    "azeite",
+    "parmesao"
+   ],
    "videoFile": "videos/grao-crocante-colorau-parmesao.mp4"
   },
   {
@@ -5432,11 +6061,16 @@
      }
     ]
    },
+   "difficulty": "Média",
+   "storage": "4 dias no frigorífico",
+   "mealPrep": true,
+   "hook": "Um cheesecake cremoso de skyr, com uma fração das calorias do clássico.",
    "macrosPerServing": {
     "kcal": 155,
     "protein": 15,
     "carbs": 18,
-    "fat": 3
+    "fat": 3,
+    "fiber": 2
    },
    "macroBreakdownWholeRecipe": [
     {
@@ -5489,6 +6123,22 @@
     }
    ],
    "proteinPer100kcal": 9.4,
+   "totalMin": 68,
+   "costPerServing": 0.85,
+   "cost": "€",
+   "glutenFree": false,
+   "vegetarian": true,
+   "freezer": false,
+   "foods": [
+    "skyr",
+    "quark",
+    "ovo",
+    "amido",
+    "eritritol",
+    "aveia",
+    "mel",
+    "frutos_vermelhos"
+   ],
    "videoFile": "videos/cheesecake-skyr-forno.mp4"
   },
   {
@@ -5827,11 +6477,16 @@
      }
     ]
    },
+   "difficulty": "Fácil",
+   "storage": "3 dias no frigorífico",
+   "mealPrep": false,
+   "hook": "Crumble de maçã e frutos vermelhos, estaladiço por cima e quentinho por baixo.",
    "macrosPerServing": {
     "kcal": 205,
     "protein": 12,
     "carbs": 39,
-    "fat": 2
+    "fat": 2,
+    "fiber": 7
    },
    "macroBreakdownWholeRecipe": [
     {
@@ -5872,7 +6527,8388 @@
     }
    ],
    "proteinPer100kcal": 5.8,
+   "totalMin": 35,
+   "costPerServing": 1.14,
+   "cost": "€",
+   "glutenFree": false,
+   "vegetarian": true,
+   "freezer": false,
+   "foods": [
+    "maca",
+    "frutos_vermelhos",
+    "aveia",
+    "clara",
+    "mel",
+    "skyr"
+   ],
    "videoFile": "videos/crumble-maca-frutos-vermelhos-skyr.mp4"
+  },
+  {
+   "id": "frango-limao-batata-curgete",
+   "title": "Frango com limão, batata e curgete no tabuleiro",
+   "short": "Frango com limão e curgete",
+   "protein": "Frango/Peru",
+   "meal": "Prato principal",
+   "servings": 4,
+   "handsOn": 15,
+   "ovenMax": 35,
+   "oven": "35 min",
+   "temp": 210,
+   "tags": [
+    "tabuleiro único",
+    "limão",
+    "curgete",
+    "batata",
+    "sem glúten"
+   ],
+   "ingredients": [
+    {
+     "q": 600,
+     "u": "g",
+     "n": "de peito de frango em pedaços",
+     "food": "frango"
+    },
+    {
+     "q": 500,
+     "u": "g",
+     "n": "de batata em cubos pequenos",
+     "food": "batata"
+    },
+    {
+     "q": 2,
+     "u": "un",
+     "n": "curgete em meias-luas",
+     "np": "curgetes em meias-luas",
+     "food": "curgete",
+     "grams": null
+    },
+    {
+     "q": 1,
+     "u": "un",
+     "n": "cebola às tiras",
+     "np": "cebolas às tiras",
+     "food": "cebola",
+     "grams": null
+    },
+    {
+     "q": 200,
+     "u": "g",
+     "n": "de tomate cherry",
+     "food": "tomate_cherry"
+    },
+    {
+     "q": 1,
+     "u": "c. sopa",
+     "n": "de azeite",
+     "food": "azeite"
+    },
+    {
+     "q": 2,
+     "u": "c. sopa",
+     "n": "de sumo de limão",
+     "food": "limao"
+    },
+    {
+     "t": "Raspa de 1 limão, alho, orégãos, sal e pimenta a gosto"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Pré-aquece o forno",
+     "detail": "Liga o forno a 210 °C."
+    },
+    {
+     "title": "Tudo no tabuleiro",
+     "detail": "Frango, batata, curgete, cebola e tomate com o azeite, o limão, o alho e os orégãos."
+    },
+    {
+     "title": "Leva ao forno",
+     "detail": "35 minutos, mexendo a meio."
+    },
+    {
+     "title": "Finaliza",
+     "detail": "Mais raspa de limão e salsa por cima."
+    }
+   ],
+   "tip": "Corta a batata mais pequena do que o frango: assim fica pronta ao mesmo tempo.",
+   "tips": [
+    "Troca a curgete por beringela ou pimentos, conforme o que tiveres.",
+    "Ótimo para levar: aguenta 3 dias no frigorífico."
+   ],
+   "pairs": [
+    "molho-skyr-alho-ervas",
+    "molho-verde-ervilhas-skyr",
+    "peras-assadas-canela-quark"
+   ],
+   "difficulty": "Fácil",
+   "storage": "3 dias no frigorífico",
+   "mealPrep": true,
+   "hook": "Frango com limão é daqueles pratos que nunca falham, e o tabuleiro faz o trabalho todo por ti.",
+   "video": {
+    "container": "tray",
+    "groups": [
+     {
+      "id": "a",
+      "shape": "cube",
+      "c": [
+       "#F6DCCB",
+       "#E3A85B"
+      ],
+      "n": 28,
+      "size": 1.05
+     },
+     {
+      "id": "p",
+      "shape": "cube",
+      "c": [
+       "#F2D98A",
+       "#D9A441"
+      ],
+      "n": 24,
+      "size": 0.8
+     },
+     {
+      "id": "z",
+      "shape": "slice",
+      "c": [
+       "#A9CF73",
+       "#5E8F3A"
+      ],
+      "n": 18,
+      "size": 0.9
+     },
+     {
+      "id": "t",
+      "shape": "ball",
+      "c": [
+       "#E8432F",
+       "#C23422"
+      ],
+      "n": 12,
+      "size": 0.6
+     },
+     {
+      "id": "o",
+      "shape": "arc",
+      "c": [
+       "#F1E6D2",
+       "#D9B07A"
+      ],
+      "n": 10
+     },
+     {
+      "id": "l",
+      "shape": "lemon",
+      "c": [
+       "#F7D544",
+       "#E9C030"
+      ],
+      "n": 4,
+      "layout": "grid",
+      "z": 1
+     },
+     {
+      "id": "h",
+      "shape": "herb",
+      "c": [
+       "#3E9A4A",
+       "#2F7A38"
+      ],
+      "n": 24,
+      "z": 2
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "shape",
+       "shape": "cube",
+       "c": [
+        "#F6DCCB",
+        "#E3A85B"
+       ],
+       "n": 3
+      },
+      "600 g",
+      [
+       "peito de frango"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "potato"
+      },
+      "500 g",
+      [
+       "batata em cubos"
+      ]
+     ],
+     [
+      {
+       "k": "shape",
+       "shape": "slice",
+       "c": [
+        "#A9CF73",
+        "#5E8F3A"
+       ],
+       "n": 3
+      },
+      "2",
+      [
+       "curgetes"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "onionw"
+      },
+      "1",
+      [
+       "cebola"
+      ]
+     ],
+     [
+      {
+       "k": "shape",
+       "shape": "ball",
+       "c": [
+        "#E8432F",
+        "#C23422"
+       ],
+       "n": 3
+      },
+      "200 g",
+      [
+       "tomate cherry"
+      ]
+     ],
+     [
+      {
+       "k": "bottle"
+      },
+      "1 c. sopa",
+      [
+       "de azeite"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "lemon"
+      },
+      "1",
+      [
+       "limão (sumo e raspa)"
+      ]
+     ],
+     [
+      {
+       "k": "spices"
+      },
+      "a gosto",
+      [
+       "alho, orégãos, sal e pimenta"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "preheat",
+      "temp": 210,
+      "title": [
+       "Pré-aquece",
+       "o forno"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Tudo no",
+       "tabuleiro"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "a",
+         "p"
+        ],
+        "text": [
+         "Frango e batata"
+        ]
+       },
+       {
+        "groups": [
+         "z",
+         "t",
+         "o"
+        ],
+        "text": [
+         "Curgete, tomate e cebola"
+        ]
+       },
+       {
+        "fx": "oil",
+        "text": [
+         "Azeite e sumo de limão"
+        ]
+       },
+       {
+        "fx": "spice",
+        "text": [
+         "Alho, orégãos, sal e pimenta"
+        ]
+       }
+      ],
+      "mix": true,
+      "mixText": [
+       "Envolve tudo"
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 210,
+      "minutes": 35,
+      "label": "35",
+      "sub": "minutos",
+      "mid": "Mexe a meio do tempo!",
+      "after": "Douradinho e suculento."
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Limão",
+       "e salsa"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "l"
+        ],
+        "text": [
+         "Raspa de limão"
+        ]
+       },
+       {
+        "groups": [
+         "h"
+        ],
+        "text": [
+         "Salsa picada"
+        ]
+       }
+      ],
+      "done": "Pronto! Bom apetite."
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 350,
+    "protein": 39,
+    "carbs": 30,
+    "fat": 8,
+    "fiber": 5
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Peito de frango em pedaços",
+     "g": 600,
+     "kcal": 720,
+     "protein": 135
+    },
+    {
+     "item": "Batata em cubos pequenos",
+     "g": 500,
+     "kcal": 385,
+     "protein": 10
+    },
+    {
+     "item": "Curgete em meias-luas",
+     "g": 500,
+     "kcal": 85,
+     "protein": 6
+    },
+    {
+     "item": "Cebola às tiras",
+     "g": 120,
+     "kcal": 48,
+     "protein": 1
+    },
+    {
+     "item": "Tomate cherry",
+     "g": 200,
+     "kcal": 36,
+     "protein": 2
+    },
+    {
+     "item": "Azeite",
+     "g": 13,
+     "kcal": 115,
+     "protein": 0
+    },
+    {
+     "item": "Sumo de limão",
+     "g": 30,
+     "kcal": 7,
+     "protein": 0
+    }
+   ],
+   "proteinPer100kcal": 11.1,
+   "totalMin": 50,
+   "costPerServing": 1.73,
+   "cost": "€€",
+   "glutenFree": true,
+   "vegetarian": false,
+   "freezer": false,
+   "foods": [
+    "frango",
+    "batata",
+    "curgete",
+    "cebola",
+    "tomate_cherry",
+    "azeite",
+    "limao"
+   ],
+   "videoFile": "videos/frango-limao-batata-curgete.mp4"
+  },
+  {
+   "id": "lasanha-curgete-peru-cottage",
+   "title": "Lasanha de curgete com peru picado e cottage",
+   "short": "Lasanha de curgete e peru",
+   "protein": "Frango/Peru",
+   "meal": "Prato principal",
+   "servings": 4,
+   "handsOn": 20,
+   "ovenMax": 40,
+   "oven": "40 min",
+   "temp": 190,
+   "tags": [
+    "sem massa",
+    "cottage",
+    "comfort food",
+    "congela bem",
+    "sem glúten"
+   ],
+   "ingredients": [
+    {
+     "q": 500,
+     "u": "g",
+     "n": "de peru picado",
+     "food": "peru_picado"
+    },
+    {
+     "q": 400,
+     "u": "g",
+     "n": "de tomate triturado",
+     "food": "tomate_lata"
+    },
+    {
+     "q": 1,
+     "u": "un",
+     "n": "cebola picada",
+     "np": "cebolas picadas",
+     "food": "cebola",
+     "grams": null
+    },
+    {
+     "q": 2,
+     "u": "un",
+     "n": "curgete em lâminas finas",
+     "np": "curgetes em lâminas finas",
+     "food": "curgete",
+     "grams": null
+    },
+    {
+     "q": 250,
+     "u": "g",
+     "n": "de queijo cottage",
+     "food": "cottage"
+    },
+    {
+     "q": 1,
+     "u": "un",
+     "n": "ovo",
+     "np": "ovos",
+     "food": "ovo",
+     "grams": null
+    },
+    {
+     "q": 60,
+     "u": "g",
+     "n": "de mozzarella light ralada",
+     "food": "mozzarella_light"
+    },
+    {
+     "t": "Alho, orégãos, manjericão, sal e pimenta a gosto"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Pré-aquece o forno",
+     "detail": "Liga o forno a 190 °C."
+    },
+    {
+     "title": "Molho na travessa",
+     "detail": "Mistura o peru cru desfeito com o tomate, a cebola, o alho e os orégãos e espalha metade no fundo."
+    },
+    {
+     "title": "Faz as camadas",
+     "detail": "Curgete, cottage batido com o ovo, o resto do molho e mais curgete."
+    },
+    {
+     "title": "Queijo por cima",
+     "detail": "Espalha a mozzarella."
+    },
+    {
+     "title": "Leva ao forno",
+     "detail": "40 minutos, até gratinar."
+    },
+    {
+     "title": "Repousa",
+     "detail": "Espera 5 minutos antes de cortar."
+    }
+   ],
+   "tip": "Salga as lâminas de curgete 10 minutos e seca-as com papel: a lasanha não fica aguada.",
+   "tips": [
+    "Congela às doses, já cortada.",
+    "Com carne picada de vaca magra também fica ótima."
+   ],
+   "pairs": [
+    "paezinhos-quark-aveia",
+    "brownie-feijao-preto-cacau"
+   ],
+   "difficulty": "Média",
+   "storage": "3 dias no frigorífico · congela bem",
+   "mealPrep": true,
+   "freezer": true,
+   "hook": "É lasanha, sim, mas sem massa: as camadas são de curgete e fica levíssima.",
+   "video": {
+    "container": "tray",
+    "groups": [
+     {
+      "id": "t",
+      "shape": "layer",
+      "c": [
+       "#C8402E",
+       "#A8321F"
+      ]
+     },
+     {
+      "id": "m",
+      "shape": "pea",
+      "c": [
+       "#B0585A",
+       "#74412C"
+      ],
+      "n": 60,
+      "size": 0.5
+     },
+     {
+      "id": "o",
+      "shape": "arc",
+      "c": [
+       "#F1E6D2",
+       "#D9B07A"
+      ],
+      "n": 8,
+      "size": 0.7
+     },
+     {
+      "id": "z",
+      "shape": "slice",
+      "c": [
+       "#A9CF73",
+       "#5E8F3A"
+      ],
+      "n": 20,
+      "z": 1,
+      "size": 1.1
+     },
+     {
+      "id": "q",
+      "shape": "curd",
+      "c": [
+       "#FFFFFF",
+       "#F6E6C8"
+      ],
+      "n": 12,
+      "z": 2
+     },
+     {
+      "id": "s",
+      "shape": "shred",
+      "c": [
+       "#FFF8E6",
+       "#F0C674"
+      ],
+      "n": 50,
+      "z": 3
+     },
+     {
+      "id": "h",
+      "shape": "leaf",
+      "c": [
+       "#3E9A4A",
+       "#2F7A38"
+      ],
+      "n": 10,
+      "z": 4,
+      "size": 0.8
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "meat",
+       "c": "#E6A79A"
+      },
+      "500 g",
+      [
+       "de peru picado"
+      ]
+     ],
+     [
+      {
+       "k": "can",
+       "c": "#C8402E"
+      },
+      "400 g",
+      [
+       "de tomate triturado"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "onionw"
+      },
+      "1",
+      [
+       "cebola picada"
+      ]
+     ],
+     [
+      {
+       "k": "shape",
+       "shape": "slice",
+       "c": [
+        "#A9CF73",
+        "#5E8F3A"
+       ],
+       "n": 3
+      },
+      "2",
+      [
+       "curgetes em lâminas"
+      ]
+     ],
+     [
+      {
+       "k": "tub",
+       "c": "#2F80C0"
+      },
+      "250 g",
+      [
+       "de queijo cottage"
+      ]
+     ],
+     [
+      {
+       "k": "eggs"
+      },
+      "1",
+      [
+       "ovo"
+      ]
+     ],
+     [
+      {
+       "k": "cheese",
+       "c": "#FFF3D0"
+      },
+      "60 g",
+      [
+       "de mozzarella light"
+      ]
+     ],
+     [
+      {
+       "k": "spices"
+      },
+      "a gosto",
+      [
+       "alho, orégãos e manjericão"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "preheat",
+      "temp": 190,
+      "title": [
+       "Pré-aquece",
+       "o forno"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Molho de",
+       "peru"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "t"
+        ],
+        "text": [
+         "Tomate triturado"
+        ]
+       },
+       {
+        "groups": [
+         "m",
+         "o"
+        ],
+        "text": [
+         "Peru picado e cebola"
+        ]
+       },
+       {
+        "fx": "spice",
+        "text": [
+         "Alho e orégãos"
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Faz as",
+       "camadas"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "z"
+        ],
+        "text": [
+         "Lâminas de curgete"
+        ]
+       },
+       {
+        "groups": [
+         "q"
+        ],
+        "text": [
+         "Cottage batido com ovo"
+        ]
+       },
+       {
+        "groups": [
+         "s"
+        ],
+        "text": [
+         "Mozzarella por cima"
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 190,
+      "minutes": 40,
+      "label": "40",
+      "sub": "minutos",
+      "after": "Gratinada e a borbulhar."
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Manjericão",
+       "e repouso"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "h"
+        ],
+        "text": [
+         "Manjericão fresco"
+        ]
+       }
+      ],
+      "done": "Repousa 5 min e serve!"
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 320,
+    "protein": 41,
+    "carbs": 16,
+    "fat": 10,
+    "fiber": 3
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Peru picado",
+     "g": 500,
+     "kcal": 625,
+     "protein": 105
+    },
+    {
+     "item": "Tomate triturado",
+     "g": 400,
+     "kcal": 128,
+     "protein": 6
+    },
+    {
+     "item": "Cebola picada",
+     "g": 120,
+     "kcal": 48,
+     "protein": 1
+    },
+    {
+     "item": "Curgete em lâminas finas",
+     "g": 500,
+     "kcal": 85,
+     "protein": 6
+    },
+    {
+     "item": "Queijo cottage",
+     "g": 250,
+     "kcal": 210,
+     "protein": 28
+    },
+    {
+     "item": "Ovo",
+     "g": 55,
+     "kcal": 79,
+     "protein": 7
+    },
+    {
+     "item": "Mozzarella light ralada",
+     "g": 60,
+     "kcal": 99,
+     "protein": 12
+    }
+   ],
+   "proteinPer100kcal": 13.0,
+   "totalMin": 60,
+   "costPerServing": 2.12,
+   "cost": "€€",
+   "glutenFree": true,
+   "vegetarian": false,
+   "foods": [
+    "peru_picado",
+    "tomate_lata",
+    "cebola",
+    "curgete",
+    "cottage",
+    "ovo",
+    "mozzarella_light"
+   ],
+   "videoFile": "videos/lasanha-curgete-peru-cottage.mp4"
+  },
+  {
+   "id": "fajitas-frango-forno",
+   "title": "Fajitas de frango no forno com pimentos",
+   "short": "Fajitas de frango no forno",
+   "protein": "Frango/Peru",
+   "meal": "Prato principal",
+   "servings": 4,
+   "handsOn": 15,
+   "ovenMax": 25,
+   "oven": "25 min",
+   "temp": 220,
+   "tags": [
+    "tabuleiro único",
+    "pimentos",
+    "tortilhas",
+    "mexicano"
+   ],
+   "ingredients": [
+    {
+     "q": 600,
+     "u": "g",
+     "n": "de peito de frango às tiras",
+     "food": "frango"
+    },
+    {
+     "q": 3,
+     "u": "un",
+     "n": "pimento às tiras (cores variadas)",
+     "np": "pimentos às tiras (cores variadas)",
+     "food": "pimento",
+     "grams": null
+    },
+    {
+     "q": 2,
+     "u": "un",
+     "n": "cebola roxa às tiras",
+     "np": "cebolas roxas às tiras",
+     "food": "cebola",
+     "grams": null
+    },
+    {
+     "q": 1,
+     "u": "c. sopa",
+     "n": "de azeite",
+     "food": "azeite"
+    },
+    {
+     "q": 1,
+     "u": "c. sopa",
+     "n": "de sumo de limão",
+     "food": "limao"
+    },
+    {
+     "t": "Colorau fumado, cominhos, alho em pó, orégãos e sal a gosto"
+    },
+    {
+     "q": 4,
+     "u": "un",
+     "n": "tortilha integral",
+     "np": "tortilhas integrais",
+     "food": "tortilha_integral",
+     "grams": null
+    },
+    {
+     "q": 150,
+     "u": "g",
+     "n": "de skyr natural, para servir",
+     "food": "skyr"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Pré-aquece o forno",
+     "detail": "Liga o forno a 220 °C."
+    },
+    {
+     "title": "Tempera no tabuleiro",
+     "detail": "Frango, pimentos e cebola com o azeite, o limão e as especiarias."
+    },
+    {
+     "title": "Leva ao forno",
+     "detail": "25 minutos, mexendo a meio."
+    },
+    {
+     "title": "Monta as fajitas",
+     "detail": "Aquece as tortilhas 1 minuto no forno e recheia com o frango, os pimentos e uma colher de skyr."
+    }
+   ],
+   "tip": "Forno bem quente e uma só camada: os pimentos ganham aquele tostado das fajitas.",
+   "tips": [
+    "Para menos hidratos, serve em folhas de alface em vez de tortilhas.",
+    "O skyr com limão e coentros faz de natas ácidas."
+   ],
+   "pairs": [
+    "molho-verde-ervilhas-skyr",
+    "molho-quark-pimento-assado",
+    "peras-assadas-canela-quark"
+   ],
+   "difficulty": "Fácil",
+   "storage": "3 dias no frigorífico (tortilhas à parte)",
+   "mealPrep": true,
+   "hook": "Sexta-feira à noite pede fajitas, e esta versão vai toda ao forno.",
+   "video": {
+    "container": "tray",
+    "groups": [
+     {
+      "id": "a",
+      "shape": "strip",
+      "c": [
+       "#F6DCCB",
+       "#E3A85B"
+      ],
+      "n": 16,
+      "size": 1.15
+     },
+     {
+      "id": "r",
+      "shape": "strip",
+      "c": [
+       "#E03A2A",
+       "#B02517"
+      ],
+      "n": 10
+     },
+     {
+      "id": "y",
+      "shape": "strip",
+      "c": [
+       "#F7C531",
+       "#DBA21A"
+      ],
+      "n": 9
+     },
+     {
+      "id": "v",
+      "shape": "strip",
+      "c": [
+       "#5DA543",
+       "#3F7F2E"
+      ],
+      "n": 8
+     },
+     {
+      "id": "o",
+      "shape": "arc",
+      "c": [
+       "#B05EAA",
+       "#7C3C7C"
+      ],
+      "n": 14
+     },
+     {
+      "id": "k",
+      "shape": "blob",
+      "c": [
+       "#FFFFFF",
+       "#F6E6C8"
+      ],
+      "n": 4,
+      "layout": "grid",
+      "z": 1
+     },
+     {
+      "id": "h",
+      "shape": "herb",
+      "c": [
+       "#3E9A4A",
+       "#2F7A38"
+      ],
+      "n": 28,
+      "z": 2
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "shape",
+       "shape": "strip",
+       "c": [
+        "#F6DCCB",
+        "#E3A85B"
+       ],
+       "n": 3
+      },
+      "600 g",
+      [
+       "frango às tiras"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "pepper"
+      },
+      "3",
+      [
+       "pimentos de cores"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "onion"
+      },
+      "2",
+      [
+       "cebolas roxas"
+      ]
+     ],
+     [
+      {
+       "k": "bottle"
+      },
+      "1 c. sopa",
+      [
+       "de azeite"
+      ]
+     ],
+     [
+      {
+       "k": "spices",
+       "c": [
+        "#C0392B",
+        "#8A4B22",
+        "#F3E3C3"
+       ]
+      },
+      "a gosto",
+      [
+       "colorau fumado, cominhos",
+       "e alho em pó"
+      ]
+     ],
+     [
+      {
+       "k": "sack",
+       "c": "#C9A26B"
+      },
+      "4",
+      [
+       "tortilhas integrais"
+      ]
+     ],
+     [
+      {
+       "k": "tub",
+       "c": "#5B7BA8"
+      },
+      "150 g",
+      [
+       "de skyr natural"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "preheat",
+      "temp": 220,
+      "title": [
+       "Pré-aquece",
+       "o forno"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Tempera no",
+       "tabuleiro"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "a"
+        ],
+        "text": [
+         "Frango às tiras"
+        ]
+       },
+       {
+        "groups": [
+         "r",
+         "y",
+         "v",
+         "o"
+        ],
+        "text": [
+         "Pimentos e cebola roxa"
+        ]
+       },
+       {
+        "fx": "oil",
+        "text": [
+         "Azeite e limão"
+        ]
+       },
+       {
+        "fx": "spice",
+        "text": [
+         "Colorau fumado e cominhos"
+        ],
+        "spice": [
+         "#C0392B",
+         "#8A4B22",
+         "#E0A42A"
+        ]
+       }
+      ],
+      "mix": true,
+      "mixText": [
+       "Uma só camada"
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 220,
+      "minutes": 25,
+      "label": "25",
+      "sub": "minutos",
+      "mid": "Mexe a meio do tempo!",
+      "after": "Pimentos tostados nas pontas."
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Skyr e",
+       "coentros"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "k"
+        ],
+        "text": [
+         "Uma colher de skyr"
+        ]
+       },
+       {
+        "groups": [
+         "h"
+        ],
+        "text": [
+         "Coentros frescos"
+        ]
+       }
+      ],
+      "done": "Agora é rechear as tortilhas!"
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 410,
+    "protein": 43,
+    "carbs": 33,
+    "fat": 10,
+    "fiber": 6
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Peito de frango às tiras",
+     "g": 600,
+     "kcal": 720,
+     "protein": 135
+    },
+    {
+     "item": "Pimento às tiras",
+     "g": 450,
+     "kcal": 122,
+     "protein": 4
+    },
+    {
+     "item": "Cebola roxa às tiras",
+     "g": 240,
+     "kcal": 96,
+     "protein": 3
+    },
+    {
+     "item": "Azeite",
+     "g": 13,
+     "kcal": 115,
+     "protein": 0
+    },
+    {
+     "item": "Sumo de limão",
+     "g": 15,
+     "kcal": 3,
+     "protein": 0
+    },
+    {
+     "item": "Tortilha integral",
+     "g": 160,
+     "kcal": 480,
+     "protein": 14
+    },
+    {
+     "item": "Skyr natural",
+     "g": 150,
+     "kcal": 94,
+     "protein": 16
+    }
+   ],
+   "proteinPer100kcal": 10.6,
+   "totalMin": 40,
+   "costPerServing": 1.92,
+   "cost": "€€",
+   "glutenFree": false,
+   "vegetarian": false,
+   "freezer": false,
+   "foods": [
+    "frango",
+    "pimento",
+    "cebola",
+    "azeite",
+    "limao",
+    "tortilha_integral",
+    "skyr"
+   ],
+   "videoFile": "videos/fajitas-frango-forno.mp4"
+  },
+  {
+   "id": "chili-vaca-feijao-batata-doce",
+   "title": "Chili de vaca com feijão vermelho e batata-doce no forno",
+   "short": "Chili de vaca no forno",
+   "protein": "Vaca/Porco",
+   "meal": "Prato principal",
+   "servings": 4,
+   "handsOn": 15,
+   "ovenMax": 40,
+   "oven": "40 min",
+   "temp": 200,
+   "tags": [
+    "tacho no forno",
+    "feijão",
+    "batata-doce",
+    "congela bem",
+    "sem glúten"
+   ],
+   "ingredients": [
+    {
+     "q": 500,
+     "u": "g",
+     "n": "de carne picada de vaca magra (5% gordura)",
+     "food": "vaca5"
+    },
+    {
+     "q": 240,
+     "u": "g",
+     "n": "de feijão vermelho escorrido (1 lata)",
+     "food": "feijao_vermelho"
+    },
+    {
+     "q": 400,
+     "u": "g",
+     "n": "de batata-doce em cubos pequenos",
+     "food": "batata_doce"
+    },
+    {
+     "q": 400,
+     "u": "g",
+     "n": "de tomate triturado",
+     "food": "tomate_lata"
+    },
+    {
+     "q": 1,
+     "u": "un",
+     "n": "pimento em cubos",
+     "np": "pimentos em cubos",
+     "food": "pimento",
+     "grams": null
+    },
+    {
+     "q": 1,
+     "u": "un",
+     "n": "cebola picada",
+     "np": "cebolas picadas",
+     "food": "cebola",
+     "grams": null
+    },
+    {
+     "t": "Alho, cominhos, colorau fumado, piripíri e sal a gosto"
+    },
+    {
+     "q": 100,
+     "u": "g",
+     "n": "de iogurte grego magro, para servir",
+     "food": "iog_grego"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Pré-aquece o forno",
+     "detail": "Liga o forno a 200 °C."
+    },
+    {
+     "title": "Tudo na travessa",
+     "detail": "Tomate, carne desfeita, cebola, batata-doce, feijão, pimento e especiarias."
+    },
+    {
+     "title": "Mexe bem",
+     "detail": "Desfaz a carne com uma colher para não ficar em blocos."
+    },
+    {
+     "title": "Leva ao forno",
+     "detail": "40 minutos, mexendo a meio."
+    },
+    {
+     "title": "Serve",
+     "detail": "Com uma colher de iogurte e coentros."
+    }
+   ],
+   "tip": "Cubos de batata-doce pequenos (1,5 cm) cozem no molho e engrossam o chili.",
+   "tips": [
+    "Congela muito bem às doses.",
+    "Fica ainda melhor no dia seguinte."
+   ],
+   "pairs": [
+    "paezinhos-quark-aveia",
+    "pao-proteico-cottage-aveia",
+    "brownie-feijao-preto-cacau"
+   ],
+   "difficulty": "Fácil",
+   "storage": "4 dias no frigorífico · congela bem",
+   "mealPrep": true,
+   "freezer": true,
+   "hook": "Um chili reconfortante, picante q.b., e sem estares agarrado ao fogão.",
+   "video": {
+    "container": "round",
+    "groups": [
+     {
+      "id": "t",
+      "shape": "layer",
+      "c": [
+       "#C8402E",
+       "#A8321F"
+      ]
+     },
+     {
+      "id": "m",
+      "shape": "pea",
+      "c": [
+       "#B0585A",
+       "#74412C"
+      ],
+      "n": 60,
+      "size": 0.6
+     },
+     {
+      "id": "w",
+      "shape": "bean",
+      "c": [
+       "#9E3B33",
+       "#6E2620"
+      ],
+      "n": 36
+     },
+     {
+      "id": "b",
+      "shape": "cube",
+      "c": [
+       "#F7A540",
+       "#D8701B"
+      ],
+      "n": 20,
+      "size": 0.75
+     },
+     {
+      "id": "r",
+      "shape": "cube",
+      "c": [
+       "#E03A2A",
+       "#B02517"
+      ],
+      "n": 12,
+      "size": 0.5
+     },
+     {
+      "id": "o",
+      "shape": "arc",
+      "c": [
+       "#F1E6D2",
+       "#D9B07A"
+      ],
+      "n": 8,
+      "size": 0.7
+     },
+     {
+      "id": "k",
+      "shape": "blob",
+      "c": [
+       "#FFFFFF",
+       "#F6E6C8"
+      ],
+      "n": 4,
+      "layout": "grid",
+      "z": 1
+     },
+     {
+      "id": "h",
+      "shape": "herb",
+      "c": [
+       "#3E9A4A",
+       "#2F7A38"
+      ],
+      "n": 24,
+      "z": 2
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "meat",
+       "c": "#B5474A"
+      },
+      "500 g",
+      [
+       "carne picada de vaca",
+       "magra (5%)"
+      ]
+     ],
+     [
+      {
+       "k": "can",
+       "c": "#8E2E26"
+      },
+      "1 lata",
+      [
+       "de feijão vermelho"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "sweet"
+      },
+      "400 g",
+      [
+       "batata-doce em cubos"
+      ]
+     ],
+     [
+      {
+       "k": "can",
+       "c": "#C8402E"
+      },
+      "400 g",
+      [
+       "de tomate triturado"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "pepper"
+      },
+      "1",
+      [
+       "pimento"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "onionw"
+      },
+      "1",
+      [
+       "cebola"
+      ]
+     ],
+     [
+      {
+       "k": "spices",
+       "c": [
+        "#C0392B",
+        "#8A4B22",
+        "#E0A42A"
+       ]
+      },
+      "a gosto",
+      [
+       "cominhos, colorau",
+       "e piripíri"
+      ]
+     ],
+     [
+      {
+       "k": "tub",
+       "c": "#3E8E5A"
+      },
+      "100 g",
+      [
+       "iogurte grego (servir)"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "preheat",
+      "temp": 200,
+      "title": [
+       "Pré-aquece",
+       "o forno"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Tudo na",
+       "travessa"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "t"
+        ],
+        "text": [
+         "Tomate triturado"
+        ]
+       },
+       {
+        "groups": [
+         "m",
+         "o"
+        ],
+        "text": [
+         "Carne picada e cebola"
+        ]
+       },
+       {
+        "groups": [
+         "b",
+         "w",
+         "r"
+        ],
+        "text": [
+         "Batata-doce, feijão e pimento"
+        ]
+       },
+       {
+        "fx": "spice",
+        "text": [
+         "Cominhos, colorau e piripíri"
+        ],
+        "spice": [
+         "#C0392B",
+         "#8A4B22",
+         "#E0A42A"
+        ]
+       }
+      ],
+      "mix": true,
+      "mixText": [
+       "Desfaz bem a carne"
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 200,
+      "minutes": 40,
+      "label": "40",
+      "sub": "minutos",
+      "mid": "Mexe a meio do tempo!",
+      "after": "Espesso e aromático."
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Iogurte e",
+       "coentros"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "k"
+        ],
+        "text": [
+         "Iogurte grego magro"
+        ]
+       },
+       {
+        "groups": [
+         "h"
+        ],
+        "text": [
+         "Coentros frescos"
+        ]
+       }
+      ],
+      "done": "Pronto! Bom apetite."
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 400,
+    "protein": 38,
+    "carbs": 45,
+    "fat": 8,
+    "fiber": 10
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Carne picada de vaca magra",
+     "g": 500,
+     "kcal": 685,
+     "protein": 105
+    },
+    {
+     "item": "Feijão vermelho escorrido",
+     "g": 240,
+     "kcal": 305,
+     "protein": 21
+    },
+    {
+     "item": "Batata-doce em cubos pequenos",
+     "g": 400,
+     "kcal": 344,
+     "protein": 6
+    },
+    {
+     "item": "Tomate triturado",
+     "g": 400,
+     "kcal": 128,
+     "protein": 6
+    },
+    {
+     "item": "Pimento em cubos",
+     "g": 150,
+     "kcal": 40,
+     "protein": 2
+    },
+    {
+     "item": "Cebola picada",
+     "g": 120,
+     "kcal": 48,
+     "protein": 1
+    },
+    {
+     "item": "Iogurte grego magro",
+     "g": 100,
+     "kcal": 59,
+     "protein": 10
+    }
+   ],
+   "proteinPer100kcal": 9.4,
+   "totalMin": 55,
+   "costPerServing": 2.17,
+   "cost": "€€",
+   "glutenFree": true,
+   "vegetarian": false,
+   "foods": [
+    "vaca5",
+    "feijao_vermelho",
+    "batata_doce",
+    "tomate_lata",
+    "pimento",
+    "cebola",
+    "iog_grego"
+   ],
+   "videoFile": "videos/chili-vaca-feijao-batata-doce.mp4"
+  },
+  {
+   "id": "rolo-carne-vaca-cenoura",
+   "title": "Rolo de carne de vaca com cenoura e aveia",
+   "short": "Rolo de carne com cenoura",
+   "protein": "Vaca/Porco",
+   "meal": "Prato principal",
+   "servings": 4,
+   "handsOn": 15,
+   "ovenMax": 45,
+   "oven": "45 min",
+   "temp": 190,
+   "tags": [
+    "forma de bolo inglês",
+    "cenoura",
+    "meal prep",
+    "congela bem"
+   ],
+   "ingredients": [
+    {
+     "q": 500,
+     "u": "g",
+     "n": "de carne picada de vaca magra (5% gordura)",
+     "food": "vaca5"
+    },
+    {
+     "q": 1,
+     "u": "un",
+     "n": "ovo",
+     "np": "ovos",
+     "food": "ovo",
+     "grams": null
+    },
+    {
+     "q": 40,
+     "u": "g",
+     "n": "de flocos de aveia",
+     "food": "aveia"
+    },
+    {
+     "q": 2,
+     "u": "un",
+     "n": "cenoura ralada",
+     "np": "cenouras raladas",
+     "food": "cenoura",
+     "grams": null
+    },
+    {
+     "q": 1,
+     "u": "un",
+     "n": "cebola ralada",
+     "np": "cebolas raladas",
+     "food": "cebola",
+     "grams": null
+    },
+    {
+     "q": 1,
+     "u": "c. chá",
+     "n": "de mostarda",
+     "food": "mostarda"
+    },
+    {
+     "q": 120,
+     "u": "g",
+     "n": "de tomate triturado, para cobrir",
+     "food": "tomate_lata"
+    },
+    {
+     "t": "Alho, salsa, sal e pimenta a gosto"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Pré-aquece o forno",
+     "detail": "Liga o forno a 190 °C e forra uma forma de bolo inglês."
+    },
+    {
+     "title": "Mistura tudo",
+     "detail": "Carne, ovo, aveia, cenoura, cebola, mostarda e temperos, com as mãos."
+    },
+    {
+     "title": "Molda na forma",
+     "detail": "Calca bem e cobre com o tomate."
+    },
+    {
+     "title": "Leva ao forno",
+     "detail": "45 minutos."
+    },
+    {
+     "title": "Repousa e fatia",
+     "detail": "10 minutos antes de cortar em 8 fatias."
+    }
+   ],
+   "tip": "A cenoura ralada deixa o rolo húmido sem precisar de gordura extra.",
+   "tips": [
+    "Fatias frias são ótimas no pão proteico.",
+    "Serve com legumes assados ou salada."
+   ],
+   "pairs": [
+    "molho-mostarda-mel-cottage",
+    "molho-quark-pimento-assado",
+    "pao-proteico-cottage-aveia"
+   ],
+   "difficulty": "Média",
+   "storage": "4 dias no frigorífico · congela bem",
+   "mealPrep": true,
+   "freezer": true,
+   "hook": "O rolo de carne da avó, mas numa versão leve e cheia de proteína.",
+   "video": {
+    "container": "loaf",
+    "groups": [
+     {
+      "id": "m",
+      "shape": "pea",
+      "c": [
+       "#B0585A",
+       "#74412C"
+      ],
+      "n": 50,
+      "size": 0.6,
+      "inn": "bowl"
+     },
+     {
+      "id": "e",
+      "shape": "yolk",
+      "c": [
+       "#F7B32B",
+       "#F7B32B"
+      ],
+      "n": 1,
+      "layout": "grid",
+      "inn": "bowl"
+     },
+     {
+      "id": "a",
+      "shape": "pea",
+      "c": [
+       "#E6D2A8",
+       "#E6D2A8"
+      ],
+      "n": 24,
+      "size": 0.5,
+      "inn": "bowl"
+     },
+     {
+      "id": "c",
+      "shape": "shred",
+      "c": [
+       "#F39A3D",
+       "#D9771F"
+      ],
+      "n": 30,
+      "inn": "bowl"
+     },
+     {
+      "id": "B",
+      "shape": "layer",
+      "c": [
+       "#B5605A",
+       "#B5605A"
+      ],
+      "inn": "bowl",
+      "reveal": "mix"
+     },
+     {
+      "id": "L",
+      "shape": "layer",
+      "c": [
+       "#B5605A",
+       "#7A3A26"
+      ]
+     },
+     {
+      "id": "t",
+      "shape": "layer",
+      "c": [
+       "#C8402E",
+       "#A8321F"
+      ],
+      "z": 1
+     },
+     {
+      "id": "k",
+      "shape": "slicelines",
+      "c": [
+       "#5A2A1A",
+       "#5A2A1A"
+      ],
+      "n": 4,
+      "layout": "grid",
+      "z": 2
+     },
+     {
+      "id": "h",
+      "shape": "herb",
+      "c": [
+       "#3E9A4A",
+       "#2F7A38"
+      ],
+      "n": 14,
+      "z": 3
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "meat",
+       "c": "#B5474A"
+      },
+      "500 g",
+      [
+       "carne picada de vaca",
+       "magra (5%)"
+      ]
+     ],
+     [
+      {
+       "k": "eggs"
+      },
+      "1",
+      [
+       "ovo"
+      ]
+     ],
+     [
+      {
+       "k": "sack",
+       "c": "#C9A26B"
+      },
+      "40 g",
+      [
+       "de flocos de aveia"
+      ]
+     ],
+     [
+      {
+       "k": "shape",
+       "shape": "strip",
+       "c": [
+        "#F39A3D",
+        "#D9771F"
+       ],
+       "n": 3
+      },
+      "2",
+      [
+       "cenouras raladas"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "onionw"
+      },
+      "1",
+      [
+       "cebola ralada"
+      ]
+     ],
+     [
+      {
+       "k": "jar",
+       "c": "#E8B830"
+      },
+      "1 c. chá",
+      [
+       "de mostarda"
+      ]
+     ],
+     [
+      {
+       "k": "can",
+       "c": "#C8402E"
+      },
+      "120 g",
+      [
+       "de tomate triturado"
+      ]
+     ],
+     [
+      {
+       "k": "spices"
+      },
+      "a gosto",
+      [
+       "alho, salsa, sal e pimenta"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "preheat",
+      "temp": 190,
+      "title": [
+       "Pré-aquece",
+       "o forno"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "bowl",
+      "title": [
+       "Mistura",
+       "tudo"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "m"
+        ],
+        "text": [
+         "500 g de carne picada"
+        ]
+       },
+       {
+        "groups": [
+         "e",
+         "a"
+        ],
+        "text": [
+         "Ovo e aveia"
+        ]
+       },
+       {
+        "groups": [
+         "c"
+        ],
+        "text": [
+         "Cenoura e cebola raladas"
+        ]
+       }
+      ],
+      "mix": "batter",
+      "mixText": [
+       "Mistura com as mãos"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Molda",
+       "na forma"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "L"
+        ],
+        "text": [
+         "Calca bem na forma"
+        ]
+       },
+       {
+        "groups": [
+         "t"
+        ],
+        "text": [
+         "Tomate por cima"
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 190,
+      "minutes": 45,
+      "label": "45",
+      "sub": "minutos",
+      "after": "Firme e suculento."
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Repousa",
+       "e fatia"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "k"
+        ],
+        "text": [
+         "10 min e corta 8 fatias"
+        ]
+       },
+       {
+        "groups": [
+         "h"
+        ],
+        "text": [
+         "Salsa picada"
+        ]
+       }
+      ],
+      "done": "Pronto! Bom apetite."
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 270,
+    "protein": 31,
+    "carbs": 15,
+    "fat": 9,
+    "fiber": 3
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Carne picada de vaca magra",
+     "g": 500,
+     "kcal": 685,
+     "protein": 105
+    },
+    {
+     "item": "Ovo",
+     "g": 55,
+     "kcal": 79,
+     "protein": 7
+    },
+    {
+     "item": "Flocos de aveia",
+     "g": 40,
+     "kcal": 152,
+     "protein": 5
+    },
+    {
+     "item": "Cenoura ralada",
+     "g": 160,
+     "kcal": 66,
+     "protein": 1
+    },
+    {
+     "item": "Cebola ralada",
+     "g": 120,
+     "kcal": 48,
+     "protein": 1
+    },
+    {
+     "item": "Mostarda",
+     "g": 5,
+     "kcal": 3,
+     "protein": 0
+    },
+    {
+     "item": "Tomate triturado",
+     "g": 120,
+     "kcal": 38,
+     "protein": 2
+    }
+   ],
+   "proteinPer100kcal": 11.4,
+   "totalMin": 60,
+   "costPerServing": 1.6,
+   "cost": "€€",
+   "glutenFree": false,
+   "vegetarian": false,
+   "foods": [
+    "vaca5",
+    "ovo",
+    "aveia",
+    "cenoura",
+    "cebola",
+    "mostarda",
+    "tomate_lata"
+   ],
+   "videoFile": "videos/rolo-carne-vaca-cenoura.mp4"
+  },
+  {
+   "id": "porco-grao-pimentos-colorau",
+   "title": "Porco com grão, pimentos e colorau no tabuleiro",
+   "short": "Porco com grão e colorau",
+   "protein": "Vaca/Porco",
+   "meal": "Prato principal",
+   "servings": 4,
+   "handsOn": 15,
+   "ovenMax": 30,
+   "oven": "30 min",
+   "temp": 200,
+   "tags": [
+    "tabuleiro único",
+    "grão",
+    "sabores portugueses",
+    "sem glúten"
+   ],
+   "ingredients": [
+    {
+     "q": 500,
+     "u": "g",
+     "n": "de lombo de porco em cubos",
+     "food": "porco_lombo"
+    },
+    {
+     "q": 240,
+     "u": "g",
+     "n": "de grão-de-bico escorrido (1 lata)",
+     "food": "grao"
+    },
+    {
+     "q": 2,
+     "u": "un",
+     "n": "pimento às tiras",
+     "np": "pimentos às tiras",
+     "food": "pimento",
+     "grams": null
+    },
+    {
+     "q": 1,
+     "u": "un",
+     "n": "cebola às tiras",
+     "np": "cebolas às tiras",
+     "food": "cebola",
+     "grams": null
+    },
+    {
+     "q": 200,
+     "u": "g",
+     "n": "de tomate cherry",
+     "food": "tomate_cherry"
+    },
+    {
+     "q": 1,
+     "u": "c. sopa",
+     "n": "de azeite",
+     "food": "azeite"
+    },
+    {
+     "t": "Colorau, alho, louro, sal e pimenta a gosto"
+    },
+    {
+     "t": "Coentros picados, para servir"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Pré-aquece o forno",
+     "detail": "Liga o forno a 200 °C."
+    },
+    {
+     "title": "Tempera o porco",
+     "detail": "No tabuleiro, envolve o porco com o colorau, o alho e o azeite."
+    },
+    {
+     "title": "Junta o resto",
+     "detail": "Grão, pimentos, cebola, tomate e louro, e mexe."
+    },
+    {
+     "title": "Leva ao forno",
+     "detail": "30 minutos, mexendo a meio."
+    },
+    {
+     "title": "Serve",
+     "detail": "Com coentros por cima."
+    }
+   ],
+   "tip": "Se tiveres tempo, deixa o porco 30 minutos com o colorau e o alho: fica com sabor a vinha-d’alhos.",
+   "tips": [
+    "Um golo de vinho branco antes de ir ao forno dá um molho delicioso.",
+    "Com batata em vez de grão também resulta."
+   ],
+   "pairs": [
+    "paezinhos-quark-aveia",
+    "molho-skyr-alho-ervas",
+    "peras-assadas-canela-quark"
+   ],
+   "difficulty": "Fácil",
+   "storage": "3 dias no frigorífico",
+   "mealPrep": true,
+   "hook": "Este tem sabor a casa portuguesa: porco, colorau e alho, tudo num tabuleiro.",
+   "video": {
+    "container": "tray",
+    "groups": [
+     {
+      "id": "p",
+      "shape": "cube",
+      "c": [
+       "#EFC1B4",
+       "#C98A55"
+      ],
+      "n": 26
+     },
+     {
+      "id": "c",
+      "shape": "pea",
+      "c": [
+       "#EAD095",
+       "#C58B38"
+      ],
+      "n": 44
+     },
+     {
+      "id": "r",
+      "shape": "strip",
+      "c": [
+       "#E03A2A",
+       "#B02517"
+      ],
+      "n": 9
+     },
+     {
+      "id": "y",
+      "shape": "strip",
+      "c": [
+       "#F7C531",
+       "#DBA21A"
+      ],
+      "n": 8
+     },
+     {
+      "id": "o",
+      "shape": "arc",
+      "c": [
+       "#F1E6D2",
+       "#D9B07A"
+      ],
+      "n": 10
+     },
+     {
+      "id": "t",
+      "shape": "ball",
+      "c": [
+       "#E8432F",
+       "#C23422"
+      ],
+      "n": 12,
+      "size": 0.6
+     },
+     {
+      "id": "h",
+      "shape": "herb",
+      "c": [
+       "#3E9A4A",
+       "#2F7A38"
+      ],
+      "n": 28,
+      "z": 1
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "meat",
+       "c": "#E9A496"
+      },
+      "500 g",
+      [
+       "lombo de porco em cubos"
+      ]
+     ],
+     [
+      {
+       "k": "can",
+       "c": "#D9A441"
+      },
+      "1 lata",
+      [
+       "de grão (240 g escorrido)"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "pepper"
+      },
+      "2",
+      [
+       "pimentos"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "onionw"
+      },
+      "1",
+      [
+       "cebola"
+      ]
+     ],
+     [
+      {
+       "k": "shape",
+       "shape": "ball",
+       "c": [
+        "#E8432F",
+        "#C23422"
+       ],
+       "n": 3
+      },
+      "200 g",
+      [
+       "tomate cherry"
+      ]
+     ],
+     [
+      {
+       "k": "bottle"
+      },
+      "1 c. sopa",
+      [
+       "de azeite"
+      ]
+     ],
+     [
+      {
+       "k": "spices",
+       "c": [
+        "#C0392B",
+        "#F3E3C3",
+        "#5F8F3E"
+       ]
+      },
+      "a gosto",
+      [
+       "colorau, alho e louro"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "preheat",
+      "temp": 200,
+      "title": [
+       "Pré-aquece",
+       "o forno"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Tudo no",
+       "tabuleiro"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "p"
+        ],
+        "text": [
+         "Porco com colorau e alho"
+        ]
+       },
+       {
+        "groups": [
+         "c",
+         "r",
+         "y",
+         "o",
+         "t"
+        ],
+        "text": [
+         "Grão, pimentos, cebola e tomate"
+        ]
+       },
+       {
+        "fx": "oil",
+        "text": [
+         "1 c. sopa de azeite"
+        ]
+       },
+       {
+        "fx": "spice",
+        "text": [
+         "Louro, sal e pimenta"
+        ],
+        "spice": [
+         "#C0392B",
+         "#5F8F3E",
+         "#F3E3C3"
+        ]
+       }
+      ],
+      "mix": true,
+      "mixText": [
+       "Envolve tudo"
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 200,
+      "minutes": 30,
+      "label": "30",
+      "sub": "minutos",
+      "mid": "Mexe a meio do tempo!",
+      "after": "Porco dourado, grão tostadinho."
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Coentros",
+       "por cima"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "h"
+        ],
+        "text": [
+         "Coentros picados"
+        ]
+       }
+      ],
+      "done": "Pronto! Bom apetite."
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 330,
+    "protein": 32,
+    "carbs": 23,
+    "fat": 12,
+    "fiber": 7
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Lombo de porco em cubos",
+     "g": 500,
+     "kcal": 715,
+     "protein": 107
+    },
+    {
+     "item": "Grão-de-bico escorrido",
+     "g": 240,
+     "kcal": 334,
+     "protein": 17
+    },
+    {
+     "item": "Pimento às tiras",
+     "g": 300,
+     "kcal": 81,
+     "protein": 3
+    },
+    {
+     "item": "Cebola às tiras",
+     "g": 120,
+     "kcal": 48,
+     "protein": 1
+    },
+    {
+     "item": "Tomate cherry",
+     "g": 200,
+     "kcal": 36,
+     "protein": 2
+    },
+    {
+     "item": "Azeite",
+     "g": 13,
+     "kcal": 115,
+     "protein": 0
+    }
+   ],
+   "proteinPer100kcal": 9.8,
+   "totalMin": 45,
+   "costPerServing": 1.52,
+   "cost": "€€",
+   "glutenFree": true,
+   "vegetarian": false,
+   "freezer": false,
+   "foods": [
+    "porco_lombo",
+    "grao",
+    "pimento",
+    "cebola",
+    "tomate_cherry",
+    "azeite"
+   ],
+   "videoFile": "videos/porco-grao-pimentos-colorau.mp4"
+  },
+  {
+   "id": "lentilhas-abobora-espinafres-ovos",
+   "title": "Lentilhas no forno com abóbora, espinafres e ovos",
+   "short": "Lentilhas com abóbora e ovos",
+   "protein": "Vegetariano/Leguminosas",
+   "meal": "Prato principal",
+   "servings": 4,
+   "handsOn": 15,
+   "ovenMax": 32,
+   "oven": "20 + 12 min",
+   "temp": 200,
+   "tags": [
+    "vegetariano",
+    "lentilhas",
+    "abóbora",
+    "muita fibra",
+    "sem glúten"
+   ],
+   "ingredients": [
+    {
+     "q": 480,
+     "u": "g",
+     "n": "de lentilhas cozidas escorridas (2 frascos)",
+     "food": "lentilhas"
+    },
+    {
+     "q": 400,
+     "u": "g",
+     "n": "de abóbora em cubos",
+     "food": "abobora"
+    },
+    {
+     "q": 400,
+     "u": "g",
+     "n": "de tomate triturado",
+     "food": "tomate_lata"
+    },
+    {
+     "q": 1,
+     "u": "un",
+     "n": "cebola picada",
+     "np": "cebolas picadas",
+     "food": "cebola",
+     "grams": null
+    },
+    {
+     "q": 100,
+     "u": "g",
+     "n": "de espinafres baby",
+     "food": "espinafres"
+    },
+    {
+     "q": 6,
+     "u": "un",
+     "n": "ovo",
+     "np": "ovos",
+     "food": "ovo",
+     "grams": null
+    },
+    {
+     "q": 120,
+     "u": "g",
+     "n": "de queijo fresco magro esfarelado",
+     "food": "queijo_fresco"
+    },
+    {
+     "t": "Alho, cominhos, curcuma, sal e coentros a gosto"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Pré-aquece o forno",
+     "detail": "Liga o forno a 200 °C."
+    },
+    {
+     "title": "Monta a travessa",
+     "detail": "Tomate, lentilhas, abóbora, cebola e especiarias; mexe bem."
+    },
+    {
+     "title": "Primeira fornada",
+     "detail": "20 minutos, até a abóbora amaciar."
+    },
+    {
+     "title": "Espinafres e ovos",
+     "detail": "Mistura os espinafres, abre 6 covas e parte um ovo em cada."
+    },
+    {
+     "title": "Segunda fornada",
+     "detail": "10 a 12 minutos, até as claras firmarem."
+    },
+    {
+     "title": "Serve",
+     "detail": "Com queijo fresco esfarelado e coentros."
+    }
+   ],
+   "tip": "Tira a travessa quando as claras estiverem firmes mas as gemas ainda tremerem: acabam de cozer fora do forno.",
+   "tips": [
+    "Sem ovos, junta tofu em cubos na primeira fornada.",
+    "Fica ótimo com uma fatia de pão proteico para molhar."
+   ],
+   "pairs": [
+    "pao-proteico-cottage-aveia",
+    "paezinhos-quark-aveia",
+    "peras-assadas-canela-quark"
+   ],
+   "difficulty": "Fácil",
+   "storage": "2 dias no frigorífico (melhor acabado de fazer)",
+   "mealPrep": false,
+   "hook": "Um prato vegetariano que enche a barriga: lentilhas, abóbora e ovos a cozer no molho.",
+   "video": {
+    "container": "round",
+    "groups": [
+     {
+      "id": "t",
+      "shape": "layer",
+      "c": [
+       "#C8402E",
+       "#A8321F"
+      ]
+     },
+     {
+      "id": "l",
+      "shape": "pea",
+      "c": [
+       "#A8743E",
+       "#6E4A26"
+      ],
+      "n": 80,
+      "size": 0.5
+     },
+     {
+      "id": "a",
+      "shape": "cube",
+      "c": [
+       "#F7A540",
+       "#E07B1F"
+      ],
+      "n": 20,
+      "size": 0.8
+     },
+     {
+      "id": "o",
+      "shape": "arc",
+      "c": [
+       "#F1E6D2",
+       "#D9B07A"
+      ],
+      "n": 8,
+      "size": 0.7
+     },
+     {
+      "id": "s",
+      "shape": "leaf",
+      "c": [
+       "#3F8F3A",
+       "#2C5F25"
+      ],
+      "n": 22,
+      "z": 1
+     },
+     {
+      "id": "e",
+      "shape": "egg",
+      "c": [
+       "#FFFFFF",
+       "#FFF6E6"
+      ],
+      "n": 6,
+      "layout": "grid",
+      "z": 2
+     },
+     {
+      "id": "q",
+      "shape": "curd",
+      "c": [
+       "#FFFFFF",
+       "#F6E6C8"
+      ],
+      "n": 9,
+      "z": 3
+     },
+     {
+      "id": "h",
+      "shape": "herb",
+      "c": [
+       "#3E9A4A",
+       "#2F7A38"
+      ],
+      "n": 24,
+      "z": 4
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "can",
+       "c": "#8A5A2E"
+      },
+      "480 g",
+      [
+       "de lentilhas cozidas"
+      ]
+     ],
+     [
+      {
+       "k": "shape",
+       "shape": "cube",
+       "c": [
+        "#F7A540",
+        "#E07B1F"
+       ],
+       "n": 3
+      },
+      "400 g",
+      [
+       "de abóbora em cubos"
+      ]
+     ],
+     [
+      {
+       "k": "can",
+       "c": "#C8402E"
+      },
+      "400 g",
+      [
+       "de tomate triturado"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "onionw"
+      },
+      "1",
+      [
+       "cebola"
+      ]
+     ],
+     [
+      {
+       "k": "shape",
+       "shape": "leaf",
+       "c": [
+        "#3F8F3A",
+        "#2C5F25"
+       ],
+       "n": 4
+      },
+      "100 g",
+      [
+       "de espinafres baby"
+      ]
+     ],
+     [
+      {
+       "k": "eggs"
+      },
+      "6",
+      [
+       "ovos"
+      ]
+     ],
+     [
+      {
+       "k": "cheese",
+       "c": "#FFFBEF"
+      },
+      "120 g",
+      [
+       "de queijo fresco magro"
+      ]
+     ],
+     [
+      {
+       "k": "spices",
+       "c": [
+        "#E0A42A",
+        "#F3C14A",
+        "#C9852F"
+       ]
+      },
+      "a gosto",
+      [
+       "cominhos, curcuma e alho"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "preheat",
+      "temp": 200,
+      "title": [
+       "Pré-aquece",
+       "o forno"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Monta a",
+       "travessa"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "t"
+        ],
+        "text": [
+         "Tomate triturado"
+        ]
+       },
+       {
+        "groups": [
+         "l",
+         "a",
+         "o"
+        ],
+        "text": [
+         "Lentilhas, abóbora e cebola"
+        ]
+       },
+       {
+        "fx": "spice",
+        "text": [
+         "Cominhos, curcuma e alho"
+        ],
+        "spice": [
+         "#E0A42A",
+         "#F3C14A",
+         "#C9852F",
+         "#FFF4DE"
+        ]
+       }
+      ],
+      "mix": true,
+      "mixText": [
+       "Mexe bem"
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 200,
+      "minutes": 20,
+      "label": "20",
+      "sub": "minutos",
+      "cookTo": 0.4,
+      "after": "A abóbora amacia."
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Espinafres",
+       "e ovos"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "s"
+        ],
+        "text": [
+         "Espinafres misturados"
+        ]
+       },
+       {
+        "groups": [
+         "e"
+        ],
+        "text": [
+         "Abre 6 covas e parte",
+         "um ovo em cada"
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 200,
+      "minutes": 12,
+      "label": "10–12",
+      "sub": "minutos",
+      "cookTo": 0.6,
+      "after": "Claras firmes, gemas cremosas."
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Queijo fresco",
+       "e coentros"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "q"
+        ],
+        "text": [
+         "Queijo fresco esfarelado"
+        ]
+       },
+       {
+        "groups": [
+         "h"
+        ],
+        "text": [
+         "Coentros"
+        ]
+       }
+      ],
+      "done": "Pronto! Bom apetite."
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 380,
+    "protein": 28,
+    "carbs": 47,
+    "fat": 10,
+    "fiber": 14
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Lentilhas cozidas escorridas",
+     "g": 480,
+     "kcal": 557,
+     "protein": 43
+    },
+    {
+     "item": "Abóbora em cubos",
+     "g": 400,
+     "kcal": 180,
+     "protein": 4
+    },
+    {
+     "item": "Tomate triturado",
+     "g": 400,
+     "kcal": 128,
+     "protein": 6
+    },
+    {
+     "item": "Cebola picada",
+     "g": 120,
+     "kcal": 48,
+     "protein": 1
+    },
+    {
+     "item": "Espinafres baby",
+     "g": 100,
+     "kcal": 23,
+     "protein": 3
+    },
+    {
+     "item": "Ovo",
+     "g": 330,
+     "kcal": 472,
+     "protein": 42
+    },
+    {
+     "item": "Queijo fresco magro esfarelado",
+     "g": 120,
+     "kcal": 114,
+     "protein": 13
+    }
+   ],
+   "proteinPer100kcal": 7.4,
+   "totalMin": 47,
+   "costPerServing": 1.49,
+   "cost": "€",
+   "glutenFree": true,
+   "vegetarian": true,
+   "freezer": false,
+   "foods": [
+    "lentilhas",
+    "abobora",
+    "tomate_lata",
+    "cebola",
+    "espinafres",
+    "ovo",
+    "queijo_fresco"
+   ],
+   "videoFile": "videos/lentilhas-abobora-espinafres-ovos.mp4"
+  },
+  {
+   "id": "sardinhas-batata-pimentos",
+   "title": "Tabuleiro de batata e pimentos com sardinhas em lata",
+   "short": "Batata e pimentos com sardinhas",
+   "protein": "Peixe",
+   "meal": "Prato principal",
+   "servings": 2,
+   "handsOn": 10,
+   "ovenMax": 33,
+   "oven": "25 + 8 min",
+   "temp": 200,
+   "tags": [
+    "sardinha",
+    "despensa",
+    "ómega-3",
+    "sem glúten"
+   ],
+   "ingredients": [
+    {
+     "q": 300,
+     "u": "g",
+     "n": "de batata em rodelas finas",
+     "food": "batata"
+    },
+    {
+     "q": 2,
+     "u": "un",
+     "n": "pimento às tiras",
+     "np": "pimentos às tiras",
+     "food": "pimento",
+     "grams": null
+    },
+    {
+     "q": 1,
+     "u": "un",
+     "n": "cebola roxa às tiras",
+     "np": "cebolas roxas às tiras",
+     "food": "cebola",
+     "grams": null
+    },
+    {
+     "q": 0.5,
+     "u": "c. sopa",
+     "n": "de azeite",
+     "food": "azeite"
+    },
+    {
+     "q": 250,
+     "u": "g",
+     "n": "de sardinhas em lata escorridas (3 latas)",
+     "food": "sardinha_lata"
+    },
+    {
+     "q": 150,
+     "u": "g",
+     "n": "de tomate cherry",
+     "food": "tomate_cherry"
+    },
+    {
+     "t": "Alho, orégãos, salsa, limão e sal a gosto"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Pré-aquece o forno",
+     "detail": "Liga o forno a 200 °C."
+    },
+    {
+     "title": "Batata e pimentos",
+     "detail": "Batata, pimentos e cebola com o azeite, o alho e os orégãos; 25 minutos no forno."
+    },
+    {
+     "title": "Junta as sardinhas",
+     "detail": "Sardinhas inteiras e tomate cherry por cima."
+    },
+    {
+     "title": "Mais 8 minutos",
+     "detail": "Só para aquecer as sardinhas e rebentar o tomate."
+    },
+    {
+     "title": "Serve",
+     "detail": "Com salsa e um fio de limão."
+    }
+   ],
+   "tip": "Escolhe sardinhas em azeite ou em tomate e escorre bem: o sabor fica, a gordura extra não.",
+   "tips": [
+    "As sardinhas em lata têm cálcio das espinhas e ómega-3: é um peixe barato e muito nutritivo.",
+    "Também resulta com cavala em lata."
+   ],
+   "pairs": [
+    "molho-skyr-alho-ervas",
+    "paezinhos-quark-aveia"
+   ],
+   "difficulty": "Fácil",
+   "storage": "1 dia no frigorífico (melhor na hora)",
+   "mealPrep": false,
+   "hook": "Sardinhas em lata no forno? Confia em mim: é rápido, barato e fica uma delícia.",
+   "video": {
+    "container": "tray",
+    "groups": [
+     {
+      "id": "p",
+      "shape": "slice",
+      "c": [
+       "#F2D98A",
+       "#D9A441"
+      ],
+      "n": 24
+     },
+     {
+      "id": "r",
+      "shape": "strip",
+      "c": [
+       "#E03A2A",
+       "#B02517"
+      ],
+      "n": 8
+     },
+     {
+      "id": "y",
+      "shape": "strip",
+      "c": [
+       "#F7C531",
+       "#DBA21A"
+      ],
+      "n": 7
+     },
+     {
+      "id": "o",
+      "shape": "arc",
+      "c": [
+       "#B05EAA",
+       "#7C3C7C"
+      ],
+      "n": 10
+     },
+     {
+      "id": "s",
+      "shape": "fillet",
+      "c": [
+       "#A9BBC7",
+       "#6C7F8C"
+      ],
+      "n": 6,
+      "layout": "grid",
+      "z": 1,
+      "size": 0.55
+     },
+     {
+      "id": "t",
+      "shape": "ball",
+      "c": [
+       "#E8432F",
+       "#C23422"
+      ],
+      "n": 10,
+      "z": 1,
+      "size": 0.6
+     },
+     {
+      "id": "l",
+      "shape": "lemon",
+      "c": [
+       "#F7D544",
+       "#E9C030"
+      ],
+      "n": 3,
+      "layout": "grid",
+      "z": 2
+     },
+     {
+      "id": "h",
+      "shape": "herb",
+      "c": [
+       "#3E9A4A",
+       "#2F7A38"
+      ],
+      "n": 22,
+      "z": 3
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "fruit",
+       "f": "potato"
+      },
+      "300 g",
+      [
+       "batata em rodelas"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "pepper"
+      },
+      "2",
+      [
+       "pimentos"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "onion"
+      },
+      "1",
+      [
+       "cebola roxa"
+      ]
+     ],
+     [
+      {
+       "k": "bottle"
+      },
+      "½ c. sopa",
+      [
+       "de azeite"
+      ]
+     ],
+     [
+      {
+       "k": "can",
+       "c": "#3D6E9E"
+      },
+      "3 latas",
+      [
+       "de sardinhas",
+       "(250 g escorridas)"
+      ]
+     ],
+     [
+      {
+       "k": "shape",
+       "shape": "ball",
+       "c": [
+        "#E8432F",
+        "#C23422"
+       ],
+       "n": 3
+      },
+      "150 g",
+      [
+       "tomate cherry"
+      ]
+     ],
+     [
+      {
+       "k": "spices"
+      },
+      "a gosto",
+      [
+       "alho, orégãos, salsa e limão"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "preheat",
+      "temp": 200,
+      "title": [
+       "Pré-aquece",
+       "o forno"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Batata e",
+       "pimentos"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "p"
+        ],
+        "text": [
+         "Batata em rodelas"
+        ]
+       },
+       {
+        "groups": [
+         "r",
+         "y",
+         "o"
+        ],
+        "text": [
+         "Pimentos e cebola roxa"
+        ]
+       },
+       {
+        "fx": "oil",
+        "text": [
+         "Azeite, alho e orégãos"
+        ]
+       }
+      ],
+      "mix": true,
+      "mixText": [
+       "Espalha bem"
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 200,
+      "minutes": 25,
+      "label": "25",
+      "sub": "minutos",
+      "cookTo": 0.6,
+      "after": "A batata começa a dourar."
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Junta as",
+       "sardinhas"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "s"
+        ],
+        "text": [
+         "Sardinhas inteiras"
+        ]
+       },
+       {
+        "groups": [
+         "t"
+        ],
+        "text": [
+         "Tomate cherry"
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 200,
+      "minutes": 8,
+      "label": "+8",
+      "sub": "minutos",
+      "cookTo": 0.8,
+      "after": "Só para aquecer."
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Limão",
+       "e salsa"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "l"
+        ],
+        "text": [
+         "Um fio de limão"
+        ]
+       },
+       {
+        "groups": [
+         "h"
+        ],
+        "text": [
+         "Salsa picada"
+        ]
+       }
+      ],
+      "done": "Pronto! Bom apetite."
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 480,
+    "protein": 37,
+    "carbs": 43,
+    "fat": 18,
+    "fiber": 8
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Batata em rodelas finas",
+     "g": 300,
+     "kcal": 231,
+     "protein": 6
+    },
+    {
+     "item": "Pimento às tiras",
+     "g": 300,
+     "kcal": 81,
+     "protein": 3
+    },
+    {
+     "item": "Cebola roxa às tiras",
+     "g": 120,
+     "kcal": 48,
+     "protein": 1
+    },
+    {
+     "item": "Azeite",
+     "g": 6,
+     "kcal": 57,
+     "protein": 0
+    },
+    {
+     "item": "Sardinhas em lata escorridas",
+     "g": 250,
+     "kcal": 520,
+     "protein": 62
+    },
+    {
+     "item": "Tomate cherry",
+     "g": 150,
+     "kcal": 27,
+     "protein": 1
+    }
+   ],
+   "proteinPer100kcal": 7.6,
+   "totalMin": 43,
+   "costPerServing": 2.53,
+   "cost": "€€",
+   "glutenFree": true,
+   "vegetarian": false,
+   "freezer": false,
+   "foods": [
+    "batata",
+    "pimento",
+    "cebola",
+    "azeite",
+    "sardinha_lata",
+    "tomate_cherry"
+   ],
+   "videoFile": "videos/sardinhas-batata-pimentos.mp4"
+  },
+  {
+   "id": "salmao-mostarda-mel-feijao-verde",
+   "title": "Salmão com mostarda e mel, batata-doce e feijão-verde",
+   "short": "Salmão com mostarda e mel",
+   "protein": "Peixe",
+   "meal": "Prato principal",
+   "servings": 4,
+   "handsOn": 10,
+   "ovenMax": 27,
+   "oven": "15 + 12 min",
+   "temp": 200,
+   "tags": [
+    "salmão",
+    "ómega-3",
+    "batata-doce",
+    "sem glúten"
+   ],
+   "ingredients": [
+    {
+     "q": 400,
+     "u": "g",
+     "n": "de batata-doce em cubos",
+     "food": "batata_doce"
+    },
+    {
+     "q": 0.5,
+     "u": "c. sopa",
+     "n": "de azeite",
+     "food": "azeite"
+    },
+    {
+     "q": 400,
+     "u": "g",
+     "n": "de feijão-verde",
+     "food": "feijao_verde"
+    },
+    {
+     "q": 500,
+     "u": "g",
+     "n": "de lombos de salmão sem pele",
+     "food": "salmao"
+    },
+    {
+     "q": 2,
+     "u": "c. sopa",
+     "n": "de mostarda",
+     "food": "mostarda"
+    },
+    {
+     "q": 1,
+     "u": "c. sopa",
+     "n": "de mel",
+     "food": "mel"
+    },
+    {
+     "q": 100,
+     "u": "g",
+     "n": "de skyr natural",
+     "food": "skyr"
+    },
+    {
+     "q": 1,
+     "u": "c. sopa",
+     "n": "de sumo de limão",
+     "food": "limao"
+    },
+    {
+     "t": "Alho, endro, sal e pimenta a gosto"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Pré-aquece o forno",
+     "detail": "Liga o forno a 200 °C."
+    },
+    {
+     "title": "Batata-doce primeiro",
+     "detail": "Com o azeite e sal; 15 minutos no forno."
+    },
+    {
+     "title": "Junta o resto",
+     "detail": "Feijão-verde à volta e salmão no meio, pincelado com mostarda, mel, skyr e limão."
+    },
+    {
+     "title": "Mais 12 minutos",
+     "detail": "Até o salmão lascar com o garfo."
+    },
+    {
+     "title": "Serve",
+     "detail": "Com endro fresco."
+    }
+   ],
+   "tip": "Guarda uma colher do molho de mostarda e mel para pôr por cima já no prato.",
+   "tips": [
+    "Funciona com lombos de bacalhau fresco ou de pescada.",
+    "Usa feijão-verde congelado: vai direto ao tabuleiro."
+   ],
+   "pairs": [
+    "molho-verde-ervilhas-skyr",
+    "brownie-feijao-preto-cacau"
+   ],
+   "difficulty": "Fácil",
+   "storage": "2 dias no frigorífico",
+   "mealPrep": true,
+   "hook": "Salmão com um molhinho de mostarda e mel que fica brilhante e caramelizado.",
+   "video": {
+    "container": "tray",
+    "groups": [
+     {
+      "id": "b",
+      "shape": "cube",
+      "c": [
+       "#F7A540",
+       "#D8701B"
+      ],
+      "n": 24,
+      "size": 0.85
+     },
+     {
+      "id": "v",
+      "shape": "greenbean",
+      "c": [
+       "#5DA543",
+       "#3F7F2E"
+      ],
+      "n": 22
+     },
+     {
+      "id": "s",
+      "shape": "fillet",
+      "c": [
+       "#F7896B",
+       "#F2A98A"
+      ],
+      "n": 4,
+      "layout": "grid",
+      "z": 1
+     },
+     {
+      "id": "y",
+      "shape": "blob",
+      "c": [
+       "#F2D34F",
+       "#D9A82E"
+      ],
+      "n": 4,
+      "layout": "grid",
+      "z": 2,
+      "size": 0.6
+     },
+     {
+      "id": "h",
+      "shape": "herb",
+      "c": [
+       "#3E9A4A",
+       "#2F7A38"
+      ],
+      "n": 22,
+      "z": 3
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "fruit",
+       "f": "sweet"
+      },
+      "400 g",
+      [
+       "batata-doce em cubos"
+      ]
+     ],
+     [
+      {
+       "k": "shape",
+       "shape": "greenbean",
+       "c": [
+        "#5DA543",
+        "#3F7F2E"
+       ],
+       "n": 3
+      },
+      "400 g",
+      [
+       "de feijão-verde"
+      ]
+     ],
+     [
+      {
+       "k": "fish"
+      },
+      "500 g",
+      [
+       "lombos de salmão"
+      ]
+     ],
+     [
+      {
+       "k": "jar",
+       "c": "#E8B830"
+      },
+      "2 c. sopa",
+      [
+       "de mostarda"
+      ]
+     ],
+     [
+      {
+       "k": "jar",
+       "c": "#E5A82E"
+      },
+      "1 c. sopa",
+      [
+       "de mel"
+      ]
+     ],
+     [
+      {
+       "k": "tub",
+       "c": "#5B7BA8"
+      },
+      "100 g",
+      [
+       "de skyr natural"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "lemon"
+      },
+      "1 c. sopa",
+      [
+       "de sumo de limão"
+      ]
+     ],
+     [
+      {
+       "k": "spices"
+      },
+      "a gosto",
+      [
+       "alho, endro, sal e pimenta"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "preheat",
+      "temp": 200,
+      "title": [
+       "Pré-aquece",
+       "o forno"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Batata-doce",
+       "primeiro"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "b"
+        ],
+        "text": [
+         "Batata-doce em cubos"
+        ]
+       },
+       {
+        "fx": "oil",
+        "text": [
+         "Azeite e sal"
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 200,
+      "minutes": 15,
+      "label": "15",
+      "sub": "minutos",
+      "cookTo": 0.45,
+      "after": "Começa a dourar."
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Salmão e",
+       "feijão-verde"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "v"
+        ],
+        "text": [
+         "Feijão-verde à volta"
+        ]
+       },
+       {
+        "groups": [
+         "s"
+        ],
+        "text": [
+         "Salmão no meio"
+        ]
+       },
+       {
+        "groups": [
+         "y"
+        ],
+        "text": [
+         "Mostarda, mel e skyr"
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 200,
+      "minutes": 12,
+      "label": "+12",
+      "sub": "minutos",
+      "cookTo": 0.85,
+      "after": "O salmão lasca com o garfo."
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Endro",
+       "fresco"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "h"
+        ],
+        "text": [
+         "Endro por cima"
+        ]
+       }
+      ],
+      "done": "Pronto! Bom apetite."
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 430,
+    "protein": 31,
+    "carbs": 33,
+    "fat": 18,
+    "fiber": 6
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Batata-doce em cubos",
+     "g": 400,
+     "kcal": 344,
+     "protein": 6
+    },
+    {
+     "item": "Azeite",
+     "g": 6,
+     "kcal": 57,
+     "protein": 0
+    },
+    {
+     "item": "Feijão-verde",
+     "g": 400,
+     "kcal": 124,
+     "protein": 7
+    },
+    {
+     "item": "Lombos de salmão sem pele",
+     "g": 500,
+     "kcal": 1040,
+     "protein": 100
+    },
+    {
+     "item": "Mostarda",
+     "g": 30,
+     "kcal": 20,
+     "protein": 1
+    },
+    {
+     "item": "Mel",
+     "g": 20,
+     "kcal": 61,
+     "protein": 0
+    },
+    {
+     "item": "Skyr natural",
+     "g": 100,
+     "kcal": 63,
+     "protein": 11
+    },
+    {
+     "item": "Sumo de limão",
+     "g": 15,
+     "kcal": 3,
+     "protein": 0
+    }
+   ],
+   "proteinPer100kcal": 7.4,
+   "totalMin": 37,
+   "costPerServing": 3.11,
+   "cost": "€€€",
+   "glutenFree": true,
+   "vegetarian": false,
+   "freezer": false,
+   "foods": [
+    "batata_doce",
+    "azeite",
+    "feijao_verde",
+    "salmao",
+    "mostarda",
+    "mel",
+    "skyr",
+    "limao"
+   ],
+   "videoFile": "videos/salmao-mostarda-mel-feijao-verde.mp4"
+  },
+  {
+   "id": "aveia-forno-maca-canela-skyr",
+   "title": "Papas de aveia no forno com maçã, canela e skyr",
+   "short": "Aveia no forno com maçã",
+   "protein": "Ovos/Queijo",
+   "meal": "Pequeno-almoço",
+   "servings": 2,
+   "handsOn": 5,
+   "ovenMax": 25,
+   "oven": "25 min",
+   "temp": 190,
+   "tags": [
+    "pequeno-almoço",
+    "baked oats",
+    "skyr",
+    "maçã"
+   ],
+   "ingredients": [
+    {
+     "q": 80,
+     "u": "g",
+     "n": "de flocos de aveia",
+     "food": "aveia"
+    },
+    {
+     "q": 100,
+     "u": "g",
+     "n": "de leite magro",
+     "food": "leite_magro"
+    },
+    {
+     "q": 200,
+     "u": "g",
+     "n": "de skyr natural",
+     "food": "skyr"
+    },
+    {
+     "q": 2,
+     "u": "un",
+     "n": "ovo",
+     "np": "ovos",
+     "food": "ovo",
+     "grams": null
+    },
+    {
+     "q": 1,
+     "u": "un",
+     "n": "maçã em cubos",
+     "np": "maçãs em cubos",
+     "food": "maca",
+     "grams": null
+    },
+    {
+     "t": "Canela, baunilha e adoçante a gosto"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Pré-aquece o forno",
+     "detail": "Liga o forno a 190 °C."
+    },
+    {
+     "title": "Mistura a massa",
+     "detail": "Aveia, leite, metade do skyr, ovos, canela e baunilha numa taça."
+    },
+    {
+     "title": "Verte e junta a maçã",
+     "detail": "Numa travessa pequena, com a maçã por cima."
+    },
+    {
+     "title": "Leva ao forno",
+     "detail": "25 minutos, até ficar firme e dourada."
+    },
+    {
+     "title": "Serve",
+     "detail": "Morna, com o resto do skyr."
+    }
+   ],
+   "tip": "Prepara a massa à noite e guarda no frigorífico: de manhã é só levar ao forno.",
+   "tips": [
+    "Troca a maçã por pera, banana ou frutos vermelhos.",
+    "Fria, corta-se em barras para levar."
+   ],
+   "pairs": [
+    "molho-mostarda-mel-cottage"
+   ],
+   "difficulty": "Fácil",
+   "storage": "3 dias no frigorífico",
+   "mealPrep": true,
+   "hook": "Papas de aveia no forno sabem a bolo de maçã, mas são um pequeno-almoço cheio de proteína.",
+   "video": {
+    "container": "round",
+    "groups": [
+     {
+      "id": "a",
+      "shape": "pea",
+      "c": [
+       "#E6D2A8",
+       "#E6D2A8"
+      ],
+      "n": 40,
+      "size": 0.55,
+      "inn": "bowl"
+     },
+     {
+      "id": "y",
+      "shape": "blob",
+      "c": [
+       "#FFFFFF",
+       "#F6E6C8"
+      ],
+      "n": 5,
+      "inn": "bowl",
+      "size": 1.1
+     },
+     {
+      "id": "e",
+      "shape": "yolk",
+      "c": [
+       "#F7B32B",
+       "#F7B32B"
+      ],
+      "n": 2,
+      "layout": "grid",
+      "inn": "bowl"
+     },
+     {
+      "id": "B",
+      "shape": "layer",
+      "c": [
+       "#E9D9B8",
+       "#E9D9B8"
+      ],
+      "inn": "bowl",
+      "reveal": "mix"
+     },
+     {
+      "id": "L",
+      "shape": "layer",
+      "c": [
+       "#EAD3A6",
+       "#C08A48"
+      ]
+     },
+     {
+      "id": "m",
+      "shape": "cube",
+      "c": [
+       "#F4E6B5",
+       "#D9A85B"
+      ],
+      "n": 18,
+      "z": 1,
+      "size": 0.7
+     },
+     {
+      "id": "k",
+      "shape": "blob",
+      "c": [
+       "#FFFFFF",
+       "#F6E6C8"
+      ],
+      "n": 2,
+      "layout": "grid",
+      "z": 2,
+      "size": 1.1
+     },
+     {
+      "id": "h",
+      "shape": "herb",
+      "c": [
+       "#3E9A4A",
+       "#2F7A38"
+      ],
+      "n": 6,
+      "z": 3,
+      "size": 0.7
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "sack",
+       "c": "#C9A26B"
+      },
+      "80 g",
+      [
+       "de flocos de aveia"
+      ]
+     ],
+     [
+      {
+       "k": "jar",
+       "c": "#F2EEE2"
+      },
+      "100 g",
+      [
+       "de leite magro"
+      ]
+     ],
+     [
+      {
+       "k": "tub",
+       "c": "#5B7BA8"
+      },
+      "200 g",
+      [
+       "de skyr natural"
+      ]
+     ],
+     [
+      {
+       "k": "eggs"
+      },
+      "2",
+      [
+       "ovos"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "apple"
+      },
+      "1",
+      [
+       "maçã em cubos"
+      ]
+     ],
+     [
+      {
+       "k": "spices",
+       "c": [
+        "#8A4B22",
+        "#B7793D",
+        "#F3E3C3"
+       ]
+      },
+      "a gosto",
+      [
+       "canela e baunilha"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "preheat",
+      "temp": 190,
+      "title": [
+       "Pré-aquece",
+       "o forno"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "bowl",
+      "title": [
+       "Mistura",
+       "a massa"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "a"
+        ],
+        "text": [
+         "Aveia e leite"
+        ]
+       },
+       {
+        "groups": [
+         "y",
+         "e"
+        ],
+        "text": [
+         "Skyr e 2 ovos"
+        ]
+       },
+       {
+        "fx": "spice",
+        "text": [
+         "Canela e baunilha"
+        ],
+        "spice": [
+         "#8A4B22",
+         "#B7793D",
+         "#F3E3C3"
+        ]
+       }
+      ],
+      "mix": "batter",
+      "mixText": [
+       "Mexe bem"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Verte e junta",
+       "a maçã"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "L"
+        ],
+        "text": [
+         "Massa na travessa"
+        ]
+       },
+       {
+        "groups": [
+         "m"
+        ],
+        "text": [
+         "Maçã em cubos"
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 190,
+      "minutes": 25,
+      "label": "25",
+      "sub": "minutos",
+      "after": "Fofa e dourada."
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Serve",
+       "com skyr"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "k"
+        ],
+        "text": [
+         "Uma colher de skyr"
+        ]
+       },
+       {
+        "groups": [
+         "h"
+        ],
+        "text": [
+         "Hortelã, se quiseres"
+        ]
+       }
+      ],
+      "done": "Bom pequeno-almoço!"
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 350,
+    "protein": 25,
+    "carbs": 45,
+    "fat": 8,
+    "fiber": 6
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Flocos de aveia",
+     "g": 80,
+     "kcal": 303,
+     "protein": 10
+    },
+    {
+     "item": "Leite magro",
+     "g": 100,
+     "kcal": 35,
+     "protein": 3
+    },
+    {
+     "item": "Skyr natural",
+     "g": 200,
+     "kcal": 126,
+     "protein": 22
+    },
+    {
+     "item": "Ovo",
+     "g": 110,
+     "kcal": 157,
+     "protein": 14
+    },
+    {
+     "item": "Maçã em cubos",
+     "g": 150,
+     "kcal": 78,
+     "protein": 0
+    }
+   ],
+   "proteinPer100kcal": 7.2,
+   "totalMin": 30,
+   "costPerServing": 1.04,
+   "cost": "€",
+   "glutenFree": false,
+   "vegetarian": true,
+   "freezer": false,
+   "foods": [
+    "aveia",
+    "leite_magro",
+    "skyr",
+    "ovo",
+    "maca"
+   ],
+   "videoFile": "videos/aveia-forno-maca-canela-skyr.mp4"
+  },
+  {
+   "id": "frittata-batata-cogumelos-queijo-fresco",
+   "title": "Frittata de forno com batata, cogumelos e queijo fresco",
+   "short": "Frittata de batata e cogumelos",
+   "protein": "Ovos/Queijo",
+   "meal": "Pequeno-almoço",
+   "servings": 4,
+   "handsOn": 10,
+   "ovenMax": 30,
+   "oven": "15 + 15 min",
+   "temp": 190,
+   "tags": [
+    "pequeno-almoço",
+    "ovos",
+    "meal prep",
+    "sem glúten"
+   ],
+   "ingredients": [
+    {
+     "q": 300,
+     "u": "g",
+     "n": "de batata em rodelas finas",
+     "food": "batata"
+    },
+    {
+     "q": 200,
+     "u": "g",
+     "n": "de cogumelos laminados",
+     "food": "cogumelos"
+    },
+    {
+     "q": 0.5,
+     "u": "c. sopa",
+     "n": "de azeite",
+     "food": "azeite"
+    },
+    {
+     "q": 6,
+     "u": "un",
+     "n": "ovo",
+     "np": "ovos",
+     "food": "ovo",
+     "grams": null
+    },
+    {
+     "q": 200,
+     "u": "g",
+     "n": "de claras de ovo",
+     "food": "clara"
+    },
+    {
+     "q": 60,
+     "u": "g",
+     "n": "de espinafres",
+     "food": "espinafres"
+    },
+    {
+     "q": 120,
+     "u": "g",
+     "n": "de queijo fresco magro",
+     "food": "queijo_fresco"
+    },
+    {
+     "t": "Sal, pimenta e cebolinho a gosto"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Pré-aquece o forno",
+     "detail": "Liga o forno a 190 °C."
+    },
+    {
+     "title": "Batata e cogumelos",
+     "detail": "Numa travessa redonda com o azeite e sal; 15 minutos no forno."
+    },
+    {
+     "title": "Verte os ovos",
+     "detail": "Bate os ovos com as claras, sal e pimenta e verte por cima; junta os espinafres e o queijo fresco."
+    },
+    {
+     "title": "Mais 15 minutos",
+     "detail": "Até o centro ficar firme."
+    },
+    {
+     "title": "Corta em 4",
+     "detail": "Com cebolinho por cima."
+    }
+   ],
+   "tip": "Batata em rodelas bem finas (usa a mandolina) fica pronta nos primeiros 15 minutos.",
+   "tips": [
+    "Fria é ótima para levar; aguenta 3 dias.",
+    "Junta fiambre de peru para mais proteína."
+   ],
+   "pairs": [
+    "pao-proteico-cottage-aveia",
+    "molho-quark-pimento-assado"
+   ],
+   "difficulty": "Fácil",
+   "storage": "3 dias no frigorífico",
+   "mealPrep": true,
+   "hook": "Uma frittata de forno que dá para quatro pequenos-almoços. Faz-se uma vez e come-se a semana toda.",
+   "video": {
+    "container": "round",
+    "groups": [
+     {
+      "id": "p",
+      "shape": "slice",
+      "c": [
+       "#F2D98A",
+       "#D9A441"
+      ],
+      "n": 18
+     },
+     {
+      "id": "m",
+      "shape": "mushroom",
+      "c": [
+       "#DCC7A8",
+       "#A27B52"
+      ],
+      "n": 14
+     },
+     {
+      "id": "L",
+      "shape": "layer",
+      "c": [
+       "#F3D36B",
+       "#E2AE48"
+      ],
+      "z": 1
+     },
+     {
+      "id": "s",
+      "shape": "leaf",
+      "c": [
+       "#3F8F3A",
+       "#2C5F25"
+      ],
+      "n": 16,
+      "z": 2
+     },
+     {
+      "id": "q",
+      "shape": "curd",
+      "c": [
+       "#FFFFFF",
+       "#F6E6C8"
+      ],
+      "n": 9,
+      "z": 3
+     },
+     {
+      "id": "h",
+      "shape": "herb",
+      "c": [
+       "#3E9A4A",
+       "#2F7A38"
+      ],
+      "n": 26,
+      "z": 4
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "fruit",
+       "f": "potato"
+      },
+      "300 g",
+      [
+       "batata em rodelas"
+      ]
+     ],
+     [
+      {
+       "k": "shape",
+       "shape": "mushroom",
+       "c": [
+        "#DCC7A8",
+        "#A27B52"
+       ],
+       "n": 3
+      },
+      "200 g",
+      [
+       "de cogumelos"
+      ]
+     ],
+     [
+      {
+       "k": "eggs"
+      },
+      "6",
+      [
+       "ovos"
+      ]
+     ],
+     [
+      {
+       "k": "jar",
+       "c": "#F2EEE2"
+      },
+      "200 g",
+      [
+       "de claras de ovo"
+      ]
+     ],
+     [
+      {
+       "k": "shape",
+       "shape": "leaf",
+       "c": [
+        "#3F8F3A",
+        "#2C5F25"
+       ],
+       "n": 4
+      },
+      "60 g",
+      [
+       "de espinafres"
+      ]
+     ],
+     [
+      {
+       "k": "cheese",
+       "c": "#FFFBEF"
+      },
+      "120 g",
+      [
+       "de queijo fresco magro"
+      ]
+     ],
+     [
+      {
+       "k": "bottle"
+      },
+      "½ c. sopa",
+      [
+       "de azeite"
+      ]
+     ],
+     [
+      {
+       "k": "herbs"
+      },
+      "a gosto",
+      [
+       "cebolinho, sal e pimenta"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "preheat",
+      "temp": 190,
+      "title": [
+       "Pré-aquece",
+       "o forno"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Batata e",
+       "cogumelos"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "p"
+        ],
+        "text": [
+         "Batata em rodelas finas"
+        ]
+       },
+       {
+        "groups": [
+         "m"
+        ],
+        "text": [
+         "Cogumelos laminados"
+        ]
+       },
+       {
+        "fx": "oil",
+        "text": [
+         "Azeite e sal"
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 190,
+      "minutes": 15,
+      "label": "15",
+      "sub": "minutos",
+      "cookTo": 0.4,
+      "after": "A batata amacia."
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Verte",
+       "os ovos"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "L"
+        ],
+        "text": [
+         "Ovos batidos com claras"
+        ]
+       },
+       {
+        "groups": [
+         "s"
+        ],
+        "text": [
+         "Espinafres"
+        ]
+       },
+       {
+        "groups": [
+         "q"
+        ],
+        "text": [
+         "Queijo fresco"
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 190,
+      "minutes": 15,
+      "label": "+15",
+      "sub": "minutos",
+      "cookTo": 0.7,
+      "after": "Firme no centro."
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Corta",
+       "em 4"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "h"
+        ],
+        "text": [
+         "Cebolinho por cima"
+        ]
+       }
+      ],
+      "done": "Bom pequeno-almoço!"
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 260,
+    "protein": 23,
+    "carbs": 17,
+    "fat": 11,
+    "fiber": 2
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Batata em rodelas finas",
+     "g": 300,
+     "kcal": 231,
+     "protein": 6
+    },
+    {
+     "item": "Cogumelos laminados",
+     "g": 200,
+     "kcal": 44,
+     "protein": 6
+    },
+    {
+     "item": "Azeite",
+     "g": 6,
+     "kcal": 57,
+     "protein": 0
+    },
+    {
+     "item": "Ovo",
+     "g": 330,
+     "kcal": 472,
+     "protein": 42
+    },
+    {
+     "item": "Claras de ovo",
+     "g": 200,
+     "kcal": 104,
+     "protein": 22
+    },
+    {
+     "item": "Espinafres",
+     "g": 60,
+     "kcal": 14,
+     "protein": 2
+    },
+    {
+     "item": "Queijo fresco magro",
+     "g": 120,
+     "kcal": 114,
+     "protein": 13
+    }
+   ],
+   "proteinPer100kcal": 8.7,
+   "totalMin": 40,
+   "costPerServing": 1.33,
+   "cost": "€",
+   "glutenFree": true,
+   "vegetarian": true,
+   "freezer": false,
+   "foods": [
+    "batata",
+    "cogumelos",
+    "azeite",
+    "ovo",
+    "clara",
+    "espinafres",
+    "queijo_fresco"
+   ],
+   "videoFile": "videos/frittata-batata-cogumelos-queijo-fresco.mp4"
+  },
+  {
+   "id": "muffins-banana-aveia-skyr",
+   "title": "Muffins de banana, aveia e skyr",
+   "short": "Muffins de banana e aveia",
+   "protein": "Ovos/Queijo",
+   "meal": "Pequeno-almoço",
+   "servings": 4,
+   "handsOn": 10,
+   "ovenMax": 20,
+   "oven": "20 min",
+   "temp": 180,
+   "tags": [
+    "pequeno-almoço",
+    "lancheira",
+    "sem açúcar adicionado",
+    "congela bem"
+   ],
+   "ingredients": [
+    {
+     "q": 120,
+     "u": "g",
+     "n": "de flocos de aveia",
+     "food": "aveia"
+    },
+    {
+     "q": 2,
+     "u": "un",
+     "n": "banana bem madura",
+     "np": "bananas bem maduras",
+     "food": "banana",
+     "grams": null
+    },
+    {
+     "q": 250,
+     "u": "g",
+     "n": "de skyr natural",
+     "food": "skyr"
+    },
+    {
+     "q": 2,
+     "u": "un",
+     "n": "ovo",
+     "np": "ovos",
+     "food": "ovo",
+     "grams": null
+    },
+    {
+     "q": 100,
+     "u": "g",
+     "n": "de claras de ovo",
+     "food": "clara"
+    },
+    {
+     "q": 1,
+     "u": "c. chá",
+     "n": "de fermento em pó",
+     "food": "fermento"
+    },
+    {
+     "q": 100,
+     "u": "g",
+     "n": "de frutos vermelhos",
+     "food": "frutos_vermelhos"
+    },
+    {
+     "t": "Canela a gosto"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Pré-aquece o forno",
+     "detail": "Liga o forno a 180 °C e prepara uma forma de 12 muffins."
+    },
+    {
+     "title": "Tritura a massa",
+     "detail": "Aveia, bananas, skyr, ovos, claras, fermento e canela até ficar lisa."
+    },
+    {
+     "title": "Enche a forma",
+     "detail": "Divide pelas 12 cavidades e põe frutos vermelhos por cima."
+    },
+    {
+     "title": "Leva ao forno",
+     "detail": "20 minutos, até um palito sair seco."
+    },
+    {
+     "title": "Arrefece",
+     "detail": "Uma dose são 3 muffins."
+    }
+   ],
+   "tip": "Quanto mais madura a banana, mais doces ficam: dispensa o açúcar.",
+   "tips": [
+    "Congela e tira de véspera.",
+    "Com 1 colher de cacau ficam muffins de chocolate."
+   ],
+   "pairs": [
+    "molho-mostarda-mel-cottage"
+   ],
+   "difficulty": "Fácil",
+   "storage": "4 dias no frigorífico · congela bem",
+   "mealPrep": true,
+   "freezer": true,
+   "hook": "Muffins de banana sem açúcar, perfeitos para levar e para o lanche dos miúdos.",
+   "video": {
+    "container": "muffin",
+    "groups": [
+     {
+      "id": "a",
+      "shape": "pea",
+      "c": [
+       "#E6D2A8",
+       "#E6D2A8"
+      ],
+      "n": 40,
+      "size": 0.55,
+      "inn": "bowl"
+     },
+     {
+      "id": "n",
+      "shape": "slice",
+      "c": [
+       "#FFF1B5",
+       "#F2D27A"
+      ],
+      "n": 6,
+      "inn": "bowl",
+      "size": 0.8
+     },
+     {
+      "id": "y",
+      "shape": "blob",
+      "c": [
+       "#FFFFFF",
+       "#F6E6C8"
+      ],
+      "n": 5,
+      "inn": "bowl",
+      "size": 1.1
+     },
+     {
+      "id": "e",
+      "shape": "yolk",
+      "c": [
+       "#F7B32B",
+       "#F7B32B"
+      ],
+      "n": 2,
+      "layout": "grid",
+      "inn": "bowl"
+     },
+     {
+      "id": "B",
+      "shape": "layer",
+      "c": [
+       "#EAD7B0",
+       "#EAD7B0"
+      ],
+      "inn": "bowl",
+      "reveal": "mix"
+     },
+     {
+      "id": "L",
+      "shape": "layer",
+      "c": [
+       "#E3C48E",
+       "#B9773A"
+      ]
+     },
+     {
+      "id": "r",
+      "shape": "berry",
+      "c": [
+       "#C8344C",
+       "#A8283E"
+      ],
+      "n": 12,
+      "z": 1
+     },
+     {
+      "id": "u",
+      "shape": "berry",
+      "c": [
+       "#3B3F78",
+       "#2E3160"
+      ],
+      "n": 12,
+      "z": 1,
+      "size": 0.8
+     },
+     {
+      "id": "m",
+      "shape": "herb",
+      "c": [
+       "#3E9A4A",
+       "#2F7A38"
+      ],
+      "n": 12,
+      "z": 2,
+      "size": 0.6
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "sack",
+       "c": "#C9A26B"
+      },
+      "120 g",
+      [
+       "de flocos de aveia"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "banana"
+      },
+      "2",
+      [
+       "bananas maduras"
+      ]
+     ],
+     [
+      {
+       "k": "tub",
+       "c": "#5B7BA8"
+      },
+      "250 g",
+      [
+       "de skyr natural"
+      ]
+     ],
+     [
+      {
+       "k": "eggs"
+      },
+      "2",
+      [
+       "ovos + 100 g de claras"
+      ]
+     ],
+     [
+      {
+       "k": "jar",
+       "c": "#E9E2D0"
+      },
+      "1 c. chá",
+      [
+       "de fermento em pó"
+      ]
+     ],
+     [
+      {
+       "k": "shape",
+       "shape": "berry",
+       "c": [
+        "#C8344C",
+        "#A8283E"
+       ],
+       "n": 5
+      },
+      "100 g",
+      [
+       "de frutos vermelhos"
+      ]
+     ],
+     [
+      {
+       "k": "spices",
+       "c": [
+        "#8A4B22",
+        "#B7793D",
+        "#F3E3C3"
+       ]
+      },
+      "a gosto",
+      [
+       "canela"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "preheat",
+      "temp": 180,
+      "title": [
+       "Pré-aquece",
+       "o forno"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "bowl",
+      "title": [
+       "Tritura",
+       "a massa"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "a"
+        ],
+        "text": [
+         "Aveia e fermento"
+        ]
+       },
+       {
+        "groups": [
+         "n",
+         "y"
+        ],
+        "text": [
+         "Banana e skyr"
+        ]
+       },
+       {
+        "groups": [
+         "e"
+        ],
+        "text": [
+         "Ovos e claras"
+        ]
+       }
+      ],
+      "mix": "batter",
+      "mixText": [
+       "Até ficar lisa"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Enche",
+       "a forma"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "L"
+        ],
+        "text": [
+         "Massa nas 12 cavidades"
+        ]
+       },
+       {
+        "groups": [
+         "r",
+         "u"
+        ],
+        "text": [
+         "Frutos vermelhos"
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 180,
+      "minutes": 20,
+      "label": "20",
+      "sub": "minutos",
+      "after": "Fofos e dourados."
+     },
+     {
+      "kind": "top",
+      "title": [
+       "3 muffins",
+       "por dose"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "m"
+        ],
+        "text": [
+         "Hortelã, se quiseres"
+        ]
+       }
+      ],
+      "done": "Bom pequeno-almoço!"
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 270,
+    "protein": 18,
+    "carbs": 40,
+    "fat": 5,
+    "fiber": 6
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Flocos de aveia",
+     "g": 120,
+     "kcal": 455,
+     "protein": 16
+    },
+    {
+     "item": "Banana bem madura",
+     "g": 240,
+     "kcal": 214,
+     "protein": 3
+    },
+    {
+     "item": "Skyr natural",
+     "g": 250,
+     "kcal": 158,
+     "protein": 28
+    },
+    {
+     "item": "Ovo",
+     "g": 110,
+     "kcal": 157,
+     "protein": 14
+    },
+    {
+     "item": "Claras de ovo",
+     "g": 100,
+     "kcal": 52,
+     "protein": 11
+    },
+    {
+     "item": "Fermento em pó",
+     "g": 1,
+     "kcal": 1,
+     "protein": 0
+    },
+    {
+     "item": "Frutos vermelhos",
+     "g": 100,
+     "kcal": 50,
+     "protein": 1
+    }
+   ],
+   "proteinPer100kcal": 6.6,
+   "totalMin": 30,
+   "costPerServing": 0.96,
+   "cost": "€",
+   "glutenFree": false,
+   "vegetarian": true,
+   "foods": [
+    "aveia",
+    "banana",
+    "skyr",
+    "ovo",
+    "clara",
+    "fermento",
+    "frutos_vermelhos"
+   ],
+   "videoFile": "videos/muffins-banana-aveia-skyr.mp4"
+  },
+  {
+   "id": "tiras-frango-crocantes-aveia",
+   "title": "Tiras de frango crocantes com aveia e parmesão",
+   "short": "Tiras de frango crocantes",
+   "protein": "Frango/Peru",
+   "meal": "Snack",
+   "servings": 4,
+   "handsOn": 15,
+   "ovenMax": 18,
+   "oven": "15–18 min",
+   "temp": 210,
+   "tags": [
+    "snack",
+    "panado no forno",
+    "parmesão",
+    "lancheira"
+   ],
+   "ingredients": [
+    {
+     "q": 500,
+     "u": "g",
+     "n": "de peito de frango às tiras",
+     "food": "frango"
+    },
+    {
+     "q": 1,
+     "u": "un",
+     "n": "ovo batido",
+     "np": "ovos batidos",
+     "food": "ovo",
+     "grams": null
+    },
+    {
+     "q": 60,
+     "u": "g",
+     "n": "de flocos de aveia triturados",
+     "food": "aveia"
+    },
+    {
+     "q": 30,
+     "u": "g",
+     "n": "de parmesão ralado",
+     "food": "parmesao"
+    },
+    {
+     "t": "Colorau, alho em pó, orégãos e sal a gosto"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Pré-aquece o forno",
+     "detail": "Liga o forno a 210 °C e forra um tabuleiro com papel vegetal."
+    },
+    {
+     "title": "Prepara o panado",
+     "detail": "Aveia triturada com o parmesão e as especiarias."
+    },
+    {
+     "title": "Pana as tiras",
+     "detail": "Passa cada tira pelo ovo e depois pela mistura de aveia."
+    },
+    {
+     "title": "Leva ao forno",
+     "detail": "15 a 18 minutos, virando a meio."
+    },
+    {
+     "title": "Serve",
+     "detail": "Com molho de mostarda e mel ou de skyr."
+    }
+   ],
+   "tip": "Põe as tiras numa grelha em cima do tabuleiro: o ar quente circula e ficam crocantes dos dois lados.",
+   "tips": [
+    "Frias vão bem na lancheira.",
+    "Aquece na airfryer, 4 minutos, para voltarem a estalar."
+   ],
+   "pairs": [
+    "molho-mostarda-mel-cottage",
+    "molho-skyr-alho-ervas"
+   ],
+   "difficulty": "Fácil",
+   "storage": "3 dias no frigorífico",
+   "mealPrep": true,
+   "hook": "São os nuggets lá de casa, mas com aveia e parmesão, e sem fritar nada.",
+   "video": {
+    "container": "tray",
+    "groups": [
+     {
+      "id": "e",
+      "shape": "yolk",
+      "c": [
+       "#F7B32B",
+       "#F7B32B"
+      ],
+      "n": 1,
+      "layout": "grid",
+      "inn": "bowl"
+     },
+     {
+      "id": "a",
+      "shape": "pea",
+      "c": [
+       "#E6D2A8",
+       "#E6D2A8"
+      ],
+      "n": 40,
+      "size": 0.55,
+      "inn": "bowl"
+     },
+     {
+      "id": "p",
+      "shape": "shred",
+      "c": [
+       "#F6E7B0",
+       "#E2B65A"
+      ],
+      "n": 30,
+      "inn": "bowl"
+     },
+     {
+      "id": "s",
+      "shape": "strip",
+      "c": [
+       "#E8C27A",
+       "#C98A3A"
+      ],
+      "n": 16,
+      "layout": "grid",
+      "size": 1.25
+     },
+     {
+      "id": "h",
+      "shape": "herb",
+      "c": [
+       "#3E9A4A",
+       "#2F7A38"
+      ],
+      "n": 20,
+      "z": 1,
+      "size": 0.7
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "shape",
+       "shape": "strip",
+       "c": [
+        "#F6DCCB",
+        "#E3A85B"
+       ],
+       "n": 3
+      },
+      "500 g",
+      [
+       "frango às tiras"
+      ]
+     ],
+     [
+      {
+       "k": "eggs"
+      },
+      "1",
+      [
+       "ovo batido"
+      ]
+     ],
+     [
+      {
+       "k": "sack",
+       "c": "#C9A26B"
+      },
+      "60 g",
+      [
+       "de aveia triturada"
+      ]
+     ],
+     [
+      {
+       "k": "cheese"
+      },
+      "30 g",
+      [
+       "de parmesão ralado"
+      ]
+     ],
+     [
+      {
+       "k": "spices"
+      },
+      "a gosto",
+      [
+       "colorau, alho em pó e orégãos"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "preheat",
+      "temp": 210,
+      "title": [
+       "Pré-aquece",
+       "o forno"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "bowl",
+      "title": [
+       "Prepara",
+       "o panado"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "a"
+        ],
+        "text": [
+         "Aveia triturada"
+        ]
+       },
+       {
+        "groups": [
+         "p"
+        ],
+        "text": [
+         "Parmesão ralado"
+        ]
+       },
+       {
+        "groups": [
+         "e"
+        ],
+        "text": [
+         "Ovo batido à parte"
+        ]
+       }
+      ],
+      "mix": true,
+      "mixText": [
+       "Com colorau e alho"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Pana",
+       "as tiras"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "s"
+        ],
+        "text": [
+         "Ovo, depois aveia"
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 210,
+      "minutes": 18,
+      "label": "15–18",
+      "sub": "minutos",
+      "mid": "Vira a meio do tempo!",
+      "after": "Douradas e estaladiças."
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Serve",
+       "com molho"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "h"
+        ],
+        "text": [
+         "Orégãos por cima"
+        ]
+       }
+      ],
+      "done": "Snack pronto!"
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 255,
+    "protein": 34,
+    "carbs": 11,
+    "fat": 7,
+    "fiber": 2
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Peito de frango às tiras",
+     "g": 500,
+     "kcal": 600,
+     "protein": 112
+    },
+    {
+     "item": "Ovo batido",
+     "g": 55,
+     "kcal": 79,
+     "protein": 7
+    },
+    {
+     "item": "Flocos de aveia triturados",
+     "g": 60,
+     "kcal": 227,
+     "protein": 8
+    },
+    {
+     "item": "Parmesão ralado",
+     "g": 30,
+     "kcal": 118,
+     "protein": 11
+    }
+   ],
+   "proteinPer100kcal": 13.5,
+   "totalMin": 33,
+   "costPerServing": 1.12,
+   "cost": "€",
+   "glutenFree": false,
+   "vegetarian": false,
+   "freezer": false,
+   "foods": [
+    "frango",
+    "ovo",
+    "aveia",
+    "parmesao"
+   ],
+   "videoFile": "videos/tiras-frango-crocantes-aveia.mp4"
+  },
+  {
+   "id": "cogumelos-recheados-cottage-peru",
+   "title": "Cogumelos recheados com cottage e peru",
+   "short": "Cogumelos recheados",
+   "protein": "Frango/Peru",
+   "meal": "Snack",
+   "servings": 4,
+   "handsOn": 15,
+   "ovenMax": 20,
+   "oven": "20 min",
+   "temp": 200,
+   "tags": [
+    "snack",
+    "cottage",
+    "poucas calorias",
+    "sem glúten"
+   ],
+   "ingredients": [
+    {
+     "q": 400,
+     "u": "g",
+     "n": "de cogumelos grandes (12), sem pé",
+     "food": "cogumelos"
+    },
+    {
+     "q": 200,
+     "u": "g",
+     "n": "de queijo cottage",
+     "food": "cottage"
+    },
+    {
+     "q": 100,
+     "u": "g",
+     "n": "de fiambre de peito de peru picado",
+     "food": "fiambre_peru"
+    },
+    {
+     "q": 40,
+     "u": "g",
+     "n": "de mozzarella light ralada",
+     "food": "mozzarella_light"
+    },
+    {
+     "t": "Alho, salsa e pimenta a gosto"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Pré-aquece o forno",
+     "detail": "Liga o forno a 200 °C."
+    },
+    {
+     "title": "Prepara os cogumelos",
+     "detail": "Tira os pés e põe os chapéus virados para cima no tabuleiro."
+    },
+    {
+     "title": "Recheia",
+     "detail": "Mistura o cottage com o peru, o alho e a salsa e enche cada cogumelo."
+    },
+    {
+     "title": "Queijo por cima",
+     "detail": "Espalha a mozzarella."
+    },
+    {
+     "title": "Leva ao forno",
+     "detail": "20 minutos, até gratinar."
+    }
+   ],
+   "tip": "Pica os pés dos cogumelos e junta ao recheio: nada se perde e fica mais saboroso.",
+   "tips": [
+    "Ótimos como entrada para um jantar com amigos.",
+    "Com atum em vez de peru também ficam ótimos."
+   ],
+   "pairs": [
+    "molho-verde-ervilhas-skyr"
+   ],
+   "difficulty": "Fácil",
+   "storage": "2 dias no frigorífico",
+   "mealPrep": false,
+   "hook": "Um snack quentinho com pouquíssimas calorias, que parece entrada de restaurante.",
+   "video": {
+    "container": "tray",
+    "groups": [
+     {
+      "id": "m",
+      "shape": "mushroom",
+      "c": [
+       "#E2CFB2",
+       "#A27B52"
+      ],
+      "n": 12,
+      "layout": "grid",
+      "size": 1.5
+     },
+     {
+      "id": "q",
+      "shape": "curd",
+      "c": [
+       "#FFFFFF",
+       "#F6E6C8"
+      ],
+      "n": 12,
+      "layout": "grid",
+      "z": 1
+     },
+     {
+      "id": "k",
+      "shape": "cube",
+      "c": [
+       "#F2B5B0",
+       "#E39B8C"
+      ],
+      "n": 12,
+      "layout": "grid",
+      "z": 2,
+      "size": 0.45
+     },
+     {
+      "id": "s",
+      "shape": "shred",
+      "c": [
+       "#FFF8E6",
+       "#F0C674"
+      ],
+      "n": 40,
+      "z": 3
+     },
+     {
+      "id": "h",
+      "shape": "herb",
+      "c": [
+       "#3E9A4A",
+       "#2F7A38"
+      ],
+      "n": 20,
+      "z": 4
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "shape",
+       "shape": "mushroom",
+       "c": [
+        "#E2CFB2",
+        "#A27B52"
+       ],
+       "n": 3
+      },
+      "12",
+      [
+       "cogumelos grandes (400 g)"
+      ]
+     ],
+     [
+      {
+       "k": "tub",
+       "c": "#2F80C0"
+      },
+      "200 g",
+      [
+       "de queijo cottage"
+      ]
+     ],
+     [
+      {
+       "k": "shape",
+       "shape": "cube",
+       "c": [
+        "#F2B5B0",
+        "#E39B8C"
+       ],
+       "n": 3
+      },
+      "100 g",
+      [
+       "de fiambre de peru"
+      ]
+     ],
+     [
+      {
+       "k": "cheese",
+       "c": "#FFF3D0"
+      },
+      "40 g",
+      [
+       "de mozzarella light"
+      ]
+     ],
+     [
+      {
+       "k": "herbs"
+      },
+      "a gosto",
+      [
+       "alho, salsa e pimenta"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "preheat",
+      "temp": 200,
+      "title": [
+       "Pré-aquece",
+       "o forno"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Prepara os",
+       "cogumelos"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "m"
+        ],
+        "text": [
+         "12 cogumelos sem pé"
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Recheia"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "q"
+        ],
+        "text": [
+         "Cottage com alho e salsa"
+        ]
+       },
+       {
+        "groups": [
+         "k"
+        ],
+        "text": [
+         "Fiambre de peru"
+        ]
+       },
+       {
+        "groups": [
+         "s"
+        ],
+        "text": [
+         "Mozzarella por cima"
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 200,
+      "minutes": 20,
+      "label": "20",
+      "sub": "minutos",
+      "after": "Gratinados por cima."
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Salsa",
+       "picada"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "h"
+        ],
+        "text": [
+         "Salsa por cima"
+        ]
+       }
+      ],
+      "done": "Snack pronto!"
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 105,
+    "protein": 15,
+    "carbs": 6,
+    "fat": 3,
+    "fiber": 1
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Cogumelos grandes",
+     "g": 400,
+     "kcal": 88,
+     "protein": 12
+    },
+    {
+     "item": "Queijo cottage",
+     "g": 200,
+     "kcal": 168,
+     "protein": 22
+    },
+    {
+     "item": "Fiambre de peito de peru picado",
+     "g": 100,
+     "kcal": 105,
+     "protein": 19
+    },
+    {
+     "item": "Mozzarella light ralada",
+     "g": 40,
+     "kcal": 66,
+     "protein": 8
+    }
+   ],
+   "proteinPer100kcal": 14.4,
+   "totalMin": 35,
+   "costPerServing": 1.2,
+   "cost": "€",
+   "glutenFree": true,
+   "vegetarian": false,
+   "freezer": false,
+   "foods": [
+    "cogumelos",
+    "cottage",
+    "fiambre_peru",
+    "mozzarella_light"
+   ],
+   "videoFile": "videos/cogumelos-recheados-cottage-peru.mp4"
+  },
+  {
+   "id": "bolinhos-sardinha-grao",
+   "title": "Bolinhos de sardinha e grão no forno",
+   "short": "Bolinhos de sardinha e grão",
+   "protein": "Peixe",
+   "meal": "Snack",
+   "servings": 4,
+   "handsOn": 15,
+   "ovenMax": 20,
+   "oven": "20 min",
+   "temp": 200,
+   "tags": [
+    "snack",
+    "sardinha",
+    "grão",
+    "lancheira"
+   ],
+   "ingredients": [
+    {
+     "q": 170,
+     "u": "g",
+     "n": "de sardinhas em lata escorridas (2 latas)",
+     "food": "sardinha_lata"
+    },
+    {
+     "q": 240,
+     "u": "g",
+     "n": "de grão-de-bico escorrido (1 lata)",
+     "food": "grao"
+    },
+    {
+     "q": 1,
+     "u": "un",
+     "n": "ovo",
+     "np": "ovos",
+     "food": "ovo",
+     "grams": null
+    },
+    {
+     "q": 30,
+     "u": "g",
+     "n": "de flocos de aveia",
+     "food": "aveia"
+    },
+    {
+     "q": 1,
+     "u": "c. sopa",
+     "n": "de sumo de limão",
+     "food": "limao"
+    },
+    {
+     "t": "Salsa, alho, cominhos e sal a gosto"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Pré-aquece o forno",
+     "detail": "Liga o forno a 200 °C e forra um tabuleiro."
+    },
+    {
+     "title": "Esmaga tudo",
+     "detail": "Sardinhas, grão, ovo, aveia, limão e temperos, com um garfo ou a varinha."
+    },
+    {
+     "title": "Molda 12 bolinhos",
+     "detail": "Com as mãos húmidas, achata ligeiramente."
+    },
+    {
+     "title": "Leva ao forno",
+     "detail": "20 minutos, virando a meio."
+    },
+    {
+     "title": "Serve",
+     "detail": "Com molho de skyr. Uma dose são 3 bolinhos."
+    }
+   ],
+   "tip": "Escorre bem as sardinhas e o grão: a massa fica firme e os bolinhos não abrem.",
+   "tips": [
+    "A espinha das sardinhas em lata é macia e dá cálcio: não precisas de a tirar.",
+    "Ficam ótimos dentro de um wrap de claras."
+   ],
+   "pairs": [
+    "molho-skyr-alho-ervas",
+    "wraps-claras-aveia-forno"
+   ],
+   "difficulty": "Média",
+   "storage": "3 dias no frigorífico · congela bem",
+   "mealPrep": true,
+   "freezer": true,
+   "hook": "Bolinhos de sardinha à portuguesa, feitos no forno com grão. Ótimos para o lanche!",
+   "video": {
+    "container": "tray",
+    "groups": [
+     {
+      "id": "t",
+      "shape": "shred",
+      "c": [
+       "#A9BBC7",
+       "#6C7F8C"
+      ],
+      "n": 26,
+      "inn": "bowl",
+      "size": 1.4
+     },
+     {
+      "id": "c",
+      "shape": "pea",
+      "c": [
+       "#EAD095",
+       "#C58B38"
+      ],
+      "n": 30,
+      "inn": "bowl"
+     },
+     {
+      "id": "e",
+      "shape": "yolk",
+      "c": [
+       "#F7B32B",
+       "#F7B32B"
+      ],
+      "n": 1,
+      "layout": "grid",
+      "inn": "bowl"
+     },
+     {
+      "id": "a",
+      "shape": "pea",
+      "c": [
+       "#E6D2A8",
+       "#E6D2A8"
+      ],
+      "n": 20,
+      "size": 0.5,
+      "inn": "bowl"
+     },
+     {
+      "id": "B",
+      "shape": "layer",
+      "c": [
+       "#C9B48A",
+       "#C9B48A"
+      ],
+      "inn": "bowl",
+      "reveal": "mix"
+     },
+     {
+      "id": "b",
+      "shape": "ball",
+      "c": [
+       "#C9A66B",
+       "#9C6E35"
+      ],
+      "n": 12,
+      "layout": "grid",
+      "size": 1.3
+     },
+     {
+      "id": "h",
+      "shape": "herb",
+      "c": [
+       "#3E9A4A",
+       "#2F7A38"
+      ],
+      "n": 18,
+      "z": 1,
+      "size": 0.7
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "can",
+       "c": "#3D6E9E"
+      },
+      "2 latas",
+      [
+       "de sardinhas (170 g)"
+      ]
+     ],
+     [
+      {
+       "k": "can",
+       "c": "#D9A441"
+      },
+      "1 lata",
+      [
+       "de grão (240 g)"
+      ]
+     ],
+     [
+      {
+       "k": "eggs"
+      },
+      "1",
+      [
+       "ovo"
+      ]
+     ],
+     [
+      {
+       "k": "sack",
+       "c": "#C9A26B"
+      },
+      "30 g",
+      [
+       "de flocos de aveia"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "lemon"
+      },
+      "1 c. sopa",
+      [
+       "de sumo de limão"
+      ]
+     ],
+     [
+      {
+       "k": "herbs"
+      },
+      "a gosto",
+      [
+       "salsa, alho e cominhos"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "preheat",
+      "temp": 200,
+      "title": [
+       "Pré-aquece",
+       "o forno"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "bowl",
+      "title": [
+       "Esmaga",
+       "tudo"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "t"
+        ],
+        "text": [
+         "Sardinhas escorridas"
+        ]
+       },
+       {
+        "groups": [
+         "c",
+         "e"
+        ],
+        "text": [
+         "Grão e ovo"
+        ]
+       },
+       {
+        "groups": [
+         "a"
+        ],
+        "text": [
+         "Aveia, limão e salsa"
+        ]
+       }
+      ],
+      "mix": "batter",
+      "mixText": [
+       "Massa firme"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Molda 12",
+       "bolinhos"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "b"
+        ],
+        "text": [
+         "Com as mãos húmidas"
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 200,
+      "minutes": 20,
+      "label": "20",
+      "sub": "minutos",
+      "mid": "Vira a meio do tempo!",
+      "after": "Dourados por fora."
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Serve"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "h"
+        ],
+        "text": [
+         "Com molho de skyr"
+        ]
+       }
+      ],
+      "done": "Snack pronto!"
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 220,
+    "protein": 17,
+    "carbs": 19,
+    "fat": 8,
+    "fiber": 5
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Sardinhas em lata escorridas",
+     "g": 170,
+     "kcal": 354,
+     "protein": 42
+    },
+    {
+     "item": "Grão-de-bico escorrido",
+     "g": 240,
+     "kcal": 334,
+     "protein": 17
+    },
+    {
+     "item": "Ovo",
+     "g": 55,
+     "kcal": 79,
+     "protein": 7
+    },
+    {
+     "item": "Flocos de aveia",
+     "g": 30,
+     "kcal": 114,
+     "protein": 4
+    },
+    {
+     "item": "Sumo de limão",
+     "g": 15,
+     "kcal": 3,
+     "protein": 0
+    }
+   ],
+   "proteinPer100kcal": 7.9,
+   "totalMin": 35,
+   "costPerServing": 0.75,
+   "cost": "€",
+   "glutenFree": false,
+   "vegetarian": false,
+   "foods": [
+    "sardinha_lata",
+    "grao",
+    "ovo",
+    "aveia",
+    "limao"
+   ],
+   "videoFile": "videos/bolinhos-sardinha-grao.mp4"
+  },
+  {
+   "id": "brownie-feijao-preto-cacau",
+   "title": "Brownie de feijão preto e cacau",
+   "short": "Brownie de feijão preto",
+   "protein": "Vegetariano/Leguminosas",
+   "meal": "Sobremesa",
+   "servings": 8,
+   "handsOn": 10,
+   "ovenMax": 22,
+   "oven": "22 min",
+   "temp": 180,
+   "tags": [
+    "sobremesa",
+    "chocolate",
+    "sem farinha",
+    "sem glúten"
+   ],
+   "ingredients": [
+    {
+     "q": 240,
+     "u": "g",
+     "n": "de feijão preto escorrido e passado por água (1 lata)",
+     "food": "feijao_preto"
+    },
+    {
+     "q": 3,
+     "u": "un",
+     "n": "ovo",
+     "np": "ovos",
+     "food": "ovo",
+     "grams": null
+    },
+    {
+     "q": 150,
+     "u": "g",
+     "n": "de skyr natural",
+     "food": "skyr"
+    },
+    {
+     "q": 30,
+     "u": "g",
+     "n": "de cacau magro em pó",
+     "food": "cacau"
+    },
+    {
+     "q": 50,
+     "u": "g",
+     "n": "de adoçante (eritritol)",
+     "food": "eritritol"
+    },
+    {
+     "q": 1,
+     "u": "c. chá",
+     "n": "de fermento em pó",
+     "food": "fermento"
+    },
+    {
+     "q": 80,
+     "u": "g",
+     "n": "de framboesas (opcional)",
+     "food": "frutos_vermelhos"
+    },
+    {
+     "t": "Baunilha e uma pitada de sal"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Pré-aquece o forno",
+     "detail": "Liga o forno a 180 °C e forra uma forma quadrada."
+    },
+    {
+     "title": "Tritura tudo",
+     "detail": "Feijão, ovos, skyr, cacau, adoçante, fermento, baunilha e sal até ficar liso."
+    },
+    {
+     "title": "Verte na forma",
+     "detail": "E espalha framboesas por cima, se quiseres."
+    },
+    {
+     "title": "Leva ao forno",
+     "detail": "22 minutos: o centro fica húmido."
+    },
+    {
+     "title": "Arrefece e corta",
+     "detail": "Em 8 quadrados."
+    }
+   ],
+   "tip": "Tritura mesmo bem, 2 minutos: ninguém vai adivinhar que leva feijão.",
+   "tips": [
+    "Do frigorífico fica ainda mais denso e cremoso.",
+    "Junta 20 g de chocolate negro 85% picado para ocasiões especiais."
+   ],
+   "pairs": [],
+   "difficulty": "Fácil",
+   "storage": "4 dias no frigorífico · congela bem",
+   "mealPrep": true,
+   "freezer": true,
+   "hook": "Este brownie tem um ingrediente secreto: feijão preto! E juro que não se nota nada.",
+   "video": {
+    "container": "tray",
+    "groups": [
+     {
+      "id": "w",
+      "shape": "bean",
+      "c": [
+       "#3A3232",
+       "#1B1717"
+      ],
+      "n": 30,
+      "inn": "bowl"
+     },
+     {
+      "id": "e",
+      "shape": "yolk",
+      "c": [
+       "#F7B32B",
+       "#F7B32B"
+      ],
+      "n": 3,
+      "layout": "grid",
+      "inn": "bowl"
+     },
+     {
+      "id": "y",
+      "shape": "blob",
+      "c": [
+       "#FFFFFF",
+       "#F6E6C8"
+      ],
+      "n": 4,
+      "inn": "bowl",
+      "size": 1.1
+     },
+     {
+      "id": "c",
+      "shape": "pea",
+      "c": [
+       "#6A4430",
+       "#4A2E1E"
+      ],
+      "n": 30,
+      "inn": "bowl",
+      "size": 0.5
+     },
+     {
+      "id": "B",
+      "shape": "layer",
+      "c": [
+       "#5A3424",
+       "#5A3424"
+      ],
+      "inn": "bowl",
+      "reveal": "mix"
+     },
+     {
+      "id": "L",
+      "shape": "layer",
+      "c": [
+       "#5A3424",
+       "#3E2418"
+      ]
+     },
+     {
+      "id": "r",
+      "shape": "berry",
+      "c": [
+       "#C8344C",
+       "#A8283E"
+      ],
+      "n": 16,
+      "z": 1
+     },
+     {
+      "id": "k",
+      "shape": "slicelines",
+      "c": [
+       "#2B160C",
+       "#2B160C"
+      ],
+      "n": 4,
+      "layout": "grid",
+      "z": 2
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "can",
+       "c": "#2E2A2A"
+      },
+      "1 lata",
+      [
+       "de feijão preto (240 g)"
+      ]
+     ],
+     [
+      {
+       "k": "eggs"
+      },
+      "3",
+      [
+       "ovos"
+      ]
+     ],
+     [
+      {
+       "k": "tub",
+       "c": "#5B7BA8"
+      },
+      "150 g",
+      [
+       "de skyr natural"
+      ]
+     ],
+     [
+      {
+       "k": "jar",
+       "c": "#5A3424"
+      },
+      "30 g",
+      [
+       "de cacau magro"
+      ]
+     ],
+     [
+      {
+       "k": "jar",
+       "c": "#F4F1EA"
+      },
+      "50 g",
+      [
+       "de adoçante"
+      ]
+     ],
+     [
+      {
+       "k": "jar",
+       "c": "#E9E2D0"
+      },
+      "1 c. chá",
+      [
+       "de fermento em pó"
+      ]
+     ],
+     [
+      {
+       "k": "shape",
+       "shape": "berry",
+       "c": [
+        "#C8344C",
+        "#A8283E"
+       ],
+       "n": 5
+      },
+      "80 g",
+      [
+       "de framboesas (opcional)"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "preheat",
+      "temp": 180,
+      "title": [
+       "Pré-aquece",
+       "o forno"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "bowl",
+      "title": [
+       "Tritura",
+       "tudo"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "w"
+        ],
+        "text": [
+         "Feijão preto escorrido"
+        ]
+       },
+       {
+        "groups": [
+         "e",
+         "y"
+        ],
+        "text": [
+         "3 ovos e skyr"
+        ]
+       },
+       {
+        "groups": [
+         "c"
+        ],
+        "text": [
+         "Cacau, adoçante e fermento"
+        ]
+       }
+      ],
+      "mix": "batter",
+      "mixText": [
+       "Massa lisa e brilhante"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Verte",
+       "na forma"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "L"
+        ],
+        "text": [
+         "Forma com papel vegetal"
+        ]
+       },
+       {
+        "groups": [
+         "r"
+        ],
+        "text": [
+         "Framboesas por cima"
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 180,
+      "minutes": 22,
+      "label": "22",
+      "sub": "minutos",
+      "after": "Húmido por dentro."
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Arrefece",
+       "e corta"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "k"
+        ],
+        "text": [
+         "8 quadrados"
+        ]
+       }
+      ],
+      "done": "Ninguém adivinha o feijão!"
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 95,
+    "protein": 8,
+    "carbs": 11,
+    "fat": 3,
+    "fiber": 4
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Feijão preto escorrido e passado por água",
+     "g": 240,
+     "kcal": 317,
+     "protein": 21
+    },
+    {
+     "item": "Ovo",
+     "g": 165,
+     "kcal": 236,
+     "protein": 21
+    },
+    {
+     "item": "Skyr natural",
+     "g": 150,
+     "kcal": 94,
+     "protein": 16
+    },
+    {
+     "item": "Cacau magro em pó",
+     "g": 30,
+     "kcal": 68,
+     "protein": 6
+    },
+    {
+     "item": "Adoçante",
+     "g": 50,
+     "kcal": 0,
+     "protein": 0
+    },
+    {
+     "item": "Fermento em pó",
+     "g": 1,
+     "kcal": 1,
+     "protein": 0
+    },
+    {
+     "item": "Framboesas",
+     "g": 80,
+     "kcal": 40,
+     "protein": 1
+    }
+   ],
+   "proteinPer100kcal": 8.6,
+   "totalMin": 32,
+   "costPerServing": 0.49,
+   "cost": "€",
+   "glutenFree": true,
+   "vegetarian": true,
+   "foods": [
+    "feijao_preto",
+    "ovo",
+    "skyr",
+    "cacau",
+    "eritritol",
+    "fermento",
+    "frutos_vermelhos"
+   ],
+   "videoFile": "videos/brownie-feijao-preto-cacau.mp4"
+  },
+  {
+   "id": "peras-assadas-canela-quark",
+   "title": "Peras assadas com canela, quark e aveia tostada",
+   "short": "Peras assadas com quark",
+   "protein": "Ovos/Queijo",
+   "meal": "Sobremesa",
+   "servings": 4,
+   "handsOn": 10,
+   "ovenMax": 25,
+   "oven": "25 min",
+   "temp": 190,
+   "tags": [
+    "sobremesa",
+    "fruta",
+    "quark",
+    "outono"
+   ],
+   "ingredients": [
+    {
+     "q": 4,
+     "u": "un",
+     "n": "pera em metades, sem caroço",
+     "np": "peras em metades, sem caroço",
+     "food": "pera",
+     "grams": null
+    },
+    {
+     "q": 1,
+     "u": "c. sopa",
+     "n": "de mel",
+     "food": "mel"
+    },
+    {
+     "q": 30,
+     "u": "g",
+     "n": "de flocos de aveia",
+     "food": "aveia"
+    },
+    {
+     "q": 250,
+     "u": "g",
+     "n": "de quark magro com baunilha, para servir",
+     "food": "quark"
+    },
+    {
+     "t": "Canela e raspa de limão a gosto"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Pré-aquece o forno",
+     "detail": "Liga o forno a 190 °C."
+    },
+    {
+     "title": "Prepara as peras",
+     "detail": "Metades viradas para cima no tabuleiro, com canela e o mel."
+    },
+    {
+     "title": "Aveia à volta",
+     "detail": "Espalha a aveia no tabuleiro para tostar ao mesmo tempo."
+    },
+    {
+     "title": "Leva ao forno",
+     "detail": "25 minutos, até ficarem macias."
+    },
+    {
+     "title": "Serve",
+     "detail": "Mornas, com quark e a aveia tostada por cima."
+    }
+   ],
+   "tip": "Peras rijas, tipo Rocha, aguentam a forma no forno; as muito maduras desfazem-se.",
+   "tips": [
+    "A pera Rocha do Oeste é perfeita, e é portuguesa.",
+    "Com maçã também resulta, mais 5 minutos."
+   ],
+   "pairs": [],
+   "difficulty": "Fácil",
+   "storage": "3 dias no frigorífico",
+   "mealPrep": false,
+   "hook": "Uma sobremesa de outono, quentinha e perfumada a canela, e levíssima.",
+   "video": {
+    "container": "tray",
+    "groups": [
+     {
+      "id": "w",
+      "shape": "wedge",
+      "c": [
+       "#E8E3A0",
+       "#C9A24A"
+      ],
+      "n": 8,
+      "layout": "grid",
+      "size": 1.6
+     },
+     {
+      "id": "c",
+      "shape": "crumb",
+      "c": [
+       "#D8B57E",
+       "#B07A3C"
+      ],
+      "n": 60,
+      "size": 1.2
+     },
+     {
+      "id": "y",
+      "shape": "blob",
+      "c": [
+       "#FFFFFF",
+       "#F6E6C8"
+      ],
+      "n": 4,
+      "layout": "grid",
+      "z": 1
+     },
+     {
+      "id": "m",
+      "shape": "herb",
+      "c": [
+       "#3E9A4A",
+       "#2F7A38"
+      ],
+      "n": 8,
+      "z": 2,
+      "size": 0.7
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "fruit",
+       "f": "apple"
+      },
+      "4",
+      [
+       "peras em metades"
+      ]
+     ],
+     [
+      {
+       "k": "jar",
+       "c": "#E5A82E"
+      },
+      "1 c. sopa",
+      [
+       "de mel"
+      ]
+     ],
+     [
+      {
+       "k": "sack",
+       "c": "#C9A26B"
+      },
+      "30 g",
+      [
+       "de flocos de aveia"
+      ]
+     ],
+     [
+      {
+       "k": "tub",
+       "c": "#3E8E5A"
+      },
+      "250 g",
+      [
+       "de quark com baunilha"
+      ]
+     ],
+     [
+      {
+       "k": "spices",
+       "c": [
+        "#8A4B22",
+        "#B7793D",
+        "#F3E3C3"
+       ]
+      },
+      "a gosto",
+      [
+       "canela e raspa de limão"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "preheat",
+      "temp": 190,
+      "title": [
+       "Pré-aquece",
+       "o forno"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Prepara",
+       "as peras"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "w"
+        ],
+        "text": [
+         "8 metades de pera"
+        ]
+       },
+       {
+        "fx": "spice",
+        "text": [
+         "Canela"
+        ],
+        "spice": [
+         "#8A4B22",
+         "#B7793D"
+        ]
+       },
+       {
+        "fx": "oil",
+        "text": [
+         "Um fio de mel"
+        ]
+       },
+       {
+        "groups": [
+         "c"
+        ],
+        "text": [
+         "Aveia à volta"
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 190,
+      "minutes": 25,
+      "label": "25",
+      "sub": "minutos",
+      "after": "Macias e caramelizadas."
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Serve com",
+       "quark"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "y"
+        ],
+        "text": [
+         "Quark com baunilha"
+        ]
+       },
+       {
+        "groups": [
+         "m"
+        ],
+        "text": [
+         "Hortelã, se quiseres"
+        ]
+       }
+      ],
+      "done": "Sobremesa pronta!"
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 180,
+    "protein": 9,
+    "carbs": 37,
+    "fat": 1,
+    "fiber": 6
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Pera em metades",
+     "g": 680,
+     "kcal": 388,
+     "protein": 3
+    },
+    {
+     "item": "Mel",
+     "g": 20,
+     "kcal": 61,
+     "protein": 0
+    },
+    {
+     "item": "Flocos de aveia",
+     "g": 30,
+     "kcal": 114,
+     "protein": 4
+    },
+    {
+     "item": "Quark magro com baunilha",
+     "g": 250,
+     "kcal": 168,
+     "protein": 30
+    }
+   ],
+   "proteinPer100kcal": 5.0,
+   "totalMin": 35,
+   "costPerServing": 0.69,
+   "cost": "€",
+   "glutenFree": false,
+   "vegetarian": true,
+   "freezer": false,
+   "foods": [
+    "pera",
+    "mel",
+    "aveia",
+    "quark"
+   ],
+   "videoFile": "videos/peras-assadas-canela-quark.mp4"
+  },
+  {
+   "id": "wraps-claras-aveia-forno",
+   "title": "Wraps de claras e aveia no forno",
+   "short": "Wraps de claras",
+   "protein": "Ovos/Queijo",
+   "meal": "Acompanhamento/Pão",
+   "servings": 4,
+   "handsOn": 5,
+   "ovenMax": 12,
+   "oven": "12 min",
+   "temp": 200,
+   "tags": [
+    "substituto de pão",
+    "claras",
+    "wrap",
+    "poucas calorias"
+   ],
+   "unit": [
+    "wrap",
+    "wraps"
+   ],
+   "ingredients": [
+    {
+     "q": 300,
+     "u": "g",
+     "n": "de claras de ovo",
+     "food": "clara"
+    },
+    {
+     "q": 40,
+     "u": "g",
+     "n": "de flocos de aveia finos",
+     "food": "aveia"
+    },
+    {
+     "t": "Sal, pimenta e orégãos a gosto"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Pré-aquece o forno",
+     "detail": "Liga o forno a 200 °C e forra um tabuleiro com papel vegetal."
+    },
+    {
+     "title": "Bate a massa",
+     "detail": "Claras, aveia, sal e orégãos, com a varinha."
+    },
+    {
+     "title": "Espalha fino",
+     "detail": "Verte no tabuleiro e espalha numa camada fina e uniforme."
+    },
+    {
+     "title": "Leva ao forno",
+     "detail": "12 minutos, até ficar firme."
+    },
+    {
+     "title": "Corta em 4",
+     "detail": "E deixa arrefecer em cima de um pano."
+    }
+   ],
+   "tip": "Tira o papel vegetal enquanto está morno: descola sem rasgar.",
+   "tips": [
+    "Recheia com frango, bolinhos de sardinha ou molho de skyr e alface.",
+    "Guarda separados por papel vegetal, até 3 dias."
+   ],
+   "pairs": [],
+   "difficulty": "Fácil",
+   "storage": "3 dias no frigorífico",
+   "mealPrep": true,
+   "hook": "Precisas de um wrap leve? Com claras e aveia fazes quatro de uma vez no forno.",
+   "video": {
+    "container": "tray",
+    "groups": [
+     {
+      "id": "y",
+      "shape": "blob",
+      "c": [
+       "#FFFFFF",
+       "#F2EEE2"
+      ],
+      "n": 5,
+      "inn": "bowl",
+      "size": 1.1
+     },
+     {
+      "id": "a",
+      "shape": "pea",
+      "c": [
+       "#E6D2A8",
+       "#E6D2A8"
+      ],
+      "n": 30,
+      "size": 0.5,
+      "inn": "bowl"
+     },
+     {
+      "id": "B",
+      "shape": "layer",
+      "c": [
+       "#F6EBD2",
+       "#F6EBD2"
+      ],
+      "inn": "bowl",
+      "reveal": "mix"
+     },
+     {
+      "id": "L",
+      "shape": "layer",
+      "c": [
+       "#F6E7C4",
+       "#D9A85B"
+      ]
+     },
+     {
+      "id": "h",
+      "shape": "herb",
+      "c": [
+       "#3E9A4A",
+       "#2F7A38"
+      ],
+      "n": 24,
+      "z": 1,
+      "size": 0.6
+     },
+     {
+      "id": "k",
+      "shape": "slicelines",
+      "c": [
+       "#B9773A",
+       "#B9773A"
+      ],
+      "n": 2,
+      "layout": "grid",
+      "z": 2
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "jar",
+       "c": "#F2EEE2"
+      },
+      "300 g",
+      [
+       "de claras de ovo"
+      ]
+     ],
+     [
+      {
+       "k": "sack",
+       "c": "#C9A26B"
+      },
+      "40 g",
+      [
+       "de aveia fina"
+      ]
+     ],
+     [
+      {
+       "k": "spices"
+      },
+      "a gosto",
+      [
+       "sal, pimenta e orégãos"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "preheat",
+      "temp": 200,
+      "title": [
+       "Pré-aquece",
+       "o forno"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "bowl",
+      "title": [
+       "Bate",
+       "a massa"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "y"
+        ],
+        "text": [
+         "300 g de claras"
+        ]
+       },
+       {
+        "groups": [
+         "a"
+        ],
+        "text": [
+         "40 g de aveia fina"
+        ]
+       }
+      ],
+      "mix": "batter",
+      "mixText": [
+       "Até ligar"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Espalha",
+       "fino"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "L"
+        ],
+        "text": [
+         "Tabuleiro com papel vegetal"
+        ]
+       },
+       {
+        "groups": [
+         "h"
+        ],
+        "text": [
+         "Orégãos por cima"
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 200,
+      "minutes": 12,
+      "label": "12",
+      "sub": "minutos",
+      "after": "Firme e flexível."
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Corta",
+       "em 4"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "k"
+        ],
+        "text": [
+         "4 wraps"
+        ]
+       }
+      ],
+      "done": "Prontos a rechear!"
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 75,
+    "protein": 9,
+    "carbs": 7,
+    "fat": 1,
+    "fiber": 1
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Claras de ovo",
+     "g": 300,
+     "kcal": 156,
+     "protein": 33
+    },
+    {
+     "item": "Flocos de aveia finos",
+     "g": 40,
+     "kcal": 152,
+     "protein": 5
+    }
+   ],
+   "proteinPer100kcal": 12.3,
+   "totalMin": 17,
+   "costPerServing": 0.48,
+   "cost": "€",
+   "glutenFree": false,
+   "vegetarian": true,
+   "freezer": false,
+   "foods": [
+    "clara",
+    "aveia"
+   ],
+   "videoFile": "videos/wraps-claras-aveia-forno.mp4"
+  },
+  {
+   "id": "paezinhos-quark-aveia",
+   "title": "Pãezinhos de quark e aveia",
+   "short": "Pãezinhos de quark",
+   "protein": "Ovos/Queijo",
+   "meal": "Acompanhamento/Pão",
+   "servings": 6,
+   "handsOn": 10,
+   "ovenMax": 25,
+   "oven": "25 min",
+   "temp": 190,
+   "tags": [
+    "pão",
+    "quark",
+    "sem farinha de trigo",
+    "congela bem"
+   ],
+   "unit": [
+    "pãozinho",
+    "pãezinhos"
+   ],
+   "ingredients": [
+    {
+     "q": 250,
+     "u": "g",
+     "n": "de quark magro",
+     "food": "quark"
+    },
+    {
+     "q": 150,
+     "u": "g",
+     "n": "de flocos de aveia triturados",
+     "food": "aveia"
+    },
+    {
+     "q": 1,
+     "u": "un",
+     "n": "ovo",
+     "np": "ovos",
+     "food": "ovo",
+     "grams": null
+    },
+    {
+     "q": 2,
+     "u": "c. chá",
+     "n": "de fermento em pó",
+     "food": "fermento"
+    },
+    {
+     "q": 1,
+     "u": "c. sopa",
+     "n": "de sementes de chia",
+     "food": "chia"
+    },
+    {
+     "t": "Sal e sementes de sésamo a gosto"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Pré-aquece o forno",
+     "detail": "Liga o forno a 190 °C e forra um tabuleiro."
+    },
+    {
+     "title": "Faz a massa",
+     "detail": "Quark, aveia triturada, ovo, fermento, chia e sal; mistura até ligar."
+    },
+    {
+     "title": "Molda 6 pãezinhos",
+     "detail": "Com as mãos húmidas; sésamo por cima."
+    },
+    {
+     "title": "Leva ao forno",
+     "detail": "25 minutos, até dourarem."
+    },
+    {
+     "title": "Arrefece",
+     "detail": "Numa grelha, 10 minutos."
+    }
+   ],
+   "tip": "Se a massa estiver muito mole, deixa repousar 10 minutos: a aveia e a chia absorvem a humidade.",
+   "tips": [
+    "Abre ao meio e torra: perfeito com ovos mexidos ou fiambre de peru.",
+    "Congela e aquece 8 minutos no forno."
+   ],
+   "pairs": [],
+   "difficulty": "Média",
+   "storage": "3 dias num saco · congela bem",
+   "mealPrep": true,
+   "freezer": true,
+   "hook": "Pãezinhos fofos, sem farinha de trigo, que ficam prontos em meia hora.",
+   "video": {
+    "container": "tray",
+    "groups": [
+     {
+      "id": "q",
+      "shape": "blob",
+      "c": [
+       "#FFFFFF",
+       "#F6E6C8"
+      ],
+      "n": 5,
+      "inn": "bowl",
+      "size": 1.1
+     },
+     {
+      "id": "a",
+      "shape": "pea",
+      "c": [
+       "#E6D2A8",
+       "#E6D2A8"
+      ],
+      "n": 40,
+      "size": 0.55,
+      "inn": "bowl"
+     },
+     {
+      "id": "e",
+      "shape": "yolk",
+      "c": [
+       "#F7B32B",
+       "#F7B32B"
+      ],
+      "n": 1,
+      "layout": "grid",
+      "inn": "bowl"
+     },
+     {
+      "id": "B",
+      "shape": "layer",
+      "c": [
+       "#EBDDBD",
+       "#EBDDBD"
+      ],
+      "inn": "bowl",
+      "reveal": "mix"
+     },
+     {
+      "id": "b",
+      "shape": "ball",
+      "c": [
+       "#ECD39C",
+       "#B9773A"
+      ],
+      "n": 6,
+      "layout": "grid",
+      "size": 2.6
+     },
+     {
+      "id": "s",
+      "shape": "pea",
+      "c": [
+       "#F3EAD6",
+       "#D9B377"
+      ],
+      "n": 40,
+      "z": 1,
+      "size": 0.3
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "tub",
+       "c": "#3E8E5A"
+      },
+      "250 g",
+      [
+       "de quark magro"
+      ]
+     ],
+     [
+      {
+       "k": "sack",
+       "c": "#C9A26B"
+      },
+      "150 g",
+      [
+       "de aveia triturada"
+      ]
+     ],
+     [
+      {
+       "k": "eggs"
+      },
+      "1",
+      [
+       "ovo"
+      ]
+     ],
+     [
+      {
+       "k": "jar",
+       "c": "#E9E2D0"
+      },
+      "2 c. chá",
+      [
+       "de fermento em pó"
+      ]
+     ],
+     [
+      {
+       "k": "jar",
+       "c": "#6E6A66"
+      },
+      "1 c. sopa",
+      [
+       "de sementes de chia"
+      ]
+     ],
+     [
+      {
+       "k": "spices"
+      },
+      "a gosto",
+      [
+       "sal e sésamo"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "preheat",
+      "temp": 190,
+      "title": [
+       "Pré-aquece",
+       "o forno"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "bowl",
+      "title": [
+       "Faz",
+       "a massa"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "q"
+        ],
+        "text": [
+         "250 g de quark"
+        ]
+       },
+       {
+        "groups": [
+         "a"
+        ],
+        "text": [
+         "Aveia triturada e chia"
+        ]
+       },
+       {
+        "groups": [
+         "e"
+        ],
+        "text": [
+         "Ovo e fermento"
+        ]
+       }
+      ],
+      "mix": "batter",
+      "mixText": [
+       "Até ligar"
+      ]
+     },
+     {
+      "kind": "fill",
+      "target": "dish",
+      "title": [
+       "Molda 6",
+       "pãezinhos"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "b"
+        ],
+        "text": [
+         "Com as mãos húmidas"
+        ]
+       },
+       {
+        "groups": [
+         "s"
+        ],
+        "text": [
+         "Sésamo por cima"
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "bake",
+      "temp": 190,
+      "minutes": 25,
+      "label": "25",
+      "sub": "minutos",
+      "after": "Dourados e fofos."
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Arrefece",
+       "e serve"
+      ],
+      "batches": [
+       {
+        "groups": [],
+        "text": [
+         "10 minutos numa grelha"
+        ]
+       }
+      ],
+      "done": "Prontos a acompanhar!"
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 145,
+    "protein": 10,
+    "carbs": 20,
+    "fat": 3,
+    "fiber": 3
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Quark magro",
+     "g": 250,
+     "kcal": 168,
+     "protein": 30
+    },
+    {
+     "item": "Flocos de aveia triturados",
+     "g": 150,
+     "kcal": 568,
+     "protein": 20
+    },
+    {
+     "item": "Ovo",
+     "g": 55,
+     "kcal": 79,
+     "protein": 7
+    },
+    {
+     "item": "Fermento em pó",
+     "g": 3,
+     "kcal": 1,
+     "protein": 0
+    },
+    {
+     "item": "Sementes de chia",
+     "g": 10,
+     "kcal": 49,
+     "protein": 2
+    }
+   ],
+   "proteinPer100kcal": 6.7,
+   "totalMin": 35,
+   "costPerServing": 0.32,
+   "cost": "€",
+   "glutenFree": false,
+   "vegetarian": true,
+   "foods": [
+    "quark",
+    "aveia",
+    "ovo",
+    "fermento",
+    "chia"
+   ],
+   "videoFile": "videos/paezinhos-quark-aveia.mp4"
+  },
+  {
+   "id": "molho-mostarda-mel-cottage",
+   "title": "Molho de mostarda e mel com cottage",
+   "short": "Molho de mostarda e mel",
+   "protein": "Ovos/Queijo",
+   "meal": "Molho",
+   "servings": 6,
+   "handsOn": 5,
+   "ovenMax": 0,
+   "oven": "Sem forno",
+   "temp": null,
+   "tags": [
+    "molho",
+    "cottage",
+    "sem forno",
+    "honey mustard",
+    "sem glúten"
+   ],
+   "ingredients": [
+    {
+     "q": 200,
+     "u": "g",
+     "n": "de queijo cottage",
+     "food": "cottage"
+    },
+    {
+     "q": 100,
+     "u": "g",
+     "n": "de skyr natural",
+     "food": "skyr"
+    },
+    {
+     "q": 2,
+     "u": "c. sopa",
+     "n": "de mostarda",
+     "food": "mostarda"
+    },
+    {
+     "q": 1,
+     "u": "c. sopa",
+     "n": "de mel",
+     "food": "mel"
+    },
+    {
+     "q": 1,
+     "u": "c. sopa",
+     "n": "de sumo de limão",
+     "food": "limao"
+    },
+    {
+     "t": "Sal, pimenta e cebolinho a gosto"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Tritura tudo",
+     "detail": "Cottage, skyr, mostarda, mel e limão com a varinha, até ficar cremoso."
+    },
+    {
+     "title": "Tempera",
+     "detail": "Sal, pimenta e cebolinho picado."
+    },
+    {
+     "title": "Frigorífico",
+     "detail": "10 minutos, para engrossar."
+    }
+   ],
+   "tip": "Triturar o cottage tira-lhe os grumos e deixa-o liso como uma maionese.",
+   "tips": [
+    "Perfeito com as tiras de frango crocantes.",
+    "Dura 4 dias no frigorífico."
+   ],
+   "pairs": [],
+   "difficulty": "Fácil",
+   "storage": "4 dias no frigorífico",
+   "mealPrep": true,
+   "hook": "O clássico molho de mostarda e mel, mas feito com cottage: cremoso e cheio de proteína.",
+   "video": {
+    "container": "bowl",
+    "groups": [
+     {
+      "id": "q",
+      "shape": "curd",
+      "c": [
+       "#FFFFFF",
+       "#F6E6C8"
+      ],
+      "n": 10,
+      "inn": "bowl"
+     },
+     {
+      "id": "y",
+      "shape": "blob",
+      "c": [
+       "#FFFFFF",
+       "#F6E6C8"
+      ],
+      "n": 4,
+      "inn": "bowl",
+      "size": 1.1
+     },
+     {
+      "id": "m",
+      "shape": "blob",
+      "c": [
+       "#E8B830",
+       "#C99A1E"
+      ],
+      "n": 3,
+      "inn": "bowl",
+      "size": 0.6
+     },
+     {
+      "id": "l",
+      "shape": "lemon",
+      "c": [
+       "#F7D544",
+       "#E9C030"
+      ],
+      "n": 1,
+      "layout": "grid",
+      "inn": "bowl"
+     },
+     {
+      "id": "B",
+      "shape": "layer",
+      "c": [
+       "#F2DE8E",
+       "#F2DE8E"
+      ],
+      "inn": "bowl",
+      "reveal": "mix"
+     },
+     {
+      "id": "h",
+      "shape": "herb",
+      "c": [
+       "#3E9A4A",
+       "#2F7A38"
+      ],
+      "n": 16,
+      "z": 1,
+      "inn": "bowl"
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "tub",
+       "c": "#2F80C0"
+      },
+      "200 g",
+      [
+       "de queijo cottage"
+      ]
+     ],
+     [
+      {
+       "k": "tub",
+       "c": "#5B7BA8"
+      },
+      "100 g",
+      [
+       "de skyr natural"
+      ]
+     ],
+     [
+      {
+       "k": "jar",
+       "c": "#E8B830"
+      },
+      "2 c. sopa",
+      [
+       "de mostarda"
+      ]
+     ],
+     [
+      {
+       "k": "jar",
+       "c": "#E5A82E"
+      },
+      "1 c. sopa",
+      [
+       "de mel"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "lemon"
+      },
+      "1 c. sopa",
+      [
+       "de sumo de limão"
+      ]
+     ],
+     [
+      {
+       "k": "herbs"
+      },
+      "a gosto",
+      [
+       "cebolinho, sal e pimenta"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "fill",
+      "target": "bowl",
+      "title": [
+       "Tritura",
+       "tudo"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "q"
+        ],
+        "text": [
+         "200 g de cottage"
+        ]
+       },
+       {
+        "groups": [
+         "y"
+        ],
+        "text": [
+         "100 g de skyr"
+        ]
+       },
+       {
+        "groups": [
+         "m",
+         "l"
+        ],
+        "text": [
+         "Mostarda, mel e limão"
+        ]
+       }
+      ],
+      "mix": "batter",
+      "mixText": [
+       "Até ficar cremoso"
+      ]
+     },
+     {
+      "kind": "chill",
+      "title": [
+       "Frigorífico"
+      ],
+      "label": "10",
+      "sub": "minutos"
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Cebolinho",
+       "por cima"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "h"
+        ],
+        "text": [
+         "Cebolinho picado"
+        ]
+       }
+      ],
+      "done": "Pronto a servir!"
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 50,
+    "protein": 6,
+    "carbs": 5,
+    "fat": 1,
+    "fiber": 0
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Queijo cottage",
+     "g": 200,
+     "kcal": 168,
+     "protein": 22
+    },
+    {
+     "item": "Skyr natural",
+     "g": 100,
+     "kcal": 63,
+     "protein": 11
+    },
+    {
+     "item": "Mostarda",
+     "g": 30,
+     "kcal": 20,
+     "protein": 1
+    },
+    {
+     "item": "Mel",
+     "g": 20,
+     "kcal": 61,
+     "protein": 0
+    },
+    {
+     "item": "Sumo de limão",
+     "g": 15,
+     "kcal": 3,
+     "protein": 0
+    }
+   ],
+   "proteinPer100kcal": 10.9,
+   "totalMin": 5,
+   "costPerServing": 0.35,
+   "cost": "€",
+   "glutenFree": true,
+   "vegetarian": true,
+   "freezer": false,
+   "foods": [
+    "cottage",
+    "skyr",
+    "mostarda",
+    "mel",
+    "limao"
+   ],
+   "videoFile": "videos/molho-mostarda-mel-cottage.mp4"
+  },
+  {
+   "id": "molho-verde-ervilhas-skyr",
+   "title": "Molho verde de ervilhas, skyr e hortelã",
+   "short": "Molho verde de ervilhas",
+   "protein": "Vegetariano/Leguminosas",
+   "meal": "Molho",
+   "servings": 6,
+   "handsOn": 10,
+   "ovenMax": 0,
+   "oven": "Sem forno",
+   "temp": null,
+   "tags": [
+    "molho",
+    "skyr",
+    "sem forno",
+    "ervilhas",
+    "sem glúten"
+   ],
+   "ingredients": [
+    {
+     "q": 200,
+     "u": "g",
+     "n": "de ervilhas descongeladas",
+     "food": "ervilhas"
+    },
+    {
+     "q": 200,
+     "u": "g",
+     "n": "de skyr natural",
+     "food": "skyr"
+    },
+    {
+     "q": 15,
+     "u": "g",
+     "n": "de parmesão ralado",
+     "food": "parmesao"
+    },
+    {
+     "q": 1,
+     "u": "un",
+     "n": "dente de alho",
+     "np": "dentes de alho",
+     "food": "alho",
+     "grams": null
+    },
+    {
+     "q": 2,
+     "u": "c. sopa",
+     "n": "de sumo de limão",
+     "food": "limao"
+    },
+    {
+     "t": "Hortelã fresca, sal e pimenta a gosto"
+    }
+   ],
+   "steps": [
+    {
+     "title": "Tritura tudo",
+     "detail": "Ervilhas, skyr, parmesão, alho, limão e hortelã, até ficar cremoso."
+    },
+    {
+     "title": "Prova e tempera",
+     "detail": "Sal, pimenta e mais limão, se quiseres."
+    },
+    {
+     "title": "Serve",
+     "detail": "Com mais hortelã por cima."
+    }
+   ],
+   "tip": "Ervilhas congeladas são doces e baratas: basta passá-las por água quente para descongelar.",
+   "tips": [
+    "Barra-se como um pesto: ótimo nos wraps de claras.",
+    "Fica lindo com frango, salmão ou fajitas."
+   ],
+   "pairs": [],
+   "difficulty": "Fácil",
+   "storage": "3 dias no frigorífico",
+   "mealPrep": true,
+   "hook": "Um molho verdinho, fresco e docinho, parecido com um pesto, mas muito mais leve.",
+   "video": {
+    "container": "bowl",
+    "groups": [
+     {
+      "id": "p",
+      "shape": "pea",
+      "c": [
+       "#7CC04A",
+       "#4E9A2E"
+      ],
+      "n": 50,
+      "inn": "bowl",
+      "size": 0.8
+     },
+     {
+      "id": "y",
+      "shape": "blob",
+      "c": [
+       "#FFFFFF",
+       "#F6E6C8"
+      ],
+      "n": 5,
+      "inn": "bowl",
+      "size": 1.1
+     },
+     {
+      "id": "g",
+      "shape": "pea",
+      "c": [
+       "#F3EBD9",
+       "#D9C9A8"
+      ],
+      "n": 6,
+      "inn": "bowl",
+      "size": 0.4
+     },
+     {
+      "id": "l",
+      "shape": "lemon",
+      "c": [
+       "#F7D544",
+       "#E9C030"
+      ],
+      "n": 1,
+      "layout": "grid",
+      "inn": "bowl"
+     },
+     {
+      "id": "B",
+      "shape": "layer",
+      "c": [
+       "#A8D47A",
+       "#A8D47A"
+      ],
+      "inn": "bowl",
+      "reveal": "mix"
+     },
+     {
+      "id": "h",
+      "shape": "leaf",
+      "c": [
+       "#4FAF4A",
+       "#2F7A38"
+      ],
+      "n": 10,
+      "z": 1,
+      "inn": "bowl",
+      "size": 0.7
+     }
+    ],
+    "ingr": [
+     [
+      {
+       "k": "shape",
+       "shape": "pea",
+       "c": [
+        "#7CC04A",
+        "#4E9A2E"
+       ],
+       "n": 5
+      },
+      "200 g",
+      [
+       "de ervilhas"
+      ]
+     ],
+     [
+      {
+       "k": "tub",
+       "c": "#5B7BA8"
+      },
+      "200 g",
+      [
+       "de skyr natural"
+      ]
+     ],
+     [
+      {
+       "k": "cheese"
+      },
+      "15 g",
+      [
+       "de parmesão"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "garlic"
+      },
+      "1",
+      [
+       "dente de alho"
+      ]
+     ],
+     [
+      {
+       "k": "fruit",
+       "f": "lemon"
+      },
+      "2 c. sopa",
+      [
+       "de sumo de limão"
+      ]
+     ],
+     [
+      {
+       "k": "herbs"
+      },
+      "a gosto",
+      [
+       "hortelã, sal e pimenta"
+      ]
+     ]
+    ],
+    "steps": [
+     {
+      "kind": "fill",
+      "target": "bowl",
+      "title": [
+       "Tritura",
+       "tudo"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "p"
+        ],
+        "text": [
+         "200 g de ervilhas"
+        ]
+       },
+       {
+        "groups": [
+         "y"
+        ],
+        "text": [
+         "200 g de skyr"
+        ]
+       },
+       {
+        "groups": [
+         "g",
+         "l"
+        ],
+        "text": [
+         "Parmesão, alho e limão"
+        ]
+       }
+      ],
+      "mix": "batter",
+      "mixText": [
+       "Até ficar cremoso"
+      ]
+     },
+     {
+      "kind": "top",
+      "title": [
+       "Hortelã",
+       "por cima"
+      ],
+      "batches": [
+       {
+        "groups": [
+         "h"
+        ],
+        "text": [
+         "Hortelã fresca"
+        ]
+       }
+      ],
+      "done": "Pronto a servir!"
+     }
+    ]
+   },
+   "macrosPerServing": {
+    "kcal": 60,
+    "protein": 6,
+    "carbs": 7,
+    "fat": 1,
+    "fiber": 2
+   },
+   "macroBreakdownWholeRecipe": [
+    {
+     "item": "Ervilhas descongeladas",
+     "g": 200,
+     "kcal": 162,
+     "protein": 11
+    },
+    {
+     "item": "Skyr natural",
+     "g": 200,
+     "kcal": 126,
+     "protein": 22
+    },
+    {
+     "item": "Parmesão ralado",
+     "g": 15,
+     "kcal": 59,
+     "protein": 5
+    },
+    {
+     "item": "Dente de alho",
+     "g": 4,
+     "kcal": 6,
+     "protein": 0
+    },
+    {
+     "item": "Sumo de limão",
+     "g": 30,
+     "kcal": 7,
+     "protein": 0
+    }
+   ],
+   "proteinPer100kcal": 10.7,
+   "totalMin": 10,
+   "costPerServing": 0.33,
+   "cost": "€",
+   "glutenFree": true,
+   "vegetarian": true,
+   "freezer": false,
+   "foods": [
+    "ervilhas",
+    "skyr",
+    "parmesao",
+    "alho",
+    "limao"
+   ],
+   "videoFile": "videos/molho-verde-ervilhas-skyr.mp4"
   }
  ]
 }
