@@ -15638,9 +15638,9 @@
    "kcalPerGram": 0.95,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/overnight-oats-skyr-frutos-vermelhos.mp4?v=731f1a3f",
+   "poster": "media/overnight-oats-skyr-frutos-vermelhos.jpg?v=c5bb3dbb",
+   "thumb": "media/overnight-oats-skyr-frutos-vermelhos-thumb.webp?v=8201dff8"
   },
   {
    "id": "tostas-cottage-tomate-ovo",
@@ -15995,9 +15995,9 @@
    "kcalPerGram": 1.04,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/tostas-cottage-tomate-ovo.mp4?v=cf11a5ab",
+   "poster": "media/tostas-cottage-tomate-ovo.jpg?v=d632ac68",
+   "thumb": "media/tostas-cottage-tomate-ovo-thumb.webp?v=580878ee"
   },
   {
    "id": "taca-skyr-morangos-kiwi-granola",
@@ -16328,9 +16328,9 @@
    "kcalPerGram": 0.77,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/taca-skyr-morangos-kiwi-granola.mp4?v=756dd441",
+   "poster": "media/taca-skyr-morangos-kiwi-granola.jpg?v=709931b2",
+   "thumb": "media/taca-skyr-morangos-kiwi-granola-thumb.webp?v=a6551537"
   },
   {
    "id": "omelete-forno-claras-legumes",
@@ -16748,9 +16748,9 @@
    "kcalPerGram": 0.56,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/omelete-forno-claras-legumes.mp4?v=d7ce6de9",
+   "poster": "media/omelete-forno-claras-legumes.jpg?v=6476c722",
+   "thumb": "media/omelete-forno-claras-legumes-thumb.webp?v=b9b182c2"
   },
   {
    "id": "pudim-chia-cacau-banana",
@@ -17087,9 +17087,9 @@
    "kcalPerGram": 0.86,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/pudim-chia-cacau-banana.mp4?v=e5be5581",
+   "poster": "media/pudim-chia-cacau-banana.jpg?v=17ae51f0",
+   "thumb": "media/pudim-chia-cacau-banana-thumb.webp?v=2adb1112"
   },
   {
    "id": "tortilha-recheada-ovo-peru-espinafres",
@@ -17463,9 +17463,9 @@
    "kcalPerGram": 1.25,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/tortilha-recheada-ovo-peru-espinafres.mp4?v=4a7f6fbe",
+   "poster": "media/tortilha-recheada-ovo-peru-espinafres.jpg?v=84fffbbb",
+   "thumb": "media/tortilha-recheada-ovo-peru-espinafres-thumb.webp?v=c60a0cfb"
   },
   {
    "id": "rabanadas-forno-canela-skyr",
