@@ -790,7 +790,9 @@
     "azeite",
     "iog_grego"
    ],
-   "videoFile": "videos/frango-batata-doce-grao-pimentos.mp4"
+   "videoFile": "videos/frango-batata-doce-grao-pimentos.mp4?v=57dca0be",
+   "poster": "media/frango-batata-doce-grao-pimentos.jpg?v=90142794",
+   "thumb": "media/frango-batata-doce-grao-pimentos-thumb.webp?v=65e77db3"
   },
   {
    "id": "almondegas-vaca-feijao-tomate",
@@ -1211,7 +1213,9 @@
     "espinafres",
     "parmesao"
    ],
-   "videoFile": "videos/almondegas-vaca-feijao-tomate.mp4"
+   "videoFile": "videos/almondegas-vaca-feijao-tomate.mp4?v=b61860fd",
+   "poster": "media/almondegas-vaca-feijao-tomate.jpg?v=c6e3c171",
+   "thumb": "media/almondegas-vaca-feijao-tomate-thumb.webp?v=fe57989f"
   },
   {
    "id": "lombo-porco-batata-couves",
@@ -1601,7 +1605,9 @@
     "azeite",
     "mostarda"
    ],
-   "videoFile": "videos/lombo-porco-batata-couves.mp4"
+   "videoFile": "videos/lombo-porco-batata-couves.mp4?v=ad27f72b",
+   "poster": "media/lombo-porco-batata-couves.jpg?v=56de30db",
+   "thumb": "media/lombo-porco-batata-couves-thumb.webp?v=2c5859ac"
   },
   {
    "id": "peru-batata-cogumelos-feijao-verde",
@@ -1992,7 +1998,9 @@
     "azeite",
     "limao"
    ],
-   "videoFile": "videos/peru-batata-cogumelos-feijao-verde.mp4"
+   "videoFile": "videos/peru-batata-cogumelos-feijao-verde.mp4?v=44acb3b6",
+   "poster": "media/peru-batata-cogumelos-feijao-verde.jpg?v=5854dd2b",
+   "thumb": "media/peru-batata-cogumelos-feijao-verde-thumb.webp?v=735a74c3"
   },
   {
    "id": "ovos-forno-tomate-grao-cottage",
@@ -2427,7 +2435,9 @@
     "cottage",
     "azeite"
    ],
-   "videoFile": "videos/ovos-forno-tomate-grao-cottage.mp4"
+   "videoFile": "videos/ovos-forno-tomate-grao-cottage.mp4?v=259f01e4",
+   "poster": "media/ovos-forno-tomate-grao-cottage.jpg?v=5dfc5404",
+   "thumb": "media/ovos-forno-tomate-grao-cottage-thumb.webp?v=565bc3f2"
   },
   {
    "id": "caril-grao-couve-flor-tofu",
@@ -2878,7 +2888,9 @@
     "caril",
     "skyr"
    ],
-   "videoFile": "videos/caril-grao-couve-flor-tofu.mp4"
+   "videoFile": "videos/caril-grao-couve-flor-tofu.mp4?v=fe08b3be",
+   "poster": "media/caril-grao-couve-flor-tofu.jpg?v=93741b6d",
+   "thumb": "media/caril-grao-couve-flor-tofu-thumb.webp?v=130be8ab"
   },
   {
    "id": "salmao-batata-brocolos",
@@ -3259,7 +3271,9 @@
     "limao",
     "azeite"
    ],
-   "videoFile": "videos/salmao-batata-brocolos.mp4"
+   "videoFile": "videos/salmao-batata-brocolos.mp4?v=95e3df1f",
+   "poster": "media/salmao-batata-brocolos.jpg?v=3676742c",
+   "thumb": "media/salmao-batata-brocolos-thumb.webp?v=523dc7e8"
   },
   {
    "id": "pao-proteico-cottage-aveia",
@@ -3618,7 +3632,9 @@
     "aveia",
     "fermento"
    ],
-   "videoFile": "videos/pao-proteico-cottage-aveia.mp4"
+   "videoFile": "videos/pao-proteico-cottage-aveia.mp4?v=59e18a4b",
+   "poster": "media/pao-proteico-cottage-aveia.jpg?v=1bac3912",
+   "thumb": "media/pao-proteico-cottage-aveia-thumb.webp?v=9d4c7836"
   },
   {
    "id": "molho-skyr-alho-ervas",
@@ -3929,7 +3945,9 @@
     "alho",
     "limao"
    ],
-   "videoFile": "videos/molho-skyr-alho-ervas.mp4"
+   "videoFile": "videos/molho-skyr-alho-ervas.mp4?v=679ed71d",
+   "poster": "media/molho-skyr-alho-ervas.jpg?v=c99966a5",
+   "thumb": "media/molho-skyr-alho-ervas-thumb.webp?v=464d346f"
   },
   {
    "id": "molho-quark-pimento-assado",
@@ -4227,7 +4245,9 @@
     "alho",
     "limao"
    ],
-   "videoFile": "videos/molho-quark-pimento-assado.mp4"
+   "videoFile": "videos/molho-quark-pimento-assado.mp4?v=06f86174",
+   "poster": "media/molho-quark-pimento-assado.jpg?v=e6447ddb",
+   "thumb": "media/molho-quark-pimento-assado-thumb.webp?v=c4744bbc"
   },
   {
    "id": "panqueca-forno-aveia-cottage",
@@ -4682,7 +4702,9 @@
     "fermento",
     "frutos_vermelhos"
    ],
-   "videoFile": "videos/panqueca-forno-aveia-cottage.mp4"
+   "videoFile": "videos/panqueca-forno-aveia-cottage.mp4?v=0dc9f005",
+   "poster": "media/panqueca-forno-aveia-cottage.jpg?v=5b6b1075",
+   "thumb": "media/panqueca-forno-aveia-cottage-thumb.webp?v=2fbe9bfc"
   },
   {
    "id": "muffins-ovo-peru-espinafres",
@@ -5062,7 +5084,9 @@
     "pimento",
     "mozzarella_light"
    ],
-   "videoFile": "videos/muffins-ovo-peru-espinafres.mp4"
+   "videoFile": "videos/muffins-ovo-peru-espinafres.mp4?v=700fbec6",
+   "poster": "media/muffins-ovo-peru-espinafres.jpg?v=837362f5",
+   "thumb": "media/muffins-ovo-peru-espinafres-thumb.webp?v=a39ff578"
   },
   {
    "id": "bolinhas-atum-cottage",
@@ -5420,7 +5444,9 @@
     "ovo",
     "aveia"
    ],
-   "videoFile": "videos/bolinhas-atum-cottage.mp4"
+   "videoFile": "videos/bolinhas-atum-cottage.mp4?v=b70c3e9a",
+   "poster": "media/bolinhas-atum-cottage.jpg?v=cec3eaa3",
+   "thumb": "media/bolinhas-atum-cottage-thumb.webp?v=b404b8a4"
   },
   {
    "id": "grao-crocante-colorau-parmesao",
@@ -5672,7 +5698,9 @@
     "azeite",
     "parmesao"
    ],
-   "videoFile": "videos/grao-crocante-colorau-parmesao.mp4"
+   "videoFile": "videos/grao-crocante-colorau-parmesao.mp4?v=e6343f70",
+   "poster": "media/grao-crocante-colorau-parmesao.jpg?v=28f63aed",
+   "thumb": "media/grao-crocante-colorau-parmesao-thumb.webp?v=8650a05e"
   },
   {
    "id": "cheesecake-skyr-forno",
@@ -6139,7 +6167,9 @@
     "mel",
     "frutos_vermelhos"
    ],
-   "videoFile": "videos/cheesecake-skyr-forno.mp4"
+   "videoFile": "videos/cheesecake-skyr-forno.mp4?v=84968115",
+   "poster": "media/cheesecake-skyr-forno.jpg?v=f5726f03",
+   "thumb": "media/cheesecake-skyr-forno-thumb.webp?v=e6f6caed"
   },
   {
    "id": "crumble-maca-frutos-vermelhos-skyr",
@@ -6541,7 +6571,9 @@
     "mel",
     "skyr"
    ],
-   "videoFile": "videos/crumble-maca-frutos-vermelhos-skyr.mp4"
+   "videoFile": "videos/crumble-maca-frutos-vermelhos-skyr.mp4?v=29c859f6",
+   "poster": "media/crumble-maca-frutos-vermelhos-skyr.jpg?v=9f5c9f94",
+   "thumb": "media/crumble-maca-frutos-vermelhos-skyr-thumb.webp?v=9fc1b971"
   },
   {
    "id": "frango-limao-batata-curgete",
@@ -6971,7 +7003,9 @@
     "azeite",
     "limao"
    ],
-   "videoFile": "videos/frango-limao-batata-curgete.mp4"
+   "videoFile": "videos/frango-limao-batata-curgete.mp4?v=0dee3133",
+   "poster": "media/frango-limao-batata-curgete.jpg?v=a23fcd0b",
+   "thumb": "media/frango-limao-batata-curgete-thumb.webp?v=76ebdf40"
   },
   {
    "id": "lasanha-curgete-peru-cottage",
@@ -7413,7 +7447,9 @@
     "ovo",
     "mozzarella_light"
    ],
-   "videoFile": "videos/lasanha-curgete-peru-cottage.mp4"
+   "videoFile": "videos/lasanha-curgete-peru-cottage.mp4?v=5144821c",
+   "poster": "media/lasanha-curgete-peru-cottage.jpg?v=eaf82317",
+   "thumb": "media/lasanha-curgete-peru-cottage-thumb.webp?v=8c051187"
   },
   {
    "id": "fajitas-frango-forno",
@@ -7832,7 +7868,9 @@
     "tortilha_integral",
     "skyr"
    ],
-   "videoFile": "videos/fajitas-frango-forno.mp4"
+   "videoFile": "videos/fajitas-frango-forno.mp4?v=e36d40e2",
+   "poster": "media/fajitas-frango-forno.jpg?v=f709e505",
+   "thumb": "media/fajitas-frango-forno-thumb.webp?v=ce8a1a85"
   },
   {
    "id": "chili-vaca-feijao-batata-doce",
@@ -8274,7 +8312,9 @@
     "cebola",
     "iog_grego"
    ],
-   "videoFile": "videos/chili-vaca-feijao-batata-doce.mp4"
+   "videoFile": "videos/chili-vaca-feijao-batata-doce.mp4?v=2694ebe4",
+   "poster": "media/chili-vaca-feijao-batata-doce.jpg?v=11928118",
+   "thumb": "media/chili-vaca-feijao-batata-doce-thumb.webp?v=f21c9aee"
   },
   {
    "id": "rolo-carne-vaca-cenoura",
@@ -8740,7 +8780,9 @@
     "mostarda",
     "tomate_lata"
    ],
-   "videoFile": "videos/rolo-carne-vaca-cenoura.mp4"
+   "videoFile": "videos/rolo-carne-vaca-cenoura.mp4?v=6aacadc2",
+   "poster": "media/rolo-carne-vaca-cenoura.jpg?v=b40c32b4",
+   "thumb": "media/rolo-carne-vaca-cenoura-thumb.webp?v=1beea954"
   },
   {
    "id": "porco-grao-pimentos-colorau",
@@ -9141,7 +9183,9 @@
     "tomate_cherry",
     "azeite"
    ],
-   "videoFile": "videos/porco-grao-pimentos-colorau.mp4"
+   "videoFile": "videos/porco-grao-pimentos-colorau.mp4?v=8ba1ca26",
+   "poster": "media/porco-grao-pimentos-colorau.jpg?v=da714db0",
+   "thumb": "media/porco-grao-pimentos-colorau-thumb.webp?v=b4a35c50"
   },
   {
    "id": "lentilhas-abobora-espinafres-ovos",
@@ -9623,7 +9667,9 @@
     "ovo",
     "queijo_fresco"
    ],
-   "videoFile": "videos/lentilhas-abobora-espinafres-ovos.mp4"
+   "videoFile": "videos/lentilhas-abobora-espinafres-ovos.mp4?v=4ff3ded2",
+   "poster": "media/lentilhas-abobora-espinafres-ovos.jpg?v=5b23e5c8",
+   "thumb": "media/lentilhas-abobora-espinafres-ovos-thumb.webp?v=e2a26856"
   },
   {
    "id": "sardinhas-batata-pimentos",
@@ -10061,7 +10107,9 @@
     "sardinha_lata",
     "tomate_cherry"
    ],
-   "videoFile": "videos/sardinhas-batata-pimentos.mp4"
+   "videoFile": "videos/sardinhas-batata-pimentos.mp4?v=84888736",
+   "poster": "media/sardinhas-batata-pimentos.jpg?v=96115f9e",
+   "thumb": "media/sardinhas-batata-pimentos-thumb.webp?v=39354691"
   },
   {
    "id": "salmao-mostarda-mel-feijao-verde",
@@ -10488,7 +10536,9 @@
     "skyr",
     "limao"
    ],
-   "videoFile": "videos/salmao-mostarda-mel-feijao-verde.mp4"
+   "videoFile": "videos/salmao-mostarda-mel-feijao-verde.mp4?v=014a6e5b",
+   "poster": "media/salmao-mostarda-mel-feijao-verde.jpg?v=bf217260",
+   "thumb": "media/salmao-mostarda-mel-feijao-verde-thumb.webp?v=d956e3a7"
   },
   {
    "id": "aveia-forno-maca-canela-skyr",
@@ -10900,7 +10950,9 @@
     "ovo",
     "maca"
    ],
-   "videoFile": "videos/aveia-forno-maca-canela-skyr.mp4"
+   "videoFile": "videos/aveia-forno-maca-canela-skyr.mp4?v=e591eaf7",
+   "poster": "media/aveia-forno-maca-canela-skyr.jpg?v=e85a6724",
+   "thumb": "media/aveia-forno-maca-canela-skyr-thumb.webp?v=cda842d5"
   },
   {
    "id": "frittata-batata-cogumelos-queijo-fresco",
@@ -11333,7 +11385,9 @@
     "espinafres",
     "queijo_fresco"
    ],
-   "videoFile": "videos/frittata-batata-cogumelos-queijo-fresco.mp4"
+   "videoFile": "videos/frittata-batata-cogumelos-queijo-fresco.mp4?v=42e0d251",
+   "poster": "media/frittata-batata-cogumelos-queijo-fresco.jpg?v=3e72bfca",
+   "thumb": "media/frittata-batata-cogumelos-queijo-fresco-thumb.webp?v=17cd246b"
   },
   {
    "id": "muffins-banana-aveia-skyr",
@@ -11785,7 +11839,9 @@
     "fermento",
     "frutos_vermelhos"
    ],
-   "videoFile": "videos/muffins-banana-aveia-skyr.mp4"
+   "videoFile": "videos/muffins-banana-aveia-skyr.mp4?v=5ba67c0b",
+   "poster": "media/muffins-banana-aveia-skyr.jpg?v=609a62cd",
+   "thumb": "media/muffins-banana-aveia-skyr-thumb.webp?v=5d355fd3"
   },
   {
    "id": "tiras-frango-crocantes-aveia",
@@ -12122,7 +12178,9 @@
     "aveia",
     "parmesao"
    ],
-   "videoFile": "videos/tiras-frango-crocantes-aveia.mp4"
+   "videoFile": "videos/tiras-frango-crocantes-aveia.mp4?v=d5999c7b",
+   "poster": "media/tiras-frango-crocantes-aveia.jpg?v=81636c23",
+   "thumb": "media/tiras-frango-crocantes-aveia-thumb.webp?v=329126e2"
   },
   {
    "id": "cogumelos-recheados-cottage-peru",
@@ -12457,7 +12515,9 @@
     "fiambre_peru",
     "mozzarella_light"
    ],
-   "videoFile": "videos/cogumelos-recheados-cottage-peru.mp4"
+   "videoFile": "videos/cogumelos-recheados-cottage-peru.mp4?v=7e87f449",
+   "poster": "media/cogumelos-recheados-cottage-peru.jpg?v=83ae9206",
+   "thumb": "media/cogumelos-recheados-cottage-peru-thumb.webp?v=3f36f02f"
   },
   {
    "id": "bolinhos-sardinha-grao",
@@ -12834,7 +12894,9 @@
     "aveia",
     "limao"
    ],
-   "videoFile": "videos/bolinhos-sardinha-grao.mp4"
+   "videoFile": "videos/bolinhos-sardinha-grao.mp4?v=8eb687ae",
+   "poster": "media/bolinhos-sardinha-grao.jpg?v=a7e5cbed",
+   "thumb": "media/bolinhos-sardinha-grao-thumb.webp?v=57898b39"
   },
   {
    "id": "brownie-feijao-preto-cacau",
@@ -13265,7 +13327,9 @@
     "fermento",
     "frutos_vermelhos"
    ],
-   "videoFile": "videos/brownie-feijao-preto-cacau.mp4"
+   "videoFile": "videos/brownie-feijao-preto-cacau.mp4?v=df0f48f8",
+   "poster": "media/brownie-feijao-preto-cacau.jpg?v=a603c06f",
+   "thumb": "media/brownie-feijao-preto-cacau-thumb.webp?v=aa49a910"
   },
   {
    "id": "peras-assadas-canela-quark",
@@ -13583,7 +13647,9 @@
     "aveia",
     "quark"
    ],
-   "videoFile": "videos/peras-assadas-canela-quark.mp4"
+   "videoFile": "videos/peras-assadas-canela-quark.mp4?v=ce717b52",
+   "poster": "media/peras-assadas-canela-quark.jpg?v=e6d94af5",
+   "thumb": "media/peras-assadas-canela-quark-thumb.webp?v=5aaae4ea"
   },
   {
    "id": "wraps-claras-aveia-forno",
@@ -13877,7 +13943,9 @@
     "clara",
     "aveia"
    ],
-   "videoFile": "videos/wraps-claras-aveia-forno.mp4"
+   "videoFile": "videos/wraps-claras-aveia-forno.mp4?v=46c1031d",
+   "poster": "media/wraps-claras-aveia-forno.jpg?v=deb7d2dc",
+   "thumb": "media/wraps-claras-aveia-forno-thumb.webp?v=6b5ea00d"
   },
   {
    "id": "paezinhos-quark-aveia",
@@ -14250,7 +14318,9 @@
     "fermento",
     "chia"
    ],
-   "videoFile": "videos/paezinhos-quark-aveia.mp4"
+   "videoFile": "videos/paezinhos-quark-aveia.mp4?v=a70a5100",
+   "poster": "media/paezinhos-quark-aveia.jpg?v=682c48c0",
+   "thumb": "media/paezinhos-quark-aveia-thumb.webp?v=d10435a5"
   },
   {
    "id": "molho-mostarda-mel-cottage",
@@ -14579,7 +14649,9 @@
     "mel",
     "limao"
    ],
-   "videoFile": "videos/molho-mostarda-mel-cottage.mp4"
+   "videoFile": "videos/molho-mostarda-mel-cottage.mp4?v=740959c5",
+   "poster": "media/molho-mostarda-mel-cottage.jpg?v=699a31b0",
+   "thumb": "media/molho-mostarda-mel-cottage-thumb.webp?v=ab8f789b"
   },
   {
    "id": "molho-verde-ervilhas-skyr",
@@ -14908,7 +14980,9 @@
     "alho",
     "limao"
    ],
-   "videoFile": "videos/molho-verde-ervilhas-skyr.mp4"
+   "videoFile": "videos/molho-verde-ervilhas-skyr.mp4?v=49f3a4a3",
+   "poster": "media/molho-verde-ervilhas-skyr.jpg?v=07f4a004",
+   "thumb": "media/molho-verde-ervilhas-skyr-thumb.webp?v=e88167f6"
   }
  ]
 }

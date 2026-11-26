@@ -1,5 +1,6 @@
 # Fonte das receitas: edita aqui e corre `python3 tools/recipes_src.py` para gerar recipes.json com macros recalculados.
-import json, sys, os
+import json, sys, os, hashlib
+OUT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "recipes.json")
 sys.path.insert(0, os.path.dirname(__file__))
 from foods import FOODS, UNIT_G, SPOON_G
 
@@ -431,7 +432,10 @@ def build():
         if rr['glutenFree']: tags.append('sem glúten')
         rr['tags'] = tags
         rr['steps'] = [{'title': a, 'detail': b} for a, b in r['steps']]
-        rr['videoFile'] = f"videos/{r['id']}.mp4"
+        # ?v=<hash do ficheiro>: um vídeo/poster gerado de novo tem um URL novo, por isso nenhuma cache serve o antigo
+        for key, rel in (('videoFile', f"videos/{r['id']}.mp4"), ('poster', f"media/{r['id']}.jpg"), ('thumb', f"media/{r['id']}-thumb.webp")):
+            fp = os.path.join(os.path.dirname(OUT_PATH), rel)
+            rr[key] = rel + ('?v=' + hashlib.sha1(open(fp, 'rb').read()).hexdigest()[:8] if os.path.exists(fp) else '')
         out.append(rr)
     book = {'title': 'Livro de Receitas Fit do Chef', 'language': 'pt-PT',
             'proteinTypes': ['Frango/Peru', 'Vaca/Porco', 'Ovos/Queijo', 'Vegetariano/Leguminosas', 'Peixe'],
@@ -440,7 +444,7 @@ def build():
             'foodGroups': ['Carne e aves', 'Peixe', 'Ovos e laticínios', 'Leguminosas e tofu', 'Batata, cereais e pão', 'Legumes', 'Fruta', 'Despensa básica'],
             'subs': SUBS,
             'notes': 'Macros por dose são estimativas a partir de ingredientes crus (tools/foods.py). Para acrescentar uma receita: junta-a a tools/recipes_src.py, corre o script e gera o vídeo com tools/render_all.py (ver README.md).'}
-    json.dump({'book': book, 'recipes': out}, open(os.path.join(os.path.dirname(__file__), '..', 'recipes.json'), 'w'), ensure_ascii=False, indent=1)
+    json.dump({'book': book, 'recipes': out}, open(OUT_PATH, 'w'), ensure_ascii=False, indent=1)
     for r in out:
         m = r['macrosPerServing']; print(f"{r['id']:42s} {r['meal']:18s} {m['kcal']:4d} kcal {m['protein']:3d} P {m['carbs']:3d} C {m['fat']:3d} F  P/100={r['proteinPer100kcal']} fib={m['fiber']} {r['cost']}{r['costPerServing']} gf={int(r['glutenFree'])} veg={int(r['vegetarian'])}")
 

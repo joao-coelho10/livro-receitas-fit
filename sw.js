@@ -3,11 +3,11 @@
    - recipes.json: rede primeiro (receitas novas aparecem logo), cache se estiver offline.
    - Miniaturas e posters: cache à medida que são vistos.
    - Vídeos: só da cache se tiverem sido guardados (com suporte a pedidos Range), senão rede. */
-const VERSION = 'v2';
+const VERSION = 'v3';
 const SHELL = 'rf-shell-' + VERSION;
 const DATA = 'rf-data';
-const MEDIA = 'rf-media';
-const VIDEOS = 'rf-videos-v2'; // v2: vídeos narrados (o nome novo apaga os vídeos antigos guardados)
+const MEDIA = 'rf-media-v2';
+const VIDEOS = 'rf-videos-v3'; // v3: URLs com ?v=<hash>; apaga as cópias antigas (algumas sem narração)
 const SHELL_FILES = [
   './', 'index.html', 'styles.css', 'app.js', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-512.png', 'icons/apple-touch-icon.png', 'icons/favicon-32.png', 'icons/icon.svg',
@@ -60,7 +60,7 @@ async function networkFirst(req, cacheName) {
 
 async function cacheFirst(req, cacheName) {
   const c = await caches.open(cacheName);
-  const hit = await c.match(req, { ignoreSearch: true });
+  const hit = await c.match(req); // URL exato (inclui ?v=), para nunca servir um poster antigo
   if (hit) return hit;
   const res = await fetch(req);
   if (res.ok) c.put(req, res.clone());
@@ -69,7 +69,7 @@ async function cacheFirst(req, cacheName) {
 
 async function video(req) {
   const c = await caches.open(VIDEOS);
-  const hit = await c.match(req.url.split('?')[0]);
+  const hit = await c.match(req.url); // URL exato (inclui ?v=)
   if (!hit) return fetch(req);
   const range = req.headers.get('range');
   if (!range) return hit;

@@ -7,6 +7,6 @@ for id in $ids; do
   f="videos/$id.mp4"
   if [ -f "$f" ] && [ -n "$(ffprobe -v error -select_streams a -show_entries stream=codec_name -of csv=p=0 "$f")" ]; then echo "$(date +%H:%M) ja feito: $id"; continue; fi
   echo "$(date +%H:%M) a gerar: $id"
-  python3 tools/render_all.py "$id" || echo "$(date +%H:%M) FALHOU: $id"
+  python3 tools/render_all.py "$id" && python3 tools/recipes_src.py > /dev/null || echo "$(date +%H:%M) FALHOU: $id"
 done
 echo "$(date +%H:%M) FIM"
