@@ -17833,9 +17833,9 @@
    "kcalPerGram": 1.02,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/rabanadas-forno-canela-skyr.mp4?v=253c884f",
+   "poster": "media/rabanadas-forno-canela-skyr.jpg?v=17c7ecd6",
+   "thumb": "media/rabanadas-forno-canela-skyr-thumb.webp?v=f595c3be"
   },
   {
    "id": "taca-salgada-cottage-pepino-ovo",
@@ -18167,9 +18167,9 @@
    "kcalPerGram": 0.69,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/taca-salgada-cottage-pepino-ovo.mp4?v=4aee0cd5",
+   "poster": "media/taca-salgada-cottage-pepino-ovo.jpg?v=0b2a7774",
+   "thumb": "media/taca-salgada-cottage-pepino-ovo-thumb.webp?v=39fd623c"
   },
   {
    "id": "muffins-cenoura-aveia-quark",
@@ -18590,9 +18590,9 @@
    "kcalPerGram": 1.24,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/muffins-cenoura-aveia-quark.mp4?v=0c16f0eb",
+   "poster": "media/muffins-cenoura-aveia-quark.jpg?v=f23c00ad",
+   "thumb": "media/muffins-cenoura-aveia-quark-thumb.webp?v=ea7ed02d"
   },
   {
    "id": "tostas-salmao-fumado-quark-pepino",
@@ -18938,9 +18938,9 @@
    "kcalPerGram": 1.11,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/tostas-salmao-fumado-quark-pepino.mp4?v=bc6b7db4",
+   "poster": "media/tostas-salmao-fumado-quark-pepino.jpg?v=4ab8c168",
+   "thumb": "media/tostas-salmao-fumado-quark-pepino-thumb.webp?v=59608cc8"
   },
   {
    "id": "granola-caseira-aveia-amendoim",
@@ -19303,9 +19303,9 @@
    "kcalPerGram": 3.29,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/granola-caseira-aveia-amendoim.mp4?v=659a2c62",
+   "poster": "media/granola-caseira-aveia-amendoim.jpg?v=c2638c99",
+   "thumb": "media/granola-caseira-aveia-amendoim-thumb.webp?v=3822ca23"
   },
   {
    "id": "pao-banana-quark",
@@ -19742,9 +19742,9 @@
    "kcalPerGram": 1.41,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/pao-banana-quark.mp4?v=72212479",
+   "poster": "media/pao-banana-quark.jpg?v=f4a63def",
+   "thumb": "media/pao-banana-quark-thumb.webp?v=6b5edd95"
   },
   {
    "id": "pipocas-colorau-parmesao",
