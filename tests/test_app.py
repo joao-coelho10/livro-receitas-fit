@@ -98,9 +98,10 @@ def run(pw, engine):
     pg.reload(); pg.wait_for_selector('#filters')
     ok(f'{E}: … nem depois de recarregar', ui_state(pg)['count'] == len(R))
     # 6b) página da receita: com vídeo mostra o leitor; sem vídeo ainda mostra o aviso
-    for r in [x for x in R if x.get('videoFile')][:1] + [x for x in R if not x.get('videoFile')][:1]:
-        pg.goto(BASE + '#/receita/' + r['id']); pg.wait_for_selector('.r-head')
-        ok(f"{E}: receita {'com' if r['videoFile'] else 'sem'} vídeo", pg.locator('#vid' if r['videoFile'] else '.video-soon').count() == 1)
+    live = pg.evaluate("RF.recipes.map(r => [r.id, r.hasVideo])")  # o que a app carregou (os vídeos podem estar a ser gerados)
+    for rid_, hv in [x for x in live if x[1]][:1] + [x for x in live if not x[1]][:1]:
+        pg.goto(BASE + '#/receita/' + rid_); pg.wait_for_selector('.r-head')
+        ok(f"{E}: receita {'com' if hv else 'sem'} vídeo", pg.locator('#vid' if hv else '.video-soon').count() == 1)
     # 7) coleções
     rid = R[0]['id']
     pg.goto(BASE + '#/receita/' + rid); pg.wait_for_selector('.r-head')
