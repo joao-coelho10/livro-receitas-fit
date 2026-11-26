@@ -21920,9 +21920,9 @@
    "kcalPerGram": 2.7,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/trufas-proteicas-cacau-amendoim.mp4?v=f4a6805e",
+   "poster": "media/trufas-proteicas-cacau-amendoim.jpg?v=32cee4e9",
+   "thumb": "media/trufas-proteicas-cacau-amendoim-thumb.webp?v=d7c232d4"
   },
   {
    "id": "barritas-aveia-amendoim-forno",
@@ -22318,9 +22318,9 @@
    "kcalPerGram": 2.34,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/barritas-aveia-amendoim-forno.mp4?v=fb405353",
+   "poster": "media/barritas-aveia-amendoim-forno.jpg?v=3e78d8ef",
+   "thumb": "media/barritas-aveia-amendoim-forno-thumb.webp?v=37df81f3"
   },
   {
    "id": "rolinhos-peru-queijo-fresco-pepino",
@@ -22620,9 +22620,9 @@
    "kcalPerGram": 0.63,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/rolinhos-peru-queijo-fresco-pepino.mp4?v=d8dc62ec",
+   "poster": "media/rolinhos-peru-queijo-fresco-pepino.jpg?v=d883daaa",
+   "thumb": "media/rolinhos-peru-queijo-fresco-pepino-thumb.webp?v=254f217b"
   },
   {
    "id": "mini-pizzas-beringela",
@@ -22988,9 +22988,9 @@
    "kcalPerGram": 0.58,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/mini-pizzas-beringela.mp4?v=aec56b65",
+   "poster": "media/mini-pizzas-beringela.jpg?v=bd46b591",
+   "thumb": "media/mini-pizzas-beringela-thumb.webp?v=4708862e"
   },
   {
    "id": "bark-iogurte-frutos-vermelhos",
@@ -23295,9 +23295,9 @@
    "kcalPerGram": 0.67,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/bark-iogurte-frutos-vermelhos.mp4?v=b904e00b",
+   "poster": "media/bark-iogurte-frutos-vermelhos.jpg?v=a6104616",
+   "thumb": "media/bark-iogurte-frutos-vermelhos-thumb.webp?v=a0bf39bf"
   },
   {
    "id": "bolinhas-queijo-fresco-espinafres",
@@ -23660,9 +23660,9 @@
    "kcalPerGram": 1.2,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/bolinhas-queijo-fresco-espinafres.mp4?v=291fe63b",
+   "poster": "media/bolinhas-queijo-fresco-espinafres.jpg?v=212889ae",
+   "thumb": "media/bolinhas-queijo-fresco-espinafres-thumb.webp?v=2299039c"
   },
   {
    "id": "salada-morna-frango-quinoa",
