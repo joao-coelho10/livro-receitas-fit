@@ -24162,9 +24162,9 @@
    ],
    "gramsPerServing": 498,
    "kcalPerGram": 0.6,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/salada-morna-frango-quinoa.mp4?v=c9596e18",
+   "poster": "media/salada-morna-frango-quinoa.jpg?v=caed92a1",
+   "thumb": "media/salada-morna-frango-quinoa-thumb.webp?v=07addb2f"
   },
   {
    "id": "salada-atum-grao-ovo",
@@ -24630,9 +24630,9 @@
    ],
    "gramsPerServing": 504,
    "kcalPerGram": 0.79,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/salada-atum-grao-ovo.mp4?v=fa4e4ccc",
+   "poster": "media/salada-atum-grao-ovo.jpg?v=ef1ab2af",
+   "thumb": "media/salada-atum-grao-ovo-thumb.webp?v=bb27e6fd"
   },
   {
    "id": "salada-morna-batata-doce-peru-rucula",
@@ -25089,9 +25089,9 @@
    "gramsPerServing": 396,
    "kcalPerGram": 0.92,
    "volume": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/salada-morna-batata-doce-peru-rucula.mp4?v=eb846905",
+   "poster": "media/salada-morna-batata-doce-peru-rucula.jpg?v=d9b7c8d1",
+   "thumb": "media/salada-morna-batata-doce-peru-rucula-thumb.webp?v=a539a139"
   },
   {
    "id": "salada-salmao-batata-feijao-verde",
@@ -25525,9 +25525,9 @@
    ],
    "gramsPerServing": 463,
    "kcalPerGram": 0.94,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/salada-salmao-batata-feijao-verde.mp4?v=932bc8e1",
+   "poster": "media/salada-salmao-batata-feijao-verde.jpg?v=dddb90b9",
+   "thumb": "media/salada-salmao-batata-feijao-verde-thumb.webp?v=8006ac99"
   },
   {
    "id": "salada-lentilhas-beterraba-queijo-fresco",
@@ -25934,9 +25934,9 @@
    ],
    "gramsPerServing": 438,
    "kcalPerGram": 0.8,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/salada-lentilhas-beterraba-queijo-fresco.mp4?v=b8fa4270",
+   "poster": "media/salada-lentilhas-beterraba-queijo-fresco.jpg?v=04fc0f72",
+   "thumb": "media/salada-lentilhas-beterraba-queijo-fresco-thumb.webp?v=1c7f3ba9"
   },
   {
    "id": "caesar-light-frango-molho-skyr",
@@ -26362,9 +26362,9 @@
    ],
    "gramsPerServing": 410,
    "kcalPerGram": 0.87,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/caesar-light-frango-molho-skyr.mp4?v=935302a1",
+   "poster": "media/caesar-light-frango-molho-skyr.jpg?v=ff8e39e9",
+   "thumb": "media/caesar-light-frango-molho-skyr-thumb.webp?v=92905540"
   },
   {
    "id": "creme-legumes-assados-frango-desfiado",
