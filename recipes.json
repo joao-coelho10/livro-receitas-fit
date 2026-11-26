@@ -20005,9 +20005,9 @@
    "gramsPerServing": 35,
    "kcalPerGram": 4.09,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/pipocas-colorau-parmesao.mp4?v=0bc36137",
+   "poster": "media/pipocas-colorau-parmesao.jpg?v=f2cbeabd",
+   "thumb": "media/pipocas-colorau-parmesao-thumb.webp?v=cb0eed6c"
   },
   {
    "id": "hummus-grao-skyr-palitos",
@@ -20413,9 +20413,9 @@
    "gramsPerServing": 236,
    "kcalPerGram": 0.69,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/hummus-grao-skyr-palitos.mp4?v=35cf06b1",
+   "poster": "media/hummus-grao-skyr-palitos.jpg?v=69ef35fb",
+   "thumb": "media/hummus-grao-skyr-palitos-thumb.webp?v=ace51e14"
   },
   {
    "id": "chips-curgete-parmesao-forno",
@@ -20687,9 +20687,9 @@
    "gramsPerServing": 267,
    "kcalPerGram": 0.45,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/chips-curgete-parmesao-forno.mp4?v=ff8a06f5",
+   "poster": "media/chips-curgete-parmesao-forno.jpg?v=36e7972c",
+   "thumb": "media/chips-curgete-parmesao-forno-thumb.webp?v=4c52afb3"
   },
   {
    "id": "edamame-assado-alho-limao",
@@ -20994,9 +20994,9 @@
    "kcalPerGram": 1.27,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/edamame-assado-alho-limao.mp4?v=bc9eae1d",
+   "poster": "media/edamame-assado-alho-limao.jpg?v=19aa46ad",
+   "thumb": "media/edamame-assado-alho-limao-thumb.webp?v=2fc43815"
   },
   {
    "id": "bolachas-arroz-cottage-fiambre",
@@ -21297,9 +21297,9 @@
    "kcalPerGram": 1.03,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/bolachas-arroz-cottage-fiambre.mp4?v=f0684768",
+   "poster": "media/bolachas-arroz-cottage-fiambre.jpg?v=c08b4c09",
+   "thumb": "media/bolachas-arroz-cottage-fiambre-thumb.webp?v=4e92053b"
   },
   {
    "id": "ovos-recheados-atum-skyr",
@@ -21584,9 +21584,9 @@
    "kcalPerGram": 1.24,
    "volume": false,
    "salad": false,
-   "videoFile": "",
-   "poster": "",
-   "thumb": ""
+   "videoFile": "videos/ovos-recheados-atum-skyr.mp4?v=7c9778a5",
+   "poster": "media/ovos-recheados-atum-skyr.jpg?v=1e218855",
+   "thumb": "media/ovos-recheados-atum-skyr-thumb.webp?v=c730afa4"
   },
   {
    "id": "trufas-proteicas-cacau-amendoim",
