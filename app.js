@@ -356,7 +356,7 @@ function renderCasa(main) {
   const used = foodsUsed();
   const groups = (BOOK.foodGroups || []).map((g) => [g, Object.keys(BOOK.foods || {}).filter((k) => BOOK.foods[k].group === g && used.has(k))]).filter((g) => g[1].length);
   main.innerHTML = '<div class="hero"><h1>O que tenho em casa</h1><p>Marca o que tens e eu digo-te o que dá para cozinhar.</p></div>' +
-    '<div class="search">' + icon.search + '<input id="cq" type="search" autocomplete="off" enterkeyhint="search" placeholder="Procura um ingrediente: frango, ovos…" aria-label="Procurar ingrediente" value="' + esc(CASA.q) + '"></div>' +
+    '<div class="search">' + icon.search + '<input id="cq" type="search" autocomplete="off" enterkeyhint="search" placeholder="Procura: frango, ovos, batata…" aria-label="Procurar ingrediente" value="' + esc(CASA.q) + '"></div>' +
     '<label class="toggle casa-pantry">Tenho o básico da despensa<small>sal, pimenta, especiarias, azeite, alho, mostarda, mel, fermento…</small><span class="switch"><input type="checkbox" id="cPantry"' + (CASA.pantry ? ' checked' : '') + '><span></span></span></label>' +
     '<div class="casa-bar"><span id="cCount"></span><button class="link-btn" id="cClear">Limpar</button></div>' +
     '<div id="cGroups">' + groups.map((g) => '<div class="casa-group" data-group="' + esc(g[0]) + '"><div class="filter-label">' + esc(g[0]) + '</div><div class="chips wrap">' +
