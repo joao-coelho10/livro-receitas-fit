@@ -195,7 +195,7 @@ tr.tot td{font-weight:800}
 
 /* Refeição completa */
 .seg{display:flex;background:#F1E5D7;border-radius:14px;padding:4px;gap:4px}
-.seg button{flex:1;border:0;background:transparent;border-radius:11px;min-height:40px;padding:0 4px;font-weight:700;font-size:13.5px;white-space:nowrap;color:var(--ink2)}
+.seg button{flex:1;border:0;background:transparent;border-radius:11px;min-height:44px;padding:0 4px;font-weight:700;font-size:13.5px;white-space:nowrap;color:var(--ink2)}
 .seg button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:var(--shadow)}
 .form{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
 .field label{display:block;font-size:12px;font-weight:700;color:var(--ink3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}
@@ -328,4 +328,8 @@ tr.tot td{font-weight:800}
   .casa-cta{background:#1F5A42}
   .chip[aria-pressed="true"]{color:#fff}
   .sheet-back.open{background:rgba(0,0,0,.6)}
+  .seg{background:#2E2620}
+  .tip{background:#3A3220;color:var(--ink)}
+  .video-soon{background:#2E2620}
+  .tag{color:#F5A47F}
 }
