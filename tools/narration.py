@@ -117,10 +117,12 @@ def tts(text):
     h = hashlib.sha1(f'{VOICE}|{RATE}|{PITCH}|{text}'.encode()).hexdigest()[:16]
     mp3 = f'{CACHE}/{h}.mp3'
     if os.path.exists(mp3) and os.path.getsize(mp3) > 1000: return mp3
-    import edge_tts
+    exe = os.path.join(os.path.dirname(sys.executable), 'edge-tts')
+    cmd = [exe if os.path.exists(exe) else 'edge-tts', '--voice', VOICE, f'--rate={RATE}', f'--pitch={PITCH}', '--text', text, '--write-media', mp3 + '.tmp']
+    err = None
     for a in range(14):
-        try:
-            asyncio.run(asyncio.wait_for(edge_tts.Communicate(text, VOICE, rate=RATE, pitch=PITCH).save(mp3 + '.tmp'), timeout=40))
+        try:  # num processo à parte, com tempo limite: o serviço às vezes fica pendurado
+            subprocess.run(cmd, check=True, timeout=45, capture_output=True)
             if os.path.getsize(mp3 + '.tmp') > 1000: os.replace(mp3 + '.tmp', mp3); return mp3
         except Exception as e:
             err = e
