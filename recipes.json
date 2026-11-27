@@ -5636,8 +5636,8 @@
    "kcalPerGram": 1.31,
    "volume": false,
    "salad": false,
-   "videoFile": "videos/bolinhas-atum-cottage.mp4?v=b70c3e9a",
-   "poster": "media/bolinhas-atum-cottage.jpg?v=cec3eaa3",
+   "videoFile": "videos/bolinhas-atum-cottage.mp4?v=7b08c35e",
+   "poster": "media/bolinhas-atum-cottage.jpg?v=cacc4b03",
    "thumb": "media/bolinhas-atum-cottage-thumb.webp?v=b404b8a4"
   },
   {
@@ -5894,8 +5894,8 @@
    "kcalPerGram": 1.59,
    "volume": false,
    "salad": false,
-   "videoFile": "videos/grao-crocante-colorau-parmesao.mp4?v=e6343f70",
-   "poster": "media/grao-crocante-colorau-parmesao.jpg?v=28f63aed",
+   "videoFile": "videos/grao-crocante-colorau-parmesao.mp4?v=c611ef34",
+   "poster": "media/grao-crocante-colorau-parmesao.jpg?v=3eb93696",
    "thumb": "media/grao-crocante-colorau-parmesao-thumb.webp?v=8650a05e"
   },
   {
@@ -6367,8 +6367,8 @@
    "kcalPerGram": 0.99,
    "volume": false,
    "salad": false,
-   "videoFile": "videos/cheesecake-skyr-forno.mp4?v=84968115",
-   "poster": "media/cheesecake-skyr-forno.jpg?v=f5726f03",
+   "videoFile": "videos/cheesecake-skyr-forno.mp4?v=891864b6",
+   "poster": "media/cheesecake-skyr-forno.jpg?v=e4ddf92b",
    "thumb": "media/cheesecake-skyr-forno-thumb.webp?v=e6f6caed"
   },
   {
@@ -7661,9 +7661,9 @@
    "kcalPerGram": 0.68,
    "volume": true,
    "salad": false,
-   "videoFile": "videos/lasanha-curgete-peru-cottage.mp4?v=5144821c",
-   "poster": "media/lasanha-curgete-peru-cottage.jpg?v=eaf82317",
-   "thumb": "media/lasanha-curgete-peru-cottage-thumb.webp?v=8c051187"
+   "videoFile": "videos/lasanha-curgete-peru-cottage.mp4?v=1295a105",
+   "poster": "media/lasanha-curgete-peru-cottage.jpg?v=170b670d",
+   "thumb": "media/lasanha-curgete-peru-cottage-thumb.webp?v=f837cb3c"
   },
   {
    "id": "fajitas-frango-forno",
